@@ -5,58 +5,72 @@
 body{
   background-color:black;
 }
+
 .block{
-  background-color:red;
-  color:red;
-  vertical-align:top;
-  cursor:pointer;
+   background-color:black;
+   transition:background-color 5s;
+   padding-bottom:320px;
+   
 }
-.button{
-   border-color:red;
-   margin-left:500;
+ 
+.block:hover{
+   background-color:white;
+}
+
+.ltp{
+   margin-left:135px;
+   margin-top:225px;
+   background-color:black;
+   border-style:solid;
+   border-color:black;
    cursor:pointer;
-  
 }
+
 
 .link{
-   text-align:center; 
-   cursor:pointer;
-   color:rgb(145, 218, 36);
-   font-size:large;
+   color:black;
 }
 
-.text{
-   color:white; 
-  vertical-align:top;
- cursor:pointer; 
-}
 
-.presstext{
-  display:block;
+.press{
    font-weight:bold;
-   margin-right:200px;
-   margin-left:105px;
+   margin-right:85px;
+   margin-left:145px;
    font-style:italic;
    font-size:20px;
-  cursor:pointer;
+   color:white;
+   display:block;
+   cursor:pointer;
 }
 
+.blacktext{
+   margin-left:11px;
+   margin-bottom:300px;
+   font-weight:bold;
+   cursor:pointer;
+   
+}
+
+
+
+
 </style>
+
 </head>
 
 <body>
+
 <div class="block">
-  
-<p class="text">
-<span class="presstext">Press the Center Area</span> 
-   of your screen.it will take you to the link(i was playing -around with code)
+
+<p class="t">
+<span class="press">Press this</span>
+<span class="blacktext">press the black button (was playing with some code)</span>
 </p>
 
-
-<button class="button" >
-<a class="link" href="">i will not scam you</a>
+<button class="ltp" >
+<a class="link" href="https://x.com">I will not scam you</a>
 </button>
-  
+
 </div>
 
 </body>
