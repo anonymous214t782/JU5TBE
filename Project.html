@@ -1,247 +1,570 @@
 <!DOCTYPE html>
+
 <html>
+
   <head>
+
     
+
     <style>
 
+
+
       .title{
+
         color:black;
+
         vertical-align:top;
+
         text-align:center;
+
         font-family:trirong;
+
         display:block;
+
         font-size:50px;
-        margin-top:0;
+
+        margin-top:20px;
+
         margin-bottom:35px;
+
         cursor:pointer;
+        
         display:block;
+        
+        font-weight:semi-bold;
+
       }
+
       .intro{
+
         text-align:center;
+
         color:grey;
+
         font-size:10px;
+
         font-weight:bold;
+
         cursor:pointer;
+
         display:block;
+
       }
+ 
       .searchbar{
-        text-align:center;
-        width:100%;
-        cursor:pointer;
-        display:block;
+         border-color:grey;
+         padding-bottom:4px;
+         text-align:center;
       }
+ 
+   
+       a{
+         text-decoration:none; 
+       }
       
+
     .d1{ 
+
       width:100%;
+
 }
+
+
 
 .p1{
+
   width:100%; 
+
 }
+.Flow,
+.ES{
+    margin-bottom:35px;
+}
+
 
  .ES, .Flow,
+
 .AH{
+
    font-weight: bold;
+
    font-size: 30px;
+
    width:100%;
+
    display:block;
+
 }
 
+
+
 .mc1{
+
    display: block;
+
    font-weight: bold;
+
    margin-top: 20px;
+
    font-size: 15px;
+
    width:100%;
+
 } 
+
+
 
       
 
+
+
 .ah1, .ah2,
+
 .ah3{
+
    display: inline-block;
+
    width: 100%;
+
 }
+
    
+
 .d2{ 
+
+  width:100%;
+
+
+
+}
+
+.p2, .p3,
+
+.p{
+  width:100%
+}
+
+.ES{
+
   width:100%;
 
 }
-.p2, .p3,
-.p{
-  width:100%;
-}
-.ES{
-  width:100%;
-}
+
+
+
+
 
 
 
 .mc3,
+
 .mc2{
+
    display: block;
+
    font-weight: bold;
+
    font-size: 15px;
+
    margin-top:20px;
+
  width:100%; 
+
 }
 
+
+
 .e1, .e2, .f1, .f2, .f3,
+
 .e3{
+
    display: block;
+
    width:100%;
+
   }
 
 
+
+
+
 .Flow{
+   width:100%;
+
 }
+
       
+
     </style>
+
     
+
   </head>
 
-  <body>
+
+
+  <body style="margin:0;
+               padding-left:30px;
+               padding-bottom:1000px;">
+  
+  <div style="background-color:green;
+            position:fixed;
+            left:0;
+            bottom:0;
+            top:29px;
+            width:30px;">
+            
+</div>
+  
+<header style="height:25px;
+            position:fixed;
+            z-index:1;
+            top:0;
+            bottom:26;
+            left:0;
+            right:0;
+            display:flex;
+            flex-direction:row;
+            justify-content:space-between;
+            border-color:black;
+            ">
+
+
+ 
+     
+    <div style="background-color:lightblue;
+                flex:0.3;
+                 margin-left: 2px;
+                 cursor:pointer;">
+                 
+    <a style="color:black;
+             font-weight:semi-bold;"
+              href="">
+         PHI
+    </a>    
+    </div>
     
+    <div style="background-color:lightgrey;
+                flex:0.3;
+                cursor:pointer;">
+    <a style="color:black;
+             font-weight:semi-bold;"
+              href="">
+       PSY
+   </a>    
+    </div>
+     
+    <div style="background-color:yellow;
+                flex:0.3;
+                cursor:pointer;">
+    <a style="color:black;
+             font-weight:semi-bold;"
+              href="">
+       ECO
+    </a>    
+    </div>
+    
+    <div style="background-color:orange;
+                flex:0.3;
+                cursor:pointer;">
+     <a style="color:black;
+             font-weight:semi-bold;"
+              href="">
+       GEN
+    </a>   
+    </div>
+     
+    <div style="background-color:purple;
+                flex:0.3;
+                cursor:pointer;">
+     <a style="color:black;
+             font-weight:semi-bold;"
+              href="">
+       CRE
+    </a>   
+    </div>
+      
+    <div style="background-color:green;
+               flex:0.3;
+                cursor:pointer;  ">
+      <a style="color:black;
+             font-weight:semi-bold;"
+              href="">
+       SIB
+    </a>             
+    </div>
+    
+    
+</header>
+    
+
     <div class="div1">
+
       
+
       <p class="title">
+
         THE PROJECT
+
       </p>
+
       
+
       <p class="intro">
+
         In this website you will find the main concepts of ____ I've ____.You will also find free____ to said ____
+
         and any other material i plan on encoding in the future as i continue to updaate the website,(it will always be free).
+
         however if your feeling generous you can click this link _________________ for a website I created for various  _______.
+
         with that being said please enjoy,(this was previously plannned as a learning
+
         tool for me so please bare in mind some of the text you might see. 
+
       </p>
+
       
+
     </div>
+
+
+
 
 
     
-    <div>
-      <input class="searchbar" type="text" placeholder="searchbar">
-    </div>
+
+  
+
+
+
 
 
 
 <div style="display:grid;
-            grid-template-columns:1fr 1fr 1fr 1fr;
+
+            grid-template-columns:1fr 1fr 1fr ;
+
             margin-top:200px;
+
             column-gap:20px;
+
             row-gap:20px;">
+
 <div class="d1">
+
 <p class="p1">
+
 <span class="AH">
+
   Atomic habits
+
 </span>
+
   The book simplifies the science of habitual behaviour
+
   and give practical advice in creating,maintaining and destroying habitual behavior,
+
   its text is easy to read and is easily understandable
+
   (if you understant its contents then you will understand the power of habits)
+
   (from here onward i will just which book ties to which book).
 
+
+
 <span class="mc1">
+
   Main concepts
+
 </span>
+
+
 
 <span class="ah1">
+
   •Habits have a cue,routine,reward system
+
    (the cue is something that triggers the habit
+
    the routine is the habit,and the reward is what 
+
    you get out of the habit and also reinforces it)
+
 </span>
+
+
 
 <span class="ah2">
+
   •In order to create a habit it must have these three
+
    qualities,in order to destroy it you must 
+
    atleast remove one of these.
+
 </span>
+
+
 
 <span class="ah3">
+
   •the more you do a habit the more it is reinforced
+
 </span>
 
+
+
 </p>
+
   <a style="color:black;
+
             font-weight:semi-bold;" 
+
     href="https://archive.org/download/atomic-habits-pdfdrive/Atomic%20habits%20%28%20PDFDrive%20%29.pdf">
+
     BOOK:ATOMIC HABITS
+
   </a>
+
 </div>
+
+
 
 <div class="d2">
 
+
+
 <p class="p2">
+
 <span class="ES">Essentialism</span>
+
    Essentialism is a book that brings into question how
+
    much excess we really need in life.its core philosophy 
+
    is about doing and having and focusing on the essentials in life.
 
+
+
 <span class="mc2">
+
 Main concepts
+
 </span>
+
+
 
 <span class="e1">
+
   •"if you dont know the most essential thing right now
+
   the most essential thing right is to focus on the 
+
   most essential thing"
+
 </span>
+
+
 
 <span class="e2">
+
   •over-extending leads to less productivity and more stess
+
 </span>
 
+
+
 <span class="e3">
+
   •focusing on essentials can lead to a happier life
+
 </span>
+
+
 
 </p>
 
 
+
+
+
 </div>
+
+
+
 
 
 <div class="div3">
+
   <p class="p3">
+
 <span class="Flow"> Flow </span>
+
     Flow is a book that primarily focuses 
+
     how we can find happiness in our lives.
+
     The book argues that for there to be happiness
+
     one must spend their time in flow (which is a state
-    of complete involvement and no distractions which ties
-    to essentiallism)
+
+    of complete involvement and no distractions which    ties to essentiallism)
+
     <span class="mc3">Main Concepts</span>
+
     <span class="f1">
+
       •Flow is the state in which pleasure 
+
        is archieved whenyou dissociate with 
+
        worldly worries and completely focus one the task or moment
+
     </span>
+
     
+
     <span class="f2">
+
       •Archieving a state of flow requires an activity in which
+
       (1. it has a skill level and its easy to gain feeback on actions
+
        2. what you are doing is challenging enough to be exciting yet
+
           not too difficult to be overwhelming)
+
     </span>
+
     <span class="f3">
+
       •Regularily archieving this state can provide lifelong 
+
        happiness and contentment even through normal chores,
-       it can also lead to highly productive work as an additional benefit
-      
+
+       it can also lead to highly productive work as an additional benefit.  
+
     </span>
+
   </p>
+
 </div>
 
 
-  
-<div class="divc4">column 4</div>
+
 
    
+
       
+
     
+
     </div>
+
     
+
   </body>
+
 </html>
