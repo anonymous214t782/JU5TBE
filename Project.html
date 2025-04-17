@@ -185,11 +185,25 @@
 
 .Flow{
    width:100%;
-
 }
+@media (max-width:750px){
+  .major{
+    grid-template-columns: 1fr 1fr;
+  }
+}      
 
-      
+ @media (min-width:751px) and (max-width: 999px){
+  .major{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}           
 
+ @media (min-width:1000px){
+  .major{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}        
+    
     </style>
 
     
@@ -247,7 +261,7 @@
     
 </div>
   
-<header style="height: 25px;
+<header     style="height: 25px;
             background-color:rgb(225, 225, 225);
             position: fixed;
             z-index: 1;
@@ -375,7 +389,7 @@
 
 
 
-<div style="display:grid;
+<div class="major" style="display:grid;
 
             grid-template-columns:1fr 1fr 1fr ;
 
