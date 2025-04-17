@@ -186,23 +186,7 @@
 .Flow{
    width:100%;
 }
-@media (max-width:750px){
-  .major{
-    grid-template-columns: 1fr 1fr;
-  }
-}      
 
- @media (min-width:751px) and (max-width: 999px){
-  .major{
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}           
-
- @media (min-width:1000px){
-  .major{
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-}        
     
     </style>
 
@@ -389,7 +373,7 @@
 
 
 
-<div class="major" style="display:grid;
+<div style="display:grid;
 
             grid-template-columns:1fr 1fr 1fr ;
 
@@ -397,7 +381,19 @@
 
             column-gap:20px;
 
-            row-gap:20px;">
+            row-gap:20px;
+  
+            @media (max-width:750px){
+            grid-template-columns: 1fr 1fr;
+            }
+              @media (min-width:751px) and (max-width: 999px){
+           grid-template-columns: 1fr 1fr 1fr;
+              }
+           @media (min-width:1000px){
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    }       
+            
+  ">
 
 <div class="d1">
 
