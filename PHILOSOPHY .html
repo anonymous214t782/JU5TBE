@@ -4,54 +4,163 @@
 <style>
 
 a{
-     text-decoration:none; 
-  }
-      
-.p{
-    
+  
+        text-decoration: none;
+        color: black;
+        
+}       
+
+body{
+  
+        margin: 0px;
+        padding-left: 90px;
+  
+}            
+
+:root{
+        --bar_color: rgb(245, 245, 245);
+        --border_color: rgb(235, 235, 235);
 }
 
 
+            
+header{
+
+        height: 45px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        bottom: 25;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 2px solid var( --border_color);
+
+}
+      
+.header_catergories{
+        
+        background-color: var( --bar_color);
+        cursor: pointer;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center; 
+        font-size: 10px;
+       /* width: clamp (200, 50%, 600);*/
+    
+}
+
+.header_link{
+  
+        font-weight: semi-bold;
+        text-align: center;
+        vertical-align: center;
+        font-size: 30px;
+        
+}
+      
+.sidebar_div{
+        
+        background-color: var( --bar_color);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        top: 26px;
+        width: 90px;
+        border-right: 2px solid var( --border_color);
+        
+}
+
+.sidebar_link{
+
+        white-space: pre-wrap;
+        font-weight: semi-bold;
+        margin-bottom: 60px;
+        font-size: 20px;
+  
+}            
+            
+.title{
+
+        color: black;
+        vertical-align: top;
+        text-align: center;
+        font-family: trirong;
+        display: block;
+        font-size: 50px;
+        margin-bottom: 40px;
+        margin-top: 110px;
+        cursor: pointer; 
+        display: block;
+        font-weight: bold;
+
+}
+
+.intro{
+
+        margin-top: 35px;
+        text-align: center;
+        color: grey;
+        font-size: 13px;
+        font-weight: bold;
+        cursor: pointer;
+        display: block;
+
+}
+
+.grid{
+     
+         display: grid;
+         grid-template-columns: 1fr 1fr ;
+         margin-top: 200px;
+         column-gap: 20px;
+         row-gap: 20px;
+     
+}     
+
+
 .b{
-    font-weight: bold;
-
-   font-size: 25px;
-
-   width: 100%;
-
-   display: block;
+         font-weight: bold;
+         font-size: 25px;
+         width: 100%;
+         display: block;
    
 }
 
 
 .mc{
+     
      display: block;
-
     font-weight: bold;
- 
     font-size: 15px;
-
     margin-top: 20px;
-
     width: 100%; 
   
 }
 
 
 .point{
-  display:block;  
+     
+  display:block; 
+     
 }
 
 .slink,
 .blink{
-    display:block;
-    font-weight:bold;
-    color:black;
-    cursor:pointer;
+    display: block;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
     transition:opacity 0.15;
 }
 
-.blink:hover{
+.blink: hover{
     opacity:0.3;  
 }
 .blink: hover,
@@ -68,120 +177,72 @@ a{
 </style>
 </head>
 
-<body style="padding-left:40px;">
-<div style="background-color:rgb(225, 225, 225);
-            position:fixed;
-            left:0;
-            bottom:0;
-            top:25px;
-            width:40px;
-            z-index:1;
-            border-right: 2px solid lightgrey;">
-         
-  <a style="font-size: 13px;
-            color: black;
-            background-color:;
-            height:20px;
-            border-bottom: 2px solid lightgrey;"
-     href="">
-     SELF HELP
-   </a>         
-        
-<a style="font-size: 13px;
-           color: black;
-           background-color:;
-           height:20px;
-     border-bottom: 2px solid lightgrey;"
-     href="">
-     no.2
-   </a>  
-    
-</div>         
+<body>
+     
+<div class= "sidebar_div">
+          
+   <a class= "sidebar_link" href= "https://ju5tbe.github.io/JU5TBE/selfhelp .html">
+    SELF HELP 
+   </a> 
+<a class= "sidebar_link" href="https://ju5tbe.github.io/JU5TBE/extra .html">
+     EXTRA
+   </a>
 
+ <a class= "sidebar_link" href="https://ju5tbe.github.io/JU5TBE/coding .html">
+    CODING
+   </a> 
+
+  <a class= "sidebar_link" href="">
+    
+   </a>   
+
+ <a class= "sidebar_link" href="">
+   
+   </a> 
+    
+</div>
    
    
-    <header style="height: 25px;
-             background-color:rgb(225, 225, 225);
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            bottom: 30;
-            left: 0;
-            right: 0;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            border-bottom: 2px solid lightgrey; ">
+    <header>
 
     
    
     
      
-    <div style="background-color:;
-                 flex:0.3;
-                 margin-left: 2px;
-                 text-align:center;
-                 cursor:pointer;">
+    <div class= "header_catergories">
                  
-    <a style="color:black;
-             font-weight:semi-bold;"
-              href="https://ju5tbe.github.io/JU5TBE/Project.html">
+    <a class= "header_link" href="https://ju5tbe.github.io/JU5TBE/Project.html">
          HOME
     </a>    
     </div>
     
-    <div style="background-color:;
-                flex:0.3;
-                cursor:pointer;
-         text-align:center">
-    <a style="color:black;
-             font-weight:semi-bold;"
-              href="https://ju5tbe.github.io/JU5TBE/Psychology .html">
+    <div class= "header_catergories">
+    <a class= "header_link" href="https://ju5tbe.github.io/JU5TBE/Psychology .html">
        PSY
    </a>    
     </div>
      
-    <div style="background-color:;
-                flex:0.3;
-                cursor:pointer;
-         text-align:center;">
-    <a style="color:black;
-             font-weight:semi-bold;"
-              href="https://ju5tbe.github.io/JU5TBE/Economics .html">
+    <div class= "header_catergories">
+    <a class= "header_link" href="https://ju5tbe.github.io/JU5TBE/Economics .html">
        ECO
     </a>    
     </div>
     
-    <div style="background-color:;
-                flex:0.3;
-                cursor:pointer;
-         text-align:center;">
-     <a style="color:black;
-             font-weight:semi-bold;"
-              href="https://ju5tbe.github.io/JU5TBE/GENERAL .html">
+    <div class= "header_catergories">
+      <a class= "header_link" href="https://ju5tbe.github.io/JU5TBE/GENERAL .html">
        GEN
     </a>   
     </div>
      
-    <div style="background-color:;
-                flex:0.3;
-                cursor:pointer;
-         text-align:center;">
-     <a style="color:black;
-             font-weight:semi-bold;"
-              href="https://ju5tbe.github.io/JU5TBE/CREDITS .html">
+    <div class= "header_catergories">
+     <a class= "header_link" href="https://ju5tbe.github.io/JU5TBE/CREDITS .html">
        CRE
     </a>   
     </div>
       
-    <div style="background-color:;
-               flex:0.3;
-                cursor:pointer; 
-         text-align:center;">
-      <a style="color:black;
-             font-weight:semi-bold;"
-              href="https://ju5tbe.github.io/JU5TBE/Siba .html">
-       SIB
+    <div class= "header_catergories">
+      <a class= "header_link" href="https://ju5tbe.github.io/JU5TBE/Siba .html">
+       SIBA
     </a>             
     </div>
     
@@ -190,41 +251,18 @@ a{
 
 
 
-<div style="font-size: 40px;
-            text-align: center;
-            font-weight: bold;
-            margin-top: 50px;
-            margin-bottom: 35px;
-            cursor: pointer;">
-PHILOSOPHY
+<div class= "title">
+    PHILOSOPHY
 </div>
 
-<div style="  text-align: center;
-
-              color: grey;
-
-              font-size: 10px;
-
-              font-weight: bold;
-
-              cursor: pointer;
-   
-              display: block;">
+<div  class= "intro">
  This file contains books that are in the genre of philosophy,I know surprising right.      
  
  </div>
 
-<div style="display: grid;
+<div class= "grid">
 
-            grid-template-columns: 1fr 1fr ;
-
-            margin-top: 200px;
-
-            column-gap: 20px;
-
-            row-gap: 20px;">
-
-  <div style="background-color:; ">
+  <div>
   <p class="p">
   
   <span class="b">
@@ -259,8 +297,8 @@ PHILOSOPHY
   </div>
 
   
-  <div style="background-color:;">
-      <p class="p">
+  <div>
+ <p class="p">
   
   <span class="b">
      POWER OF NOW
