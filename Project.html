@@ -8,120 +8,120 @@
 
     <style>
 
+a{
+        text-decoration: none;
+        color: black;
+}       
+
+body{
+        margin: 0px;
+        padding-left: 60px;
+        padding-bottom: 3000px;
+        text-align: center;
+}            
+
+:root{
+        --bar_color: rgb(245, 245, 245);
+        --border_color: rgb(225, 225, 225);
+}
 
 
-      .title{
+            
+header{
 
-        color:black;
+        height:25px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        bottom: 25;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 2px solid var( --border_color);
 
-        vertical-align:top;
-
-        text-align:center;
-
-        font-family:trirong;
-
-        display:block;
-
-        font-size:50px;
-
-        margin-top:20px;
-
-        margin-bottom:35px;
-
-        cursor:pointer;
+}
+.header_catergories{
         
-        display:block;
+        background-color: var( --bar_color);
+        cursor: pointer;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;  
+       /* width: clamp (200, 50%, 600);*/
+    
+}
+
+.sidebar_div{
         
-        font-weight:semi-bold;
+        background-color: var( --bar_color);
+        position: fixed;
+        top: 25;
+        bottom: 0;
+        left: 0;
+        width: 60px;
+        border-right: 2px solid var( --border_color);
+        
+}
 
-      }
+.sidebar_content{
 
-      .intro{
+        width: 40px;
+        margin-bottom: 5px;
+        border-bottom: 2px solid var( --border_color);
+        
+}            
+            
+.title{
 
-        text-align:center;
+        color: black;
+        vertical-align: top;
+        text-align: center;
+        font-family: trirong;
+        display: block;
+        font-size: 50px;
+        margin-top: 20px;
+        margin-bottom: 35px;
+        cursor: pointer; 
+        display: block;
+        font-weight: semi-bold;
 
-        color:grey;
+}
 
-        font-size:10px;
+.intro{
 
-        font-weight:bold;
-
-        cursor:pointer;
-
-        display:block;
-
-      }
- 
-     
-       a{
-         text-decoration:none; 
-       }
-      
-
-    .d1{ 
-
-  
+        text-align: center;
+        color: grey;
+        font-size: 10px;
+        font-weight: bold;
+        cursor: pointer;
+        display: block;
 
 }
 
 
 
-.p1{
-
-  
-
-}
-.Flow,
-.ES{
-    margin-bottom:px;
-}
-
-
- .ES, .Flow,
-.AH{
-   font-size: 30px;
-   font-weight: bold;
-   display: block;
-
-}
 
 
 
-.mc1{
-
-   display: block;
-
-   font-weight: bold;
-
-   margin-top: 20px;
-
-   font-size: 15px;
-
-   
-
-} 
-
-.major{display:grid;
-
-            grid-template-columns:1fr  1fr ;
-
-            margin-top:200px;
-
-            column-gap:20px;
-
-            row-gap:20px;
+.major{     display: grid;
+            grid-template-columns: 1fr  1fr ;
+            margin-top: 200px;
+            column-gap: 20px;
+            row-gap: 20px;
   
   }
 
 .major{
   @media (max-width:1000px){
-            grid-template-columns: 1fr 1fr;
-  
-          font-size: 20px;
+        grid-template-columns: 1fr 1fr;
+        font-size: 20px;
 
          
 
-            }
+}
               @media (min-width:1001px) and (max-width: 1200px){
            grid-template-columns: 1fr 1fr 1fr;
                 font-size: 22px;
@@ -132,79 +132,6 @@
     }       
 }      
 
-
-.ah3{
-
-   display: inline-block;
-
-   
-
-}
-
-   
-
-.d2{ 
-
-  
-
-
-
-}
-
-
-.p{
-  
-}
-
-.ES{
-
-  
-
-}
-
-
-
-
-
-
-
-.mc3,
-
-.mc2{
-
-   display: block;
-
-   font-weight: bold;
-
-   font-size: 25px;
-
-   margin-top:20px;
-
- 
-
-}
-
-
-
-.e1, .e2, .f1, .f2, .f3,
-
-.e3{
-
-   display: block;
-
-   
-
-  }
-
-
-
-
-
-.Flow{
-   width:100%;
-}
-
-    
     </style>
 
     
@@ -213,86 +140,35 @@
 
 
 
-  <body style="margin:0;
-               padding-left:60px;
-               padding-bottom:3000px;">
+  <body>
   
-  <div style=" background-color:rgb(225, 225, 225);
-            position:fixed;
-            left:0;
-            bottom:0;
-            top:25px;
-            width:60px;
-            z-index:1;
-            border-right: 2px solid lightgrey;">
-   <a style="font-size: 13px;
-            color: black;
-            background-color: ;
-            height:20px;
-            border-bottom: 2px solid lightgrey;"
-            href="https://ju5tbe.github.io/JU5TBE/selfhelp .html">
+  <div class= "sidebar_div">
+          
+   <a class= "sidebar_content" href="https://ju5tbe.github.io/JU5TBE/selfhelp .html">
     SELF HELP 
    </a> 
-<a style="font-size: 13px;
-            color: black;
-           background-color: ;
-           height:20px;
-           display:block;
-           border-bottom: 2px solid lightgrey;"
-            href="https://ju5tbe.github.io/JU5TBE/extra .html">
+<a class= "sidebar_content" href="https://ju5tbe.github.io/JU5TBE/extra .html">
      EXTRA
    </a>
 
- <a style="font-size: 13px;
-            color: black;
-            background-color: ;
-            height:20px;
-            border-bottom: 2px solid lightgrey;"
-            href="https://ju5tbe.github.io/JU5TBE/coding .html">
+ <a class= "sidebar_content" href="https://ju5tbe.github.io/JU5TBE/coding .html">
     CODING
    </a> 
 
-  <a style="font-size: 13px;
-            color: black;
-            background-color: ;
-            height:20px;
-            border-bottom: 2px solid lightgrey;"
-            href="">
+  <a class= "sidebar_content" href="">
     
    </a>   
 
- <a style="font-size: 13px;
-          width:100%;
-            color: black;
-            background-color: ;
-            height:20px;
-            border-bottom: 2px solid lightgrey;"
-            href="">
+ <a class= "sidebar_content" href="">
     layman philosophies
    </a> 
     
 </div>
   
-<header     style="height:25px;
-            background-color:rgb(225, 225, 225);
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            bottom: 25;
-            left: 0;
-            right: 0;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            border-bottom: 2px solid lightgrey;">
-
-
+<header>
  
      
-    <div style="background-color: ;
-                flex: 0.3;
-                 cursor: pointer;
-                ">
+    <div class= "header_catergories">
                  
     <a style="color:black;
              font-weight:semi-bold;
@@ -303,9 +179,7 @@
     </a>    
     </div>
     
-    <div style="background-color:;
-                flex:0.3;
-                cursor:pointer;">
+    <div class= "header_catergories">
     <a style="color:black;
              font-weight:semi-bold;
               text-align: center; 
@@ -315,9 +189,7 @@
    </a>    
     </div>
      
-    <div style="background-color:;
-                flex:0.3;
-                cursor:pointer;">
+    <div class= "header_catergories">
     <a style="color:black;
              font-weight:semi-bold;
               text-align:center;
@@ -327,9 +199,7 @@
     </a>    
     </div>
     
-    <div style="background-color:;
-                flex:0.3;
-                cursor:pointer;">
+    <div class= "header_catergories">
      <a style="color:black;
              font-weight:semi-bold;
              text-align:center;
@@ -339,11 +209,7 @@
     </a>   
     </div>
      
-    <div style="background-color:;
-                flex: 0.3;
-                cursor: pointer;
-                text-align: center;
-                vertical-align: center;">
+    <div class= "header_catergories">
      <a style="color:black;
              font-weight:semi-bold;
              text-align: center;
@@ -353,10 +219,7 @@
     </a>   
     </div>
       
-    <div style="background-color:;
-               flex:0.3;
-                cursor:pointer;
-                text-align:center;">
+    <div class= "header_catergories">
       <a style="color:black;
              font-weight:semi-bold;
                text-align:center; 
@@ -412,159 +275,6 @@
 
 
 
-
-<div class="major"d>
-
-<div class="d1">
-
-<p class="p1">
-
-<span class="AH">
-
-  Atomic Habits
-
-</span>
-
-  The book simplifies the science of habitual behaviour
-
-  and give practical advice in creating,maintaining and destroying habitual behavior,
-
-  its text is easy to read and is easily understandable
-
-  (if you understant its contents then you will understand the power of habits)
-
-  (from here onward i will just which book ties to which book).
-
-
-
-<span class="mc1">
-
-  Main concepts
-
-</span>
-
-
-
-<span class="p">
-
-  •Habits have a cue,routine,reward system
-
-   (the cue is something that triggers the habit
-
-   the routine is the habit,and the reward is what 
-
-   you get out of the habit and also reinforces it)
-
-</span>
-
-
-
-<span class="p">
-
-  •In order to create a habit it must have these three
-
-   qualities,in order to destroy it you must 
-
-   atleast remove one of these.
-
-</span>
-
-
-
-<span class="p">
-
-  •the more you do a habit the more it is reinforced
-
-</span>
-
-
-
-</p>
-
-  <a style="color:black;
-
-            font-weight:semi-bold;" 
-
-    href="https://archive.org/download/atomic-habits-pdfdrive/Atomic%20habits%20%28%20PDFDrive%20%29.pdf">
-
-    BOOK LINK
-
-  </a>
-
- <a style="color:black;
-
-            font-weight:semi-bold;" 
-
-    href="https://open.spotify.com/show/7EN4LL9sO3yA0qzTKAa7h7?si=89198ac208d74467">
-
-    SPORTIFY LINK
-
-  </a>
-
-  
-</div>
-
-
-
-<div class="d2">
-
-
-
-<p class="p">
-
-<span class="ES">Essentialism</span>
-
-   Essentialism is a book that brings into question how
-
-   much excess we really need in life.its core philosophy 
-
-   is about doing and having and focusing on the essentials in life.
-
-
-
-<span class="mc">
-
-Main concepts
-
-</span>
-
-
-
-<span class="p">
-
-  •"if you dont know the most essential thing right now
-
-  the most essential thing right is to focus on the 
-
-  most essential thing"
-
-</span>
-
-
-
-<span class="p">
-
-  •over-extending leads to less productivity and more stess
-
-</span>
-
-
-
-<span class="p">
-
-  •focusing on essentials can lead to a happier life
-
-</span>
-
-
-
-</p>
-
-
-
-
-
-</div>
 
 
 
