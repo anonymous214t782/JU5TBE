@@ -1,4 +1,87 @@
-<div style="background-color:green";>
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+a{
+         text-decoration:none; 
+       }
+ 
+ .p1{
+    
+}
+
+
+.b{
+    font-weight: bold;
+
+   font-size: 25px;
+
+   width: 100%;
+
+   display: block;
+   
+}
+
+
+.mc{
+     display: block;
+
+    font-weight: bold;
+ 
+    font-size: 15px;
+
+    margin-top: 20px;
+
+    width: clamp(200px, 50%, 600px);/*use this to see 2morrow*/
+    
+  
+}
+
+
+.point{
+  display:block;  
+}
+
+.slink,
+.blink{
+    display:block;
+    font-weight:bold;
+    color:black;
+    cursor:pointer;
+    transition:opacity 0.15;
+    }
+.blink:hover{
+    opacity:0.3;
+   
+}
+
+
+.slink:hover{
+    opacity:0.3;
+}
+     
+     
+
+
+</style
+
+</head>
+
+<body>
+
+<div style="display:grid;
+
+            grid-template-rows:1fr 1fr;
+
+            margin-top:200px;
+
+            column-gap:15px;
+
+            row-gap:20px;">
+
+  <div style="background-color:green";>
   
   <p class="p">
   
@@ -6,25 +89,25 @@
      MEDITATIONS
     </span>
     Meditations is based on the actual writings of Marcus Aurelius(was actually a journal) 
-    it details his life and his attempt to live a life of stoic virtue.
+    it details his life and his attempt to live a life of stoic virtue.(MUST READ in my opinion)
   
       <span class="mc"> Main concepts </span>
    
-  <span class="p">
+  <span class= "point">
      •Its not the thing that hurts you but rather
       your perception of it.
   </span> 
   
-  <span class="p">
+  <span class= "point">
      •Everyone should strive to live a life of virtue.
   </span> 
      
-  <span class="p">
+  <span class= "point">
      •vices (e.g smoking,drinking) should be used be enjoyed moderately.
       
   </span>
   
-  <a class="blink" href="">BOOK LINK</a>
+  <a class="blink" href="">MEDITATIONS by MARCUS AURELIUS</a>
    <a class="slink" href="">SPOTIFY LINK</a>
   </p>   
   </div>
@@ -32,29 +115,29 @@
   
   <div style="background-color:blue;">
   
-      <p class="p1">
+      <p class="p">
   
     <span class="b">
      The CHECKLIST MANIFESTO
     </span>
      The Checklist Manifesto is a book that simply talks about checklists.It shows how even simple checklists can and have had a massive impact in fields of engineering,science,pilots and even in your personal life.
   
-      <span class="mc"> Main concepts </span>
+      <span class= "mc"> Main concepts </span>
    
-  <span class="p">
+  <span class= "point">
      •Checklist offer a simple but effective way of
       minimizing mistakes by making sure the 
       are always implemented.
      
   </span> 
   
-  <span class="p">
+  <span class= "point">
      •The also helps streamline complex tasks to be more 
       effective and efficient.They infact are a staple
       in high risk/importance careers.
   </span> 
      
-  <span class="p">
+  <span class= "point">
      •(not a main concept:Just wanted to say 
       definetely a must read)
       
@@ -68,7 +151,7 @@
   
   <div style="background-color:yellow;">
   
-      <p class="p1">
+      <p class="p">
   
     <span class="b">
      GET SMART
@@ -78,14 +161,14 @@
      information
       <span class="mc"> Main concepts </span>
    
-  <span class="p">
+  <span class= "point">
      •The Book preaches CONTINUOS LEARNING in order to 
       improve our capabilities (especially in a career
       setting),this is sited as one of the main reasons
       the "top 1%" succeed.
   </span> 
   
-  <span class="p">
+  <span class= "point">
      •Having a positive/winner mindset and developing
       resilience are vital for overcoming eventual 
       obstacles (stoicism and absurdism can help here).
@@ -99,7 +182,7 @@
   </div>
   
   <div style="background-color:magenta;">
-      <p class="p1">
+      <p class="p">
   
     <span class="b">
      NO MORE,MR NICE GUY
@@ -109,28 +192,28 @@
      common pitfalls (usually orchastrated by the nice
      guy) in their lives and how to fix it.
   
-      <span class="mc"> Main concepts </span>
+      <span class= "mc"> Main concepts </span>
    
-  <span class="p">
+  <span class= "point">
      •Nice guys use niceness (termed in the book as 
       covert contracts) to manipulate people in order
       to get their needs met (not so nice is it)
   </span> 
   
-  <span class="p">
+  <span class= "point">
   • bonus(this means that they prioritise their needs
          last and hope that they will be met and 
          overreact when they aren't)
     
   </span> 
      
-  <span class="p">
+  <span class= "point">
       •Nice guys feel as if they can directly ask for
      what they want which oftentimes leds to their 
      needs not met
   </span>
   
-   <span class="p">
+   <span class= "point">
      • •Prioritising their needs first (being assertive)is actually an important part towards curing
      nice guy syndrome 
   </span>
@@ -144,7 +227,7 @@
   
   <div style="background-color:yellow;">
   
-      <p class="p1">
+      <p class="p">
   
     <span class="b">
      A BRIEF HISTORY OF HUMAN KIND
@@ -156,17 +239,17 @@
      
       <span class="mc"> Main concepts </span>
    
-  <span class="p">
+  <span class= "point">
      •We rarely make objective decisions,rather our 
       decisions are made of subjective factors.
   </span>
   
-  <span class="p">
+  <span class= "point">
      •Being AWARE of our irrational thoughts can help
       us make better decisions.
   </span> 
      
-  <span class="p">
+  <span class= "point">
      •Our decisions are context dependent(why they
       can be predictable and subjective)
       
@@ -180,10 +263,10 @@
   
   
   <div style="background-color:red;">
-     <p class="p1">
+     <p class="p">
   
     <span class="b">
-    THE ALCHEMIST 
+    THE FALLACY DETECTIVE
     </span>
      This book is basically a list of fallacies in 
      narrative form.However its not a full list(still
@@ -191,13 +274,13 @@
   
       <span class="mc"> Main concepts </span>
    
-  <span class="p">
+  <span class= "point">
      •It promotes.....Guess what.... AWARENESS🙃(if one form of advice is found in multiple books thats advice that should be practised immediately)about illogical thinking
      behaviours
      
   </span> 
   
-  <span class="p">
+  <span class= "point">
      •Helps in avoiding or pointing out illogical arguments basically making you make better decisons      
   </span> 
      
@@ -210,7 +293,7 @@
   
   
   <div style="background-color:red;">
-     <p class="p1">
+     <p class="p">
   
     <span class="b">
     Noise
@@ -221,18 +304,18 @@
   
       <span class="mc"> Main concepts </span>
    
-  <span class="p">
+  <span class= "point">
      •algorithms on average make better decisions than
       us (is it useful...well,but its the main lesson
       and its still a good read).
   </span> 
   
-  <span class="p">
+  <span class= "point">
      •There is level noise (general differnce in 
      judgement) and pattern noise(difference in judgement in a specific case).
   </span> 
   
-  <span class="p">
+  <span class= "point">
      •Being 😤...AWARE  of noise can help you make
      better judgements.
   </span> 
@@ -243,6 +326,320 @@
   </p>   
   
   </div>
+  
+  <div style="background-color:red;">
+     <p class= "p">
+  
+    <span class= "b">
+    THE ALCHEMIST
+    </span>
+    The alchemist is a book based in spirituality 
+    its a story about ____ search for the elixir of 
+    life.(i heard the audiobook version,my more spiritual friends recommend the book so...)
+  
+      <span class= "mc"> Main concepts </span>
+   
+  <span class= "point">
+     •The book introduces dreams as a way of connecting with your subconcious,Arguing that its the way the brain uses to communicated its repressed thoughts and 
+     desires
+       
+  </span> 
+  
+  <span class= "point">
+     •Another concept is trusting in the idea that
+     everything happens for a reason, offering a way to
+     sort of not be affected by the ups and downs of life
+  </span> 
+  
+  <span class= "point">
+     •The alchemist also emphasizing following your 
+     passions irregardless of the risks associated
+     wih it.
+  </span> 
+     
+  
+  <a class="blink" href="">BOOK LINK</a>
+   <a class="slink" href="">SPOTIFY LINK</a>
+  </p>   
+  
+  </div>
+  
+   <div style="background-color:red;">
+     <p class="p">
+  
+    <span class="b">EMOTIONAL INTELLIGENCE</span>
+    
+    Emotional intelligence is a books that argues that
+    IQ as a measure of intelligence is only half the 
+    story of why certain people can be successful (There are studies that prove this but they seem effective in scenarios where high iq is given or atleast an average is established irregardless its still useful - Devils advocate🙂)
+    
+    
+    
+
+      <span class="mc"> Main concepts </span>
+   
+  <span class= "point">
+     •Psychology book = Awareness,You have to step back
+     analyse and try to understand your emotions instead of being overcome by them (ties to stoicism)
+       
+  </span> 
+  
+  <span class= "point">
+     •The book strongly advocates for empathy(its literally a part of it) 
+  </span> 
+  
+  <span class= "point">
+     •As a result it also encourages social skills
+     emotional intelligence (the book can also be looked as small version of how to be a leader)
+  </span> 
+     
+  
+  <a class="blink" href="">EMOTIONAL INTELLIGENCE by DANIEL GOLEMAN</a>
+   <a class="slink" href="">SPOTIFY LINK</a>
+  </p>   
+  
+  </div>
+
+<div style="background-color:red;">
+     <p class="p">
+  
+    <span class="b">
+    THE POWER OF HABIT
+    
+    </span>
+ Its basically atomic habits rebranded,They both talk about the basic fundamentals in just different ways
+
+      <span class="mc"> Main concepts </span>
+   
+  <span class= "point">
+     •Habits are formed out of a cue routine reward system.
+  </span> 
+  
+  <span class= "point">
+     •the book kinda emphasizes strategical thinking by talking about how creating certain habits(Keystone Habits) can have a sort of snowballing effect
+     into other areas in your life.
+  </span> 
+  
+  <span class= "point">
+     •
+  </span> 
+     
+  
+  <a class="blink" href="">EMOTIONAL INTELLIGENCE by DANIEL GOLEMAN not him</a>
+   <a class="slink" href="">SPOTIFY LINK</a>
+  </p>   
+  
+  </div>
+  
+  <div style="background-color:red;">
+     <p class="p">
+  
+    <span class="b">
+    THE ART OF SEDUCTION
+    
+    </span>
+    
+    This book basically teaches how to create attraction using basic principles designed to take 
+    advantage pf our instincts(i might be painting it
+    in a bad way,but it being controversial does not
+    mean it isn't somewhat accurate)
+    
+    
+    
+    
+
+      <span class="mc"> Main concepts </span>
+   
+  <span class= "point">
+     •The most basic idea is that you have to choose
+     a "target" that will be receptive (amazing,pick someone thats interested (or gullible...maybe..dont))
+       
+  </span> 
+  
+  <span class= "point">
+     •Create skibidy sigma rizz as the youngins call it.
+     basically be mysterios but not in a depressing way
+     that way you kill them with curiosity or something
+  </span> 
+  
+  <span class= "point">
+     •Manipulate their emotions 🙂.....
+     make them feel happy excited etc for the most part
+     dont actually manipulate
+  </span> 
+     
+  
+  <a class="blink" href="">ART OF SEDUCTION BY ROBERT GREEN</a>
+   <a class="slink" href="">SPOTIFY LINK</a>
+  </p>   
+  
+  </div>
+  
+   <div style="background-color:red;">
+     <p class="p">
+  
+    <span class="b">
+       THE ART OF CLEAR THINKING
+    </span>
+    
+     In this story narrative book are lessons on ways
+     to improve decision making,Authored by a former
+     US FIGHTER PILOT and Its concepts are widely
+     used by the US Airforce (meaning they are mostly 
+     legit (If its good enough for America's Military....))
+    
+
+      <span class="mc"> Main concepts </span>
+   
+  <span class= "point">
+     •The most standout idea for me is Fast focasting
+      (essentially thinking in probabilities on steroids) frankly he can explain it better (look inside
+      the material section ).
+       
+  </span> 
+  
+  <span class= "point">
+     •The book prioritises creative thinking(moreso on the later parts) and goves a method called "conceptual
+     learning" (learn the concepts,not the details) as a way of developing critical thinking.
+  </span> 
+  
+  <span class= "point">
+     •it also introduce the concept of power laws
+     in decision making (material section)
+  </span> 
+     
+  
+  <a class= "blink" href="">ART OF CLEAR THINKING by HOWARD LEE</a>
+   <a class= "slink" href="">SPOTIFY LINK</a>
+  </p>   
+  
+  </div>
+  
+    <div style="background-color:red;">
+     <p class="p">
+  
+    <span class="b">
+       THE COMPOUND EFFECT
+    </span>
+    
+     The Compound Effect is basically atomic habits 
+     but different I guess
+    
+
+      <span class="mc"> Main concepts </span>
+   
+  <span class= "point">
+     •Just like Atomic habits it talks about making
+     small changes in your life that overtime will
+     yield great results.
+       
+  </span> 
+  
+  <span class= "point">
+     •It tries to show us powerful the power of compounding is and lays emphasis in being consistent
+     during that period to maximise the compounding effect
+     
+  </span> 
+  
+  <span class= "point">
+     •it also sponsors.........AWARENSS...
+     it emphasizes tracking yourself in order to 
+     maximise your capabilities.You can't fix a problem
+     if you don't know what the problem is
+  </span> 
+     
+  
+  <a class= "blink" href="">COMPOUND EFFECT by DARREN HARDY</a>
+   <a class= "slink" href="">SPOTIFY LINK</a>
+  </p>   
+  
+  </div>
+  
+   <div class="d">
+ <p class="p">
+ <span class="b">
+  Atomic habits
+ </span>
+The book simplifies the science of habitual behaviour
+and give practical advice in creating,maintaining and destroying habitual behavior,its text is easy to read and is easily understandable(if you understant its contents then you will understand the power of habits)
+(from here onward i will just which book ties to which book).
+
+<span class="mc">
+  Main concepts
+</span>
+
+<span class="point">
+  •Habits have a cue,routine,reward system
+   (the cue is something that triggers the habit
+   the routine is the habit,and the reward is what 
+   you get out of the habit and also reinforces it)
+</span>
+
+<span class="point">
+  •In order to create a habit it must have these three
+   qualities,in order to destroy it you must 
+   atleast remove one of these.
+</span>
+
+<span class="point">
+  •the more you do a habit the more it is reinforced
+</span>
+
+ <a class= "blink" href="">ATOMIC HABITS by JAMES CLEAR</a>
+   <a class= "slink" href="">SPOTIFY LINK</a>
+
+</p>
+</div>
+
+<div class="d">
+
+<p class="p">
+<span class="b">Essentialism</span>
+Essentialism is a book that brings into question how
+much excess we really need in life.its core philosophy 
+is about doing and having and focusing on the essentials in life.
+
+<span class="mc">
+Main concepts
+</span>
+
+<span class="point">
+•"if you dont know the most essential thing right now
+  the most essential thing right is to focus on the 
+  most essential thing"
+</span>
+
+<span class="point">
+•over-extending leads to less productivity and more stess
+</span>
+
+<span class="point">
+•focusing on essentials can lead to a happier life
+</span>
+
+ <a class= "blink" href="">ESSENTIALISM by GREG MCKEOWN</a>
+   <a class= "slink" href="">SPOTIFY LINK</a>
+
+</p>
+
 
 
 </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
