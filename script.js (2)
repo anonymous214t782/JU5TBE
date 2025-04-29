@@ -1,0 +1,81 @@
+//blackJack game
+//It seems that whenever we want to create a program we will,
+//do it in this kind of setup (def , func , else)
+let firstCard = 11 //interger var
+let secondCard = 10 //interger var
+let sum = firstCard + secondCard //var
+let cards = [firstCard, secondCard] //array []
+let hasBlackJack = false //boolean
+let isAlive = true //boolean
+let message = "" //string var
+let cardsEl = "" //string var
+console.log(startGame())
+function startGame(){ //for human readability in code
+  renderGame()
+}
+function renderGame(){
+ //when renderGame is called upon all the code inside will be used 
+ 
+  cardsEl = "cards: " + cards[0] + " " + cards[1]
+  //" " creates space
+  //information in arrays is collected using []then specifying the
+  //number.The numbers are 0 for the first thing in the array
+  // 1 for the second thing and so on,
+  //for more on arrays watch the youtube videos
+  //we are setting cardsEl to be equal to the string "cards:" and
+  //the two arrays cards[0] and cards[1]
+  console.log(cardsEl)//
+  
+if (sum < 21){// if sum is less than 21 this code will be activated
+  //you can use console,this is for a lesson
+  message = ("Do you want to draw a card")
+}else if (sum === 21){//if sum equal 21 this code will activate
+  message = ("You've got Blackjack")
+  hasBlackJack = true//if code activates, this will become true
+}else if (sum > 21){//
+  message = ("you lost, Try again?")
+  isAlive = false//if code activates this will become false
+}
+console.log(message)//the message will be printed out only for the-
+//-code activated
+
+if (hasBlackJack){//only activated if hasBlackJack is true
+  console.log("You've won 1 cent in zimbabwean dollar")
+}
+if (isAlive = false){//only activated if isAlive is false
+  console.log("You have lost 15 billion dollars")
+}
+}
+
+
+
+//age restrictor
+let ayge = 18 //interger variabld(no decimal)
+if (ayge >= 21){//if age is less than or equals to 21 code below
+  //will activate
+  console.log("Welcome to club Sapiens, Enjoy!")
+}else{//if condition 1 is not satisfied then this code will activate
+  console.log("Sorry, You're too young to enter")
+}
+
+
+
+
+//birthday card thing....scotish tradition.
+let age = 100 
+if (age < 100){
+  console.log("not eligible.")
+}else if (age === 100){
+  eligible = 1
+  console.log("they are eligible")
+  //we can use either the one line or the string for extrapolation
+}else{
+  console.log("not eligible, You already got one.")
+}
+if ("they are eligible"){//we can use strings that activate for if
+  //statements
+  console.log("holy damn the code works")
+}
+if (eligible === 1){//we can also use numbers for the same thing
+  console.log("You have lived a century, Congrats")
+}
