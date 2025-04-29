@@ -1,156 +1,6 @@
 <!DOCTYPE html>
-
-<html>
-
-  <head>
-
-    
-
-    <style>
-
-
-
-      .title{
-
-        color:black;
-
-        vertical-align:top;
-
-        text-align:center;
-
-        font-family:trirong;
-
-        display:block;
-
-        font-size:50px;
-
-        margin-top:20px;
-
-        margin-bottom:35px;
-
-        cursor:pointer;
-        
-        display:block;
-        
-        font-weight:semi-bold;
-
-      }
-
-      .intro{
-
-        text-align:center;
-
-        color:grey;
-
-        font-size:10px;
-
-        font-weight:bold;
-
-        cursor:pointer;
-
-        display:block;
-
-      }
- 
-     
-       a{
-         text-decoration:none; 
-       }
-    
-      
-.p{
-    
-}
-
-
-.b{
-    font-weight: bold;
-
-   font-size: 25px;
-
-   width: 100%;
-
-   display: block;
-   
-}
-
-
-.mc{
-     display: block;
-
-    font-weight: bold;
- 
-    font-size: 15px;
-
-    margin-top: 20px;
-
-    width: 100%; 
-  
-}
-
-
-.point{
-  display:block;  
-}
-
-.slink,
-.blink{
-    display:block;
-    font-weight:bold;
-    color:black;
-    cursor:pointer;
-    transition:opacity 0.15;
-}
-
-.blink:hover{
-    opacity:0.3;  
-}
-.blink: hover,
-.slink: hover{
-    opacity:0.3;
-}
-
-    .d1{ 
-
-  
-
-}
-  
-
-.major{display:grid;
-
-            grid-template-colu:1fr 1fr 1fr ;
-
-            margin-top:200px;
-
-            column-gap:20px;
-
-            row-gap:20px;
-  
-  }
-
-.major{
-  @media (max-width:1000px){
-            grid-template-columns: 1fr 1fr;
-  
-          font-size: 20px;
-
-         
-
-            }
-              @media (min-width:1001px) and (max-width: 1200px){
-           grid-template-columns: 1fr 1fr 1fr;
-                font-size: 22px;
-              }
-           @media (min-width:1201px){
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-             font-size: 22px;
-    }       
-}      
-
-   
-
-.d2{ 
+<head>
+<style>
 
   
 a{
@@ -239,7 +89,6 @@ header{
 .title{
 
         color: black;
-        vertical-align: top;
         text-align: center;
         font-family: trirong;
         display: block;
@@ -273,33 +122,24 @@ header{
          row-gap: 20px;
          border: 2px solid var( --border_color);
 
-        @media (max-width:1000px){
-          grid-template-rows: 1fr 1fr ;
-        }
-  
          @media (min-width:1001px) and (max-width:1199px){
-          grid-template-rows: 1fr 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr;
         }
   
         @media (min-width:1200px){
-          grid-template-rows: 1fr 1fr 1fr 1fr ;
+          grid-template-columns: 1fr 1fr 1fr 1fr ;
         }
   
 }     
 
 
 .b{
+
          font-weight: bold;
          font-size: 35px;
          width: 100%;
          display: block;
-           @media (max-width:700px){
-          font-size: 45px;
-        }
-  
-         @media (min-width:701px) and (max-width:1199px){
-          font-size: 35px;
-        }
+          
   
 }
 
@@ -330,9 +170,7 @@ header{
     transition:opacity 0.15;
 }
 
-.blink: hover{
-    opacity:0.3;  
-}
+
 .blink: hover,
 .slink: hover{
     opacity:0.3;
@@ -384,78 +222,43 @@ header{
 
  
      
-    <div style="background-color: ;
-                flex: 0.3;
-                 cursor: pointer;
-                ">
+    <div class = "header_catergories">
                  
-    <a style="color:black;
-             font-weight:semi-bold;
-            text-align:center;
-            vertical-align: center; "
-              href="https://ju5tbe.github.io/JU5TBE/PHILOSOPHY .html ">
+    <a class = "header_link" href="https://ju5tbe.github.io/JU5TBE/PHILOSOPHY .html ">
          PHI
     </a>    
     </div>
     
-    <div style="background-color:;
-                flex:0.3;
-                cursor:pointer;">
-    <a style="color:black;
-             font-weight:semi-bold;
-              text-align: center; 
-              vertical-align: center;"
+    <div  class = "header_catergories">
+    <a class = "header_link" 
               href="https://ju5tbe.github.io/JU5TBE/Psychology .html">
        PSY
    </a>    
     </div>
      
-    <div style="background-color:;
-                flex:0.3;
-                cursor:pointer;">
-    <a style="color:black;
-             font-weight:semi-bold;
-              text-align:center;
-              vertical-align: center; "
+    <div  class = "header_catergories">
+    <a class = "header_link" 
               href="https://ju5tbe.github.io/JU5TBE/Economics .html">
        ECO
     </a>    
     </div>
     
-    <div style="background-color:;
-                flex:0.3;
-                cursor:pointer;">
-     <a style="color:black;
-             font-weight:semi-bold;
-             text-align:center;
-             vertical-align: center; "
+    <div  class = "header_catergories">
+     <a class = "header_link" 
               href="https://ju5tbe.github.io/JU5TBE/GENERAL .html ">
        GEN
     </a>   
     </div>
      
-    <div style="background-color:;
-                flex: 0.3;
-                cursor: pointer;
-                text-align: center;
-                vertical-align: center;">
-     <a style="color:black;
-             font-weight:semi-bold;
-             text-align: center;
-             vertical-align: center;"
+    <div  class = "header_catergories">
+     <a class = "header_link" 
               href="https://ju5tbe.github.io/JU5TBE/CREDITS .html ">
        CRE
     </a>   
     </div>
       
-    <div style="background-color:;
-               flex:0.3;
-                cursor:pointer;
-                text-align:center;">
-      <a style="color:black;
-             font-weight:semi-bold;
-               text-align:center; 
-               vertical-align: center;"
+    <div  class = "header_catergories"">
+      <a class = "header_link" 
               href="https://ju5tbe.github.io/JU5TBE/Siba .html ">
        SIBA
     </a>             
@@ -465,7 +268,7 @@ header{
 </header>
     
 
-    <div class="div1">
+    <div>
 
       
 
@@ -500,9 +303,9 @@ header{
 
 
 
-<div class="major">
-<div style="background-color:blue;">
-  
+<div class= "grid">
+   
+    <div>
       <p class="p">
   
     <span class="b">
@@ -521,7 +324,7 @@ header{
   
   <span class= "point">
      •The also helps streamline complex tasks to be more 
-      effective and efficient.They infact are a staple
+      effective and efficient. They infact are a staple
       in high risk/importance careers.
   </span> 
      
@@ -531,13 +334,13 @@ header{
       
   </span>
   
-  <a class="blink" href="">BOOK LINK</a>
+  <a class="blink" href="">CHECKLIST MANIFESTO by ATUL GWANDE</a>
    <a class="slink" href="">SPOTIFY LINK</a>
   </p>   
   </div>
   
   
-  <div style="background-color:yellow;">
+  <div>
   
       <p class="p">
   
@@ -563,139 +366,12 @@ header{
   </span> 
     
   
-  <a class="blink" href="">BOOK LINK</a>
+  <a class="blink" href="">GET SMART by BRIAN TRACY</a>
    <a class="slink" href="">SPOTIFY LINK</a>
-  </p>   
-  
-<div class="d">
-
-<p class="p">
-
-<span class="b">
-
-  
-
-</span>
-
-
-
-<span class="point">
-
-  Main concepts
-
-</span>
-
-
-
-<span class="point">
-
- 
-
-</span>
-
-
-
-<span class="point">
-
-  
-
-</span>
-
-
-
-<span class="point">
-
- 
-
-</span>
-
-
-
-</p>
-
-  <a style="color:black;
-
-            font-weight:semi-bold;" 
-
-  
-  </a>
-
-</div>
-
-
-
-<div class="d">
-
-  
-<p class="p1">
-  
-    <span class="b">
-     The CHECKLIST MANIFESTO
-    </span>
-     The Checklist Manifesto is a book that simply talks about checklists.It shows how even simple checklists can and have had a massive impact in fields of engineering,science,pilots and even in your personal life.
-  
-      <span class="mc"> Main concepts </span>
-   
-  <span class="p">
-     •Checklist offer a simple but effective way of
-      minimizing mistakes by making sure the 
-      are always implemented.
-     
-  </span> 
-  
-  <span class="p">
-     •The also helps streamline complex tasks to be more 
-      effective and efficient.They infact are a staple
-      in high risk/importance careers.
-  </span> 
-     
-  <span class="p">
-     •(not a main concept:Just wanted to say 
-      definetely a must read)
-      
-  </span>
-  
-  <a class="blink" href="">BOOK LINK</a>
-   <a class="slink" href="">SPOTIFY LINK</a>
-  </p>   
-
-</div>
-
-<div style="background-color:;">
-  
-      <p class="p1">
-  
-    <span class="b">
-     GET SMART
-    </span>
-     Get Smart is a really short(about 100-150 pages)
-     that is filled (honestly for me somewhat useful).
-     information
-      <span class="mc"> Main concepts </span>
-   
-  <span class="p">
-     •The Book preaches CONTINUOS LEARNING in order to 
-      improve our capabilities (especially in a career
-      setting),this is sited as one of the main reasons
-      the "top 1%" succeed.
-  </span> 
-  
-  <span class="p">
-     •Having a positive/winner mindset and developing
-      resilience are vital for overcoming eventual 
-      obstacles (stoicism and absurdism can help here).
-  </span> 
-    
-  
-  <a class="blink" href="">BOOK LINK</a>
-   <a class="slink" href="">SPOTIFY LINK</a>
-  </p>   
-  
+  </p>  
   </div>
-  
-  <div style="background-color:;">
-      <p class="p1">
-  
+  <div>
+    <p class = "p">
     <span class="b">
      NO MORE,MR NICE GUY
     </span>
@@ -706,26 +382,26 @@ header{
   
       <span class="mc"> Main concepts </span>
    
-  <span class="p">
+  <span class="point">
      •Nice guys use niceness (termed in the book as 
       covert contracts) to manipulate people in order
       to get their needs met (not so nice is it)
   </span> 
   
-  <span class="p">
+  <span class="point">
   • bonus(this means that they prioritise their needs
          last and hope that they will be met and 
          overreact when they aren't)
     
   </span> 
      
-  <span class="p">
+  <span class="point">
       •Nice guys feel as if they can directly ask for
      what they want which oftentimes leds to their 
      needs not met
   </span>
   
-   <span class="p">
+   <span class="point">
      • •Prioritising their needs first (being assertive)is actually an important part towards curing
      nice guy syndrome 
   </span>
@@ -736,7 +412,7 @@ header{
     
   </div>
   
-<div style="background-color:red;">
+<div>
      <p class="p">
   
     <span class="b">
@@ -767,7 +443,7 @@ header{
   
   </div>
   
-  <div style="background-color:red;">
+  <div>
      <p class="p">
   
     <span class="b">
@@ -811,7 +487,7 @@ header{
   
   </div>
   
-   <div style="background-color:red;">
+   <div>
      <p class="p">
   
     <span class="b">
@@ -851,7 +527,7 @@ header{
   
   </div>
   
-    <div style="background-color:red;">
+    <div>
      <p class="p">
   
     <span class="b">
