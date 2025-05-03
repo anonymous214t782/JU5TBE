@@ -25,13 +25,15 @@ body{
 :root{
         --bar_color: rgb(245, 245, 245);
         --border_color: rgb(235, 235, 235);
+        --20px: 1.25rem;
+        --45px: 2.8rem;
 }
 
 
             
 header{
 
-        height: 45px;
+        height: var( --45px);
         position: fixed;
         z-index: 1;
         top: 0;
@@ -53,7 +55,7 @@ header{
         flex: 1;
         justify-content: center;
         align-items: center; 
-        font-size: 10px;
+
        /* width: clamp (200, 50%, 600);*/
     
 }
@@ -63,7 +65,7 @@ header{
         font-weight: semi-bold;
         text-align: center;
         vertical-align: center;
-        font-size: 30px;
+        font-size: var( --20px);
         
 }
       
@@ -76,18 +78,19 @@ header{
         position: fixed;
         bottom: 0;
         left: 0;
-        top: 26px;
-        width: 90px;
+        top: var( --45px);
+        width: 4rem;
         border-right: 2px solid var( --border_color);
         
 }
 
 .sidebar_link{
 
-        white-space: pre-wrap;
+        
         font-weight: semi-bold;
-        margin-bottom: 60px;
-        font-size: 20px;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        font-size: 1.10rem;
   
 }            
             
@@ -97,7 +100,7 @@ header{
         text-align: center;
         font-family: trirong;
         display: block;
-        font-size: 50px;
+        font-size: 4.1rem;
         margin-bottom: 40px;
         margin-top: 110px;
         cursor: pointer; 
@@ -111,7 +114,7 @@ header{
         margin-top: 35px;
         text-align: center;
         color: grey;
-        font-size: 13px;
+        font-size: 1rem;
         font-weight: bold;
         cursor: pointer;
         display: block;
@@ -145,7 +148,7 @@ header{
 .b{
     font-weight: bold;
 
-   font-size: 25px;
+   font-size: 1.8rem;
 
    width: 100%;
 
@@ -158,7 +161,7 @@ header{
          
      display: block;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 1.3rem;
     margin-top: 20px;
     width: 100%; 
   
