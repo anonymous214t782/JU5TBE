@@ -2,10 +2,10 @@
 <html>
 <head>
 
-<meta name="viewport" 
-    content="width=device-width, initial-scale=1.0"/>
-    
-  
+   <meta name="viewport" 
+   content="width=viewport-width, initial-scale=1.0"/>
+
+
 <style>
 
 a{
@@ -18,7 +18,7 @@ a{
 body{
   
         margin: 0px;
-        padding-left: 90px;
+        padding-left: 4rem;
   
 }            
 
@@ -26,9 +26,12 @@ body{
         --bar_color: rgb(245, 245, 245);
         --border_color: rgb(235, 235, 235);
         --20px: 1.25rem;
-        --45px: 2.8rem;
+        --45px: 2.8rem; 
 }
 
+ .container {
+        position: relative; /* Important for absolute positioning of the text */
+} 
 
             
 header{
@@ -55,7 +58,6 @@ header{
         flex: 1;
         justify-content: center;
         align-items: center; 
-
        /* width: clamp (200, 50%, 600);*/
     
 }
@@ -65,7 +67,7 @@ header{
         font-weight: semi-bold;
         text-align: center;
         vertical-align: center;
-        font-size: var( --20px);
+        font-size: var(--20px);
         
 }
       
@@ -86,7 +88,7 @@ header{
 
 .sidebar_link{
 
-        
+        white-space: pre-wrap;
         font-weight: semi-bold;
         margin-top: 4rem;
         margin-bottom: 4rem;
@@ -98,14 +100,14 @@ header{
 
         color: black;
         text-align: center;
-        font-family: trirong;
-        display: block;
+        font-family: trirong;   
         font-size: 4.1rem;
         margin-bottom: 40px;
         margin-top: 110px;
         cursor: pointer; 
         display: block;
         font-weight: bold;
+        
 
 }
 
@@ -143,7 +145,10 @@ header{
   
 }     
 
-
+#image{
+   width:100%; 
+   height: 20rem;
+}
 
 .b{
     font-weight: bold;
@@ -260,7 +265,7 @@ header{
 </header>
 
 
-<div class= "title"">
+<div class="title"> 
    PSYCHOLOGY
 </div>
 
@@ -272,7 +277,7 @@ header{
 <div class= "grid">
 
   <div>
-  
+   <img src="images/remember.jpg" id = "image"/>
   <p class="p">
   
     <span class="b">
@@ -308,7 +313,7 @@ header{
 
   
   <div>
-  
+   <img src="images/lucifer.jpg" id = "image"/>
       <p class="p">
   
     <span class="b">
@@ -346,7 +351,7 @@ header{
   
   
   <div>
-  
+   <img src="images/thinking.jpg" id = "image"/>
       <p class="p">
   
     <span class="b">
@@ -384,6 +389,8 @@ header{
   </div>
   
   <div>
+   <img src="images/mistakes.png" id = "image"/>
+
       <p class="p">
   
     <span class="b">
@@ -421,7 +428,7 @@ header{
   
   
   <div>
-  
+   <img src="images/irrational.jpg" id = "image"/>
       <p class="p">
   
     <span class="b">
@@ -458,6 +465,8 @@ header{
   
   
   <div>
+
+   <img src="images/fallacy.jpg" id = "image"/>
      <p class="p">
   
     <span class="b">
@@ -488,6 +497,8 @@ header{
   
   
   <div>
+
+   <img src="images/noise.jpg" id = "image"/>
      <p class="p">
   
     <span class="b">
@@ -523,6 +534,8 @@ header{
   
   </div>
 <div>
+
+   <img src="images/niceGuy.jpg" id = "image"/>
       <p class="p">
   
     <span class="b">
@@ -572,7 +585,7 @@ header{
   
   
   <div>
-  
+   <img src="images/sapiens.png" id = "image"/>
       <p class="p">
   
     <span class="b">
