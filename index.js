@@ -7,6 +7,14 @@ let message = ""
 let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
+let playerInfo = {//syntax for objects--> : instead of = and a comma
+name: "God",//no need for player
+cash: "Infinity"//cash = key, infinty = value
+}
+
+let playerEl = document.getElementById("player-el")
+playerEl.textContent = playerInfo.name + ": $ " + playerInfo.cash
+//playerInfo.name is how you call the object, the key and the value
 
 
 function getRandomCard(){
@@ -40,7 +48,8 @@ function renderGame(){
   for (let i = 0;  i <  cards.length; i ++){
     cardsEl.textContent += cards[i] + " "
   }
-    
+
+
 if (sum < 21){
   message = ("Do you want to draw a card ?")
 }else if (sum === 21){
@@ -56,10 +65,13 @@ messageEl.textContent = message
 }
 
 function newCard(){
-
+  if (isAlive === true && hasBlackJack === false){
     let card = getRandomCard()
     sum += card
     cards.push(card)
     renderGame()
 
+  }
+  
+   
 }
