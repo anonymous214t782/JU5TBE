@@ -1,1 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" 
+    content="width=viewport-width, initial-scale=1.0"/>
+ 
+    <title>EXTRA</title>
+<style>
+a{
+  
+        text-decoration: none;
+        color: black;
+        
+}       
 
+body{
+  
+        margin: 0px;
+        padding-left: 4rem;
+  
+}            
+
+:root{
+        --bar_color: rgb(245, 245, 245);
+        --border_color: rgb(235, 235, 235);
+        --20px: 1.25rem;
+        --45px: 2.8rem; 
+}
+
+ .container {
+        position: relative; /* Important for absolute positioning of the text */
+} 
+
+            
+header{
+
+        height: var( --45px);
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        bottom: 25;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 2px solid var( --border_color);
+
+}
+      
+.header_catergories{
+        
+        background-color: var( --bar_color);
+        cursor: pointer;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center; 
+       /* width: clamp (200, 50%, 600);*/
+    
+}
+
+.header_link{
+  
+        font-weight: semi-bold;
+        text-align: center;
+        vertical-align: center;
+        font-size: var(--20px);
+        
+}
+      
+.sidebar_div{
+        
+        background-color: var( --bar_color);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        top: var( --45px);
+        width: 4rem;
+        border-right: 2px solid var( --border_color);
+        
+}
+
+.sidebar_link{
+   
+        font-weight: semi-bold;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        font-size: 1.10rem;
+  
+}            
+            
+.title{
+
+        color: black;
+        text-align: center;
+        font-family: trirong;   
+        font-size: 4.1rem;
+        margin-bottom: 40px;
+        margin-top: 110px;
+        cursor: pointer; 
+        display: block;
+        font-weight: bold;
+        
+
+}
+
+.intro{
+
+        margin-top: 35px;
+        text-align: center;
+        color: grey;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        display: block;
+
+}
+
+.grid{
+     
+     display: grid;
+     grid-template-rows: 1fr 1fr ;
+     margin-top: 200px;
+     column-gap: 20px;
+     row-gap: 20px;
+     border: 2px solid var( --border_color);
+
+    @media (max-width:56.25rem){
+      grid-template-columns: 1fr 1fr ;
+    }
+
+     @media (min-width:56.26rem) and (max-width:74.93rem){
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media (min-width:74.94rem){
+      grid-template-columns: 1fr 1fr 1fr 1fr ;
+    }
+
+}     
+
+#image{
+width:100%; 
+height: 20rem;
+}
+
+.b{
+     font-weight: bold;
+     font-size: 1.8rem;
+     width: 100%;
+     display: block;
+       @media (max-width:43.75rem){
+      font-size: 1.9rem;
+    }
+
+     @media (min-width:43.76rem) {
+      font-size: 2rem;
+    }
+
+}
+
+.mc{
+         
+     display: block;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-top: 20px;
+    width: 100%; 
+  
+}
+
+.point{
+  display:block;  
+}
+
+.slink,
+.blink{
+    display:block;
+    font-weight:bold;
+    color:black;
+    cursor:pointer;
+    transition:opacity 0.15;
+}
+
+.blink:hover{
+    opacity:0.3; 
+}
+.slink:hover{
+    opacity:0.3;
+}
+     
+
+</style>
+
+</head>
+<body>
+   <div class= "sidebar_div">
+          
+   <a class= "sidebar_link" href= "https://ju5tbe.github.io/JU5TBE/selfhelp .html">
+    SELF HELP 
+   </a> 
+<a class= "sidebar_link" href="https://ju5tbe.github.io/JU5TBE/Project.html">
+     HOME
+   </a>
+
+ <a class= "sidebar_link" href="https://ju5tbe.github.io/JU5TBE/coding .html">
+    CODING
+   </a> 
+
+  <a class= "sidebar_link" href="">
+    
+   </a>   
+
+ <a class= "sidebar_link" href="">
+   
+   </a> 
+    
+</div>
+
+   
+   
+    <header>
+             
+     <div class= "header_catergories">            
+    <a class= "header_link" href="https://ju5tbe.github.io/JU5TBE/PHILOSOPHY .html">
+         PHI
+    </a>    
+    </div>
+    
+    <div class= "header_catergories">
+    <a class= "header_link" href="https://ju5tbe.github.io/JU5TBE/Project.html">
+       HOME 
+   </a>    
+    </div>
+     
+    <div class= "header_catergories"">
+    <a class= "header_link" href="https://ju5tbe.github.io/JU5TBE/Economics .html">
+       ECO
+    </a>    
+    </div>
+    
+    
+     
+    <div class= "header_catergories">
+     <a class= "header_link" href="https://ju5tbe.github.io/JU5TBE/CREDITS .html">
+       CRE
+    </a>   
+    </div>
+      
+    <div class= "header_catergories">
+      <a class= "header_link" href="https://ju5tbe.github.io/JU5TBE/Siba .html">
+       SIBA
+    </a>             
+    </div>
+    
+    
+</header>
+
+
+<div class="title"> 
+  EXTRA
+</div>
+
+<div class= "intro">
+ This file contains books that are in the genre of psychology,I know surprising right.      
+ 
+ </div>
+
+<div class= "grid">
+
+  <div>
+   <img src="observer.jpg" id = "image"/>
+  <p class="p">
+  
+    <span class="b">
+     THE VULNERABLE OBSERVER
+    </span>
+     tbc... 
+      <span class="mc"> Main concepts </span>
+   
+  <span class="point">
+     •
+  </span> 
+  
+  <span class="point">
+     •
+  </span> 
+     
+  <span class="point">
+     •
+      
+  </span>
+  
+  <a class="blink" href="">
+   link unavailable</a>
+   <a class="slink" href="">SPOTIFY LINK UNAVAILABLE</a>
+  </p>   
+  </div>
+
+   
+</body>
+</html>
