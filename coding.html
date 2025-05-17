@@ -1,0 +1,1367 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,
+ initial-scale=1.0"/>
+<title>JustCode</title>
+
+<link rel="stylesheet" href="style.css">
+<link href='https://unpkg.com/boxicons@2.1.3/
+ css/boxicons.min.css' rel='stylesheet'>
+ <style>
+body{
+	margin: 0;
+	padding: 0;
+	fontfamily:Arial;
+	color: lightgrey;
+}
+
+.container{
+	
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 100px;
+	background-color: #001f7c38;
+	
+}
+
+:root{
+	background-color:
+}
+
+.back-vid{
+	position:fixed;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	mix-blend-mode: lighten;
+}
+
+header{
+	
+	display: flex;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	align-items: center;
+	justify-content:space-between;
+	height: 70px;
+	background-color:  rgba(255, 255, 255, 0.123);
+	backdrop-filter: blur(10px);
+	padding: 0 30px;
+	box-shadow: 0 0 15px #72a1de68;
+	z-index: 999;	
+	
+}
+
+.left{
+	
+	display: flex;
+	align-items: center;
+	
+}
+
+.left img{
+	width: 40px;
+	margin: 0 15px;
+    border-radius: 20px;
+}
+
+header ul{
+	
+	display: flex;
+	justify-content:space-between;
+	width: 30%;
+	padding: 15px 15px;
+	border-radius: 50px;
+	background-color: rgba(0, 0, 69, 0.30);
+	backdrop-filter: blur(10px);
+	box-shadow: 0 0 10px #727fde65;
+	
+}
+
+header ul li{
+	
+	list-style: none;
+	
+}
+
+
+header ul a{
+	
+	text-decoration: none;
+	color:white;
+	font-weight: 700;
+	margin: 0 10px;
+	
+}
+
+.box-icons{
+	
+	display: flex;
+	gap: 40px;
+	
+}
+
+.box-icons a{
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	width: 30px;
+	height: 30px;
+	border: 2px solid #727fde;
+	text-decoration: none;
+	color: lightgray;
+	border-radius: 50%;
+	transition: 0.3s;
+	
+}
+
+.box-icons a:hover{
+	
+	background-color: #727fde;
+	color:black;
+	box-shadow: 0 0 15px #727fde6f;
+	
+}
+
+
+.blackhole-box{
+
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	justify-content:center;
+	mix-blend-mode: lighten;
+
+}
+
+.blackhole-box video{
+	width: 100%;
+	margin-top: -23.5%;
+	z-index: 1;
+	
+}
+
+.hero{
+	
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	align-items: center;
+	justify-content:space-between;	
+	
+}
+
+.hero-info{
+	position: absolute;
+	left: 5%;
+}
+
+.hero-info .hero-info-title{
+	
+	color: #727fde;
+	padding: 8px 5px;
+	border: 1px solid #727fde77;
+	width: 240px;
+	background-color: #2200493d;
+	box-shadow: 0 0 5px #727fde88;
+	border-radius: 50px;
+    margin-top: 360px;
+	
+}
+
+.hero-info h1{
+	
+	font-size: 60px;
+	max-width:600px;
+	font-weight:700;
+	line-height: 70px;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	
+}
+
+.hero-info p{
+	
+	max-width: 550px;
+	line-height: 25px;
+	margin-bottom: 40px;
+	font-size:20px;
+	
+}
+
+.hero-info button{
+	
+	color:white;
+	padding: 15px 35px;
+	border-radius: 10px;
+	border: 2px solid #727fdeb4;
+	background-color: #2200493d;
+	box-shadow: 0 0 5px #727fde84;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.hero-info button:hover{	
+	box-shadow: 0 0 15px #727fde86;	
+}
+
+.gradient{
+	background: linear-gradient(to right,#008baa, #00d15e, #5eff00, #007032, #a6ff00, #356d00, #008ead);
+	background-size: 200%;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animate-gradient 2.5s linear infinite;
+	
+	
+}
+
+@keyframes animate-gradient{
+	to{
+		background-position:200%;
+	}
+	
+}
+
+.hero-vid-box{
+	
+	position: absolute;
+	right: 0;
+	
+}
+
+.hero-vid-box video{
+	margin-top: 360px;
+	height: 900px;
+    mix-blend-mode:exclusion;
+	max-width: 500px;
+	
+}
+
+.scroll-down{
+	
+	height:50px;
+	width:30px;
+	border: 2px solid lightgrey;
+	position: absolute;
+	left: 48%;
+	bottom: 8%;
+	border-radius: 50px;
+	cursor: pointer;
+	box-shadow: 0 0 15px rgba(211,211,211,0.477);
+	border-top:transparent;
+	border-left:transparent;
+	animation: scroll-down 2s ease-in-out infinite;
+	
+}
+
+
+.scroll-down::before,
+.scroll-down::after{
+	content:"";
+	position:absolute;
+	top: 20%;
+	left:49%;
+	height:10px;
+	width:10px;
+	border:2px solid rgba(211,211,211,0.477);
+	transform:translate(-50%, -100%) rotate(45deg);
+	
+}
+
+.scroll-down::before{
+	top:30%;
+	animation-delay:0.5s;
+	
+}
+@keyframes{
+	0%{
+		opacity: 0;
+	}
+	30%, 60%{
+		opacity: 1;
+	}
+	100%{
+		top:90%;
+		opacity:0;
+	}
+}
+
+.info-section{
+	
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	width: 80%;
+	margin-top: 100px;
+	
+}
+
+.section-title{
+	font-size: 40px;
+	font-weight: 700;
+	margin-bottom: 100px;
+}
+
+.info-cards{
+	
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+	width: 100%;
+	height:100%;
+	margin-top: 30px;
+	align-items: center;
+	justify-content: center;
+	margin-left: 10%;
+	
+}
+
+.card{
+	
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	position: relative;
+	width: auto;
+	height: 40vh;
+	overflow:hidden;
+	border: 1px solid rgb(0, 207, 35);
+	background-color: #000000b7;
+	border-radius:20px;
+    transition: 0.3s;
+	
+}
+
+.card img{
+    width: 80%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.card h1{
+    position: absolute;
+    margin: 0;
+    bottom: 40%;
+    left: 5%;
+    font-size: 25px;
+    z-index: lightgray;
+}
+
+.card p{
+    position: absolute;
+    bottom: 3%;
+    left: 5%;
+    z-index: 1;
+    max-width: 300px;
+    color: grey;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.card video{
+    margin-top:10%;
+    width: 70%;
+    height: 50%;
+    object-fit: cover;
+    mix-blend-mode: lighten;
+
+}
+
+.card button{
+   color:white;
+	padding: 10px 15px;
+	border-radius: 10px;
+	border: 2px solid #727fdeb4;
+	background-color: #2200493d;
+	box-shadow: 0 0 5px #727fde84;
+	cursor: pointer;
+	transition: 0.3s;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+.card button:hover{	
+	box-shadow: 0 0 15px #727fde86;
+    opacity: 0.7;
+
+} 
+
+.card:hover{
+    box-shadow: 0 0 15px rgb(211, 211, 211, 0.5)
+}
+
+.card:nth-child(3){
+    grid-row: span 2;
+    height:83vh;
+}
+
+.card:nth-child(3) p{
+	bottom: 12;
+}	
+
+.card:nth-child(3) h1{
+	bottom: 21;
+}
+
+.card:nth-child(4){
+	grid-column: span 2;
+}
+
+.card:nth-child(4) p{
+	max-width: 650px;
+}
+
+.card:nth-child(4) h1{
+	bottom: 35%;
+}
+
+/*MP PROJECTS IMPORTANT*/
+.my-projects{
+
+	display: flex;
+	flex-direction: column;
+	gap:10%;
+	align-items: center;
+	position: relative;
+	width: 80%;
+	height:100vh;
+	margin-top: 200px;
+	margin-bottom: 700px;
+
+}
+
+.project-card{
+
+	display: flex;
+	width:100%;
+	height: 40%;
+	align-items: center;
+	justify-content:center ;
+
+}
+
+.project-vidbox{
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	position: relative;
+	cursor: pointer;
+	min-width: 500px;
+	transition: 0.5s;
+	mix-blend-mode:normal;
+
+}
+
+.project-vidbox img{
+
+	width: fit-content;
+	max-width: 22rem;
+	min-width: 21rem;
+	max-height: 19rem;
+	box-shadow: 0 0 10px lightgray;
+	border-radius: 20px;
+	transition: 0.5s;
+	margin-top:0;
+	margin-bottom: 150px;
+
+}
+
+.project-vidbox img:hover{
+	box-shadow: 0 0 20px lightgray;
+}
+
+.project-info{
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+	width:50%;
+	padding-left: 10%;
+}
+
+.project-info h1{
+	width: 90%;
+	font-size: 25px;
+	font-weight: 700;
+	text-wrap: nowrap;
+	margin-bottom: 0px;
+	margin-top:0;
+	max-width:450px;
+}
+
+.project-info p{
+	width: 90%;
+	max-width: 400px;
+	min-width: 300px;
+	margin-bottom: 150px;
+
+}
+
+.project-info button{
+	color:rgb(27, 161, 0);
+	padding: 10px 15px;
+	border-radius: 10px;
+	border: 2px solid #00e71fb4;
+	background-color: #4444443d;
+	box-shadow: 0 0 5px #00ff22b4;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.project-info button:hover{	
+	box-shadow: 0 0 20px #00ff22b4;
+    opacity: 0.7;
+
+} 
+
+.autoBlur{
+	animation: autoBlurAnimation linear both;
+	animation-timeline: view();
+}
+
+@keyframes autoBlurAnimation{
+	0%{
+		filter: blur(40px);
+		opacity:0;
+	}
+	35%, 65%{
+		filter:blur(0);
+		opacity:1;
+	}
+	100%{
+		filter:blur(40px);
+		opacity:0;
+	}
+	
+}
+
+.autoDisplay{
+	animation: autoDisplayAnimation both;
+	animation-timeline:view()	
+}
+
+@keyframes autoDisplayAnimation{
+	from{
+		filter:blur(10px);
+		transform: transparent(-200px) scale(0)
+		opacity:0.2;
+	}
+	50%{
+		opacity:1;
+		filter:blur(0);
+		transform: translate(0) scale(1);
+	}
+}
+
+.fadeInRight{
+	animation: fadeInAnimation both;
+	animation-timeline:view();
+}
+
+@keyframes fadeInAnimation{
+	0%{
+		opacity:0;
+		transform:translate(-500px) scale(0.2);
+		filter:blur(20px);
+	}
+	35%, 65%{
+		opacity:1;
+		transform:translate(0) scale(1);
+		filter:blur(0);
+	}
+	100%{
+		filter:blur(20px);
+	}
+
+}
+
+.point{
+	display: block;
+}
+
+.mc{
+	 display: block;
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-align: center;
+    width: 100%; 
+}
+
+.slink,
+.blink{
+	text-decoration: none;
+	color: rgb(37, 184, 0);
+	display: block;
+}
+
+
+@media (max-aspect-ratio:16/9){
+	.back-vid{
+		width: auto;
+		height: 100%;
+	}
+}
+
+@media (min-aspect-ratio:16/9){
+	.back-vid{
+		width: 100%;
+		height: auto;
+	}
+}
+
+
+ .menu-icon{
+            font-size:30px;
+            cursor:pointer;
+            
+        }
+
+  .sidebar{
+            position: fixed;
+            right:0;
+            top:0;
+            bottom:70%;
+            width:80%;
+            background-color: rgba(20, 20, 20, 0.411);
+            backdrop-filter: 10px;
+            z-index:999;
+            box-shadow: 0 0 20px rgba(red, green, blue, 0.411);
+            border-bottom-left-radius: 60%;
+            width:0;
+            opacity:0;
+
+        }
+
+.close-icon{
+  font-size: 30px;
+  color:lightgrey;
+  padding-left: 10px;
+  cursor: pointer;
+  margin-bottom:2rem;
+  padding-left: 40px;
+  margin-top:1em;
+}
+.sidebar  li {
+  padding-left: 20px;
+   list-style: none;
+ margin-bottom: 10px;
+}
+
+.sidebar  li a{
+  padding-left: 20px;
+  text-decoration: none;
+  margin-bottom:50px;
+  color: lightgrey;
+  font-weight:700;
+  font-size: 20px;
+  text-shadow: 0 0 15px rgba(230, 230, 230, 0411)
+}
+
+.sidebar.open-sidebar{
+  animation: openSidebarAnimation 1.5s forwards;
+}
+
+@keyframes openSidebarAnimation {
+  to{
+    width:80%;
+    opacity:1;
+    bottom:0;
+    border-radius: 0em;
+  }
+}
+
+.sidebar.close-sidebar{
+  animation: closeSidebarAnimation 1.5s forwards;
+}
+
+@keyframes closeSidebarAnimation {
+  from{
+    width:80%;
+    opacity:1;
+    bottom:0;
+    border-radius: 0em;
+  }
+  to{
+    width:0;
+    opacity:0;
+    bottom:0;
+    border-bottom-left-radius: 50%;
+  }
+}
+  @media screen and (max-width: 1000px){
+	.blackhole.box video{
+		margin-top:-20%;
+
+	}
+
+	.hero-info h1{
+		font-size: 40px;
+		max-width: 400px;
+		line-height: 40px;
+
+	}
+	.hero-info p{
+		max-width: 300px;
+	}
+	.hero-vid-box video{
+      height:500px;
+	}
+	.section-title{
+		font-size: 30px;
+	}
+	/*.info-cards{
+	grid-template-columns:auto;
+	}*/
+
+	.info-cards .card h1{
+		font-size: 20px;
+	}
+	.my-projects{
+		margin-bottom:300px
+	}
+	.project-vidbox img{
+		width:250px;
+		margin-left:-100px;
+	}
+	.project-info{
+		padding-left:10px;
+		margin-left: -50px;
+	}
+	.project-info h1{
+		font-size:20px;
+		max-width:200px;
+        
+	}
+	.project-info{
+		font-size: 10px;
+		text-wrap:wrap;
+		max-width:200px;
+		min-width:0;
+	}
+	footer h1{
+		font-size:20px;
+	}
+
+}
+
+@media screen and (max-width: 700px){
+	header{
+		position: fixed;
+		height: 50px;
+
+	}
+     header h1 {
+		font-size: 25px;
+
+	 }
+      .blackhole-box video{
+	    margin-top:-16%;
+
+	  }
+	  .hero-info h1{
+		line-height: 50px;
+	  }
+	  .hero-vuid-box{
+		height:200px;
+		top:5%;
+		right: 5%;
+
+	  }
+
+	  .my-projects{
+		margin-bottom:600px;
+	  }
+	  .project-card{
+		gap:30px;
+		margin-left: 25%;
+        flex-direction:column;
+        
+	  }
+
+	.project-info{
+		width:85%;
+
+	}
+
+    .project-info p{
+		max-width: 300px;
+	}
+
+}
+ </style>
+</head>
+
+<body>
+
+<div class="container">
+
+
+
+
+ <video class="back-vid" loop autoplay muted   play-inline src="videos/code21.mp4" type="video/mp4">
+ </video>
+ 
+ <header>
+ 
+  <div class="left">
+  
+    <img src="images/logo.png" alt="logo">
+    <h1><span style="color: #fdc200">Just</span>Code</h1> 
+    
+  </div> 
+  <div class="menu-icon">
+    <span class="gradient">MENU</span> 
+    </div>
+  
+    
+    
+
+ 
+ </header>
+ 
+
+<div class="sidebar">
+        <div class="close-icon">
+          X
+        </div>
+ <li>
+       <a   href= "https://ju5tbe.github.io/JU5TBE/selfhelp .html">
+    SELF HELP 
+   </a> 
+   </li>
+ <li>
+<a  href="https://ju5tbe.github.io/JU5TBE/extra .html">
+     EXTRA
+   </a>
+   </li>
+ <li>
+ <a  href="https://ju5tbe.github.io/JU5TBE/home.html">
+    HOME
+   </a> 
+   </li>
+
+<li>
+  <a class= "sidebar_link" href="">
+    
+   </a> 
+     </li>
+
+
+  <li>
+ <a class= "sidebar_link" href="">
+   
+   </a> 
+    
+</li>
+
+     
+    
+      <li>     
+    <a class= "header_link"  href="https://ju5tbe.github.io/JU5TBE/PHILOSOPHY .html ">
+             
+         PHILOSOPHY
+    </a>    
+    </li>
+
+    <li>
+    <a  class= "header_link" href="https://ju5tbe.github.io/JU5TBE/Psychology .html">
+              
+       PSYCHOLOGY
+   </a>    
+    </li>
+     
+     <li>
+    <a class= "header_link" href="https://ju5tbe.github.io/JU5TBE/Economics .html">
+       ECONOMICS
+    </a>    
+    </li>
+    
+      <li>
+    <div class= "header_catergories">
+     <a class= "header_link"  href="https://ju5tbe.github.io/JU5TBE/CREDITS .html ">
+             
+       CREDIT
+    </a>   
+    </li>
+      
+    <li>
+      <a class= "header_link"  href="https://ju5tbe.github.io/JU5TBE/Siba .html ">
+             
+       SIBA
+    </a>             
+    </li>
+ </div>
+
+ <div class="blackhole-box">
+ <video loop autoplay muted plays-inline src="videos/blackhole.mp4" type="video/mp4"></video>
+ </div>
+ <section class="hero">
+   <div class="hero-info autoBlur">
+      <div class="hero-info-title autoDisplay">
+         <i class='bx bx1-sketch'></i>
+        
+      </div>
+      
+      <h1>PSYC<span class="gradient">HOLOGY
+      </span> Sec<span class="gradient">tion
+      </span></h1>
+      <p>This section contains books by people with brains trying to figure out how the brain brains.
+      </p>
+      
+     <button><i class='bx bx-send'></i>
+       Contact Me</button>
+   </div>
+
+   <div class="hero-vid-box">
+     <video class="autoBlur" loop autoplay muted   play-inline src="videos/psychology31 (11).mp4" type="video/mp4"></video>
+   </div>
+
+   <div class="scroll-down"></div>
+ </section>
+ 
+ 
+ <section class="info-section">
+ 
+ <h1 class="section-title autoDisplay">
+   NOTICE BOARD
+ </h1>
+ <div class="info-cards">
+
+  
+  
+  <div class="card">
+   <h1>UPDATES</h1>
+   <p>new ui added </p>
+   <video loop autoplay muted plays-inline 
+   src="videos/glob.mp4" type="video/mp4"></video>
+
+   
+  </div>
+ 
+  <div class="card">
+    <h1 class="section-title autoDisplay">Upcoming </h1>
+    <p>More books</p>
+    <img src="images/grid4.png" alt="Profile pic"/>           
+  </div>
+ </div> 
+ </section>
+ <section class="my-projects">
+    <h1 class="section-title autoDisplay">BOOKS</h1>
+    <div class="project-card">
+
+        <div class="project-vidbox autoBlur">
+
+            <img id="projectVideo1" src="images/remember.jpg">
+            <div class="project-info fadeInRight" >
+                <h1>RE<span class="gradient">MEMBER</span></h1>
+                 this books provides knowledge about how and why we 
+     lose memory,and how we can retain it ...Imagine🙂.
+  
+      <span class="mc"> Main concepts </span>
+   
+  <span class="point">
+     •Paying attention is the most important step 
+      towards retaining information.
+  </span> 
+  
+  <span class="point">
+     •Testing yourself helps strengthen the neural
+      pathways associated with your memory.
+  </span> 
+     
+  <span class="point">
+     •Memories are unreliable,even truamatic ones.
+      think of it this way,A memory is a flawed
+     recollections of your flawed perception of reality.
+      
+  </span>
+  
+ 
+    
+                <button> <a class="blink" href="https://dokumen.pub/remember-the-science-of-memory-and-the-art-of-forgetting-9781761101212.html">
+                PDF</a>
+   </button>
+                 </p>
+            </div>            
+        </div>
+    </div>
+
+    <div class="project-card">
+
+        <div class="project-vidbox autoBlur">
+
+            <img id="projectVideo2" src="images/thinking.jpg"></>
+            <div class="project-info fadeInRight" >
+                <h1>THINKING <span class="gradient">FAST AND SLOW</span></h1>
+                <p> This book (must read btw) delves into human
+     thinking.It challenges common misconceptions
+     about thinking with thorough scientific evidence
+     presented in an easy to read and understand form.
+               
+      <span class="mc"> Main concepts </span>
+   
+  <span class="point">
+     •System1(emotions) is the default system 
+      System2(logical part) better at
+      complext and high stakes tasks.
+  </span> 
+  
+  <span class="point">
+     •Be AWARE which system is working and if its
+     appropiate.
+  </span> 
+     
+  <span class="point">
+     •Be AWARE of biases and heuristics when you need 
+     to think logically.
+      
+  </span>
+  
+  
+   
+                <button><a class="blink" href="https://dokumen.pub/thinking-fast-and-slow-1st-ed-978-0-3742-7563-1-0374275637.html">
+                   PDF</a></button>
+                <button><a class="slink" href="https://open.spotify.com/episode/2K0ZZloScKAitpIbNGqiWJ?si=a4a1f0f554234939">
+                 AUDIOBOOK</a></button>
+                </p>
+            </div>            
+        </div>
+
+    </div>
+    <div class="project-card">
+
+        <div class="project-vidbox autoBlur">
+
+            <img class="projectVideo" src="images/lucifer.jpg">
+            <div class="project-info fadeInRight">
+                <h1>LUCIFER <span class="gradient">EFFECT</span> </h1>
+                <p> This book tries to find out what can make a good
+     person evil.I primarily uses the authors Stanford 
+     prison experiment to give you an understanding as
+     to why good people can turn evil.
+  
+      <span class="mc"> Main concepts </span>
+   
+  <span class="point">
+     •Situational factors and  play and context play
+      a massive role,More than you think.
+     
+  </span> 
+  
+  <span class="point">
+     •Authority figures can increase the likelyhood of
+     abusing power by encouraging it or being negligent.
+  </span> 
+     
+  <span class="point">
+     •When you dont see the individuality in someone,
+     your more likely to be cruel to them.
+      
+  </span>
+  
+  
+   
+            
+                <button><a class="blink" href="https://dokumen.pub/the-lucifer-effect-understanding-how-good-people-turn-evil-random-house-trade-paperback-edition-9780812974447-0812974441-f-7769586.html">
+                       PDF</a></button>
+                </p>
+            </div>            
+        </div>
+    </div>
+    <div class="project-card">
+
+        <div class="project-vidbox autoBlur">
+
+            <img id="projectVideo1" src="images/mistakes.png">
+            <div class="project-info fadeInRight" >
+                <h1>MISTAKES WERE <span class="gradient">MADE</span> BUT <span class="gradient">NOT BY ME</span></h1>
+                <p>This book shines a light in how and why
+     (ego...mostly...) we shift or 
+     justify mistakes.
+  
+      <span class="mc"> Main concepts </span>
+   
+  <span class="point">
+     •we rationalize mistakes to maintain our self
+     concept/pride/ego(cognitive dissonance)we even use 
+     confirmation bias
+  </span> 
+  
+  <span class="point">
+     •Being SELF AWARE can help you recognise when you
+     are using fallacies to justify actions before and 
+     after
+  </span> 
+     
+  <span class="point">
+     •Cultivating a habit of accountability can help us 
+      take ownership to our actions 
+  </span>
+  
+  
+                 <button><a class="blink" href="https://dokumen.pub/mistakes-were-made-but-not-by-me-why-we-justify-foolish-beliefs-bad-decisions-and-hurtful-acts-3nbsped-0358329612-9780358329619.html">
+                 PDF</a>
+                 </button>
+                </p>
+            </div>            
+        </div>
+    </div>
+
+    <div class="project-card">
+
+        <div class="project-vidbox autoBlur">
+
+            <img id="projectVideo2" src="images/irrational.jpg">
+            <div class="project-info fadeInRight" >
+                <h1>PREDICTABLY <span class="gradient">IRRATIONAL</span></h1>
+                <p>This book and THINKING FAST AND SLOW are almost
+     the same thing,They argue we are not naturally 
+     rational and present a lot of studies (in a cool way) to prove their point.
+     
+      <span class="mc"> Main concepts </span>
+   
+  <span class="point">
+     •We rarely make objective decisions,rather our 
+      decisions are made of subjective factors.
+  </span>
+  
+  <span class="point">
+     •Being AWARE of our irrational thoughts can help
+      us make better decisions.
+  </span> 
+     
+  <span class="point">
+     •Our decisions are context dependent(why they
+      can be predictable and subjective)
+      
+  </span>
+  
+  
+   
+                <button><a class="blink" href="https://archive.org/details/predictablyirrational">
+                  PDF</a></button>
+                </p>
+            </div>            
+        </div>
+
+    </div>
+    <div class="project-card">
+
+        <div class="project-vidbox autoBlur">
+
+            <img class="prjectVideo" src="images/fallacy.jpg">
+            <div class="project-info fadeInRight">
+                <h1>FALLACY <span class="gradient">DETECTIVE</span></h1>
+                <p> This book is basically a list of fallacies in 
+     narrative form.However its not a full list(still
+     good enough tho)
+  
+      <span class="mc"> Main concepts </span>
+   
+  <span class="point">
+     •It promotes.....Guess what.... AWARENESS🙃(if one form of advice is found in multiple books thats advice that should be practised immediately)about illogical thinking
+     behaviours
+     
+  </span> 
+  
+  <span class="point">
+     •Helps in avoiding or pointing out illogical arguments basically making you make better decisons      
+  </span> 
+     
+  
+  
+   
+                <button><a class="blink" href="https://dokumen.pub/the-fallacy-detective-thirty-eight-lessons-on-how-to-recognize-bad-reasoning-9780974531571-9780974531564.html">PDF</a>
+   </button>
+                </p>
+            </div>            
+        </div>
+    </div>
+    <div class="project-card">
+
+        <div class="project-vidbox autoBlur">
+
+            <img id="projectVideo1" src="images/noise.jpg">
+            <div class="project-info fadeInRight" >
+                <h1><span class="gradient">NOISE</span></h1>
+                <p>This book is also nearly the same as Thinking fast
+     and slow but its more about variability (aka noise ).The higher the difference in judgement the
+     higher the noise.
+  
+      <span class="mc"> Main concepts </span>
+   
+  <span class="point">
+     •algorithms on average make better decisions than
+      us (is it useful...well,but its the main lesson
+      and its still a good read).
+  </span> 
+  
+  <span class="point">
+     •There is level noise (general differnce in 
+     judgement) and pattern noise(difference in judgement in a specific case).
+  </span> 
+  
+  <span class="point">
+     •Being 😤...AWARE  of noise can help you make
+     better judgements.
+  </span> 
+     
+  
+  
+                <button><a class="blink" 
+    href="https://dokumen.pub/noise-a-flaw-in-human-judgment-9780316451383.html">PDF</a>
+   </button>
+            </p>
+            </div>            
+        </div>
+    </div>
+
+    <div class="project-card">
+
+        <div class="project-vidbox autoBlur">
+
+            <img id="prjectVideo2" src="images/niceGuy.jpg"></>
+            <div class="project-info fadeInRight" >
+                <h1>NO MORE <span class="gradient">MR NICE GUY</span></h1>
+                <p>A somewhat mistakenly controversial book about the
+     y2k concept of nice guys.It brings to lite the
+     common pitfalls (usually orchastrated by the nice
+     guy) in their lives and how to fix it.
+  
+      <span class= "mc"> Main concepts </span>
+   
+  <span class= "point">
+     •Nice guys use niceness (termed in the book as 
+      covert contracts) to manipulate people in order
+      to get their needs met (not so nice is it)
+  </span> 
+  
+  <span class= "point">
+  • bonus(this means that they prioritise their needs
+         last and hope that they will be met and 
+         overreact when they aren't)
+    
+  </span> 
+     
+  <span class= "point">
+      •Nice guys feel as if they can directly ask for
+     what they want which oftentimes leds to their 
+     needs not met
+  </span>
+  
+   <span class= "point">
+     • •Prioritising their needs first (being assertive)is actually an important part towards curing
+     nice guy syndrome 
+  </span>
+  
+   
+  
+<button><a class="blink"href="https://pdfcoffee.com/download/robert-glover-no-more-mr-nice-guy-pdf-free.html">
+    PDF</a></button>
+   </p>
+                
+            </div>            
+        </div>
+
+    </div>
+    <div class="project-card">
+
+        <div class="project-vidbox autoBlur">
+
+            <img class="prjectVideo" src="images/sapiens.png">
+            <div class="project-info fadeInRight">
+                <h1>SA<span class="gradient">PIENS</span> </h1>
+                <p> This book contains a simplified recollection of 
+     human evolution.It helps us understand why we have
+     certain instincts even tho in this time period 
+     they are more of a problem...ish
+     
+      <span class="mc"> Main concepts </span>
+   
+  <span class= "point">
+     •We rarely make objective decisions,rather our 
+      decisions are made of subjective factors.
+  </span>
+  
+  <span class= "point">
+     •Being AWARE of our irrational thoughts can help
+      us make better decisions.
+  </span> 
+     
+  <span class= "point">
+     •Our decisions are context dependent(why they
+      can be predictable and subjective)
+      
+  </span>
+  
+  
+                <button><a class="blink" 
+  href="https://dokumen.pub/sapiens-a-brief-history-of-humankind-9780062316097.html">
+  PDF
+  </a></button>
+                
+                </p>
+            </div>            
+        </div>
+    </div>
+    <div class="project-card">
+
+        <div class="project-vidbox autoBlur">
+
+            <img class="prjectVideo" src="images/Power.png">
+            <div class="project-info fadeInRight">
+                <h1>😈 48 LAWS OF <span class="gradient">POWER</span></h1>
+                <P>The book described itself😈,(felt like its more Psychology then self help) the only thing worth noting is that the book 
+    explains the concept and you get a real life history story as an add on
+  
+      <span class="mc"> Main concepts </span>
+   <span class="point">conceal your intentions,make them never know what your up to😈</span>
+  
+      <span class= "point">
+     •Never outshine the master 👹 
+  </span> 
+  
+  <span class= "point">
+     •Promotes AWARENESS of power games whether intentional or unintentional😈.     
+  </span> 
+     
+  
+  
+  
+                <button><a class="blink" href="https://archive.org/details/the-48-laws-of-power_202301/The%2048%20Laws%20Of%20Power">
+            PDF</a></button>
+            <button> <a class="slink" href="https://open.spotify.com/episode/1o1p4lU54z0l4dqCWADAS6?si=97f69862d447489f">
+      AUDIOBOOK</a></button>
+    </p>
+            </div>            
+        </div>
+    </div>
+
+ </section>
+ 
+ 
+ 
+ 
+</div>
+<script src="app.js"></script>
+
+</body>
+
+</html>
