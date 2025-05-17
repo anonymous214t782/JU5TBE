@@ -17,6 +17,7 @@ body{
 	padding: 0;
 	fontfamily:Arial;
 	color: lightgrey;
+    
 }
 
 .container{
@@ -445,6 +446,7 @@ header ul a{
 	flex-direction: column;
 	gap:10%;
 	align-items: center;
+    
 	position: relative;
 	width: 80%;
 	height:100vh;
@@ -460,6 +462,7 @@ header ul a{
 	height: 40%;
 	margin-top: 5%;
     margin-bottom: 5%;
+    justify-content: center;
 
 
 }
@@ -524,12 +527,12 @@ header ul a{
 }
 
 .project-info button{
-	color:white;
+	color:#0059ff;
 	padding: 10px 15px;
 	border-radius: 10px;
-	border: 2px solid #727fdeb4;
+	border: 2px solid #0059ff;
 	background-color: #2200493d;
-	box-shadow: 0 0 5px #727fde84;
+	box-shadow: 0 0 5px #3248eb84;
 	cursor: pointer;
 	transition: 0.3s;
 }
@@ -625,7 +628,7 @@ header ul a{
 .slink,
 .blink{
 	text-decoration: none;
-	color: white;
+	color: #0059ff;
 	display: block;
 }
 
@@ -643,7 +646,186 @@ header ul a{
 		height: auto;
 	}
 }
- 
+
+ .menu-icon{
+            font-size:30px;
+            cursor:pointer;
+            
+        }
+
+        .sidebar{
+            position: fixed;
+            right:0;
+            top:0;
+            bottom:70%;
+            width:80%;
+            background-color: rgba(20, 20, 20, 0.411);
+            backdrop-filter: 10px;
+            z-index:999;
+            box-shadow: 0 0 20px rgba(red, green, blue, 0.411);
+            border-bottom-left-radius: 60%;
+            width:0;
+            opacity:0;
+
+        }
+
+.close-icon{
+  font-size: 30px;
+  color:lightgrey;
+  padding-left: 10px;
+  cursor: pointer;
+  margin-bottom:2rem;
+  padding-left: 40px;
+  margin-top:1em;
+}
+.sidebar  li {
+  padding-left: 20px;
+   list-style: none;
+ margin-bottom: 10px;
+}
+
+.sidebar  li a{
+  padding-left: 20px;
+  text-decoration: none;
+  margin-bottom:50px;
+  color: lightgrey;
+  font-weight:700;
+  font-size: 20px;
+  text-shadow: 0 0 15px rgba(230, 230, 230, 0411)
+}
+
+.sidebar.open-sidebar{
+  animation: openSidebarAnimation 1.5s forwards;
+}
+
+@keyframes openSidebarAnimation {
+  to{
+    width:80%;
+    opacity:1;
+    bottom:0;
+    border-radius: 0em;
+  }
+}
+
+.sidebar.close-sidebar{
+  animation: closeSidebarAnimation 1.5s forwards;
+}
+
+@keyframes closeSidebarAnimation {
+  from{
+    width:80%;
+    opacity:1;
+    bottom:0;
+    border-radius: 0em;
+  }
+  to{
+    width:0;
+    opacity:0;
+    bottom:0;
+    border-bottom-left-radius: 50%;
+  }
+}
+ @media screen and (max-width: 1000px){
+	.blackhole.box video{
+		margin-top:-20%;
+
+	}
+
+	.hero-info h1{
+		font-size: 40px;
+		max-width: 400px;
+		line-height: 40px;
+
+	}
+	.hero-info p{
+		max-width: 300px;
+	}
+	.hero-vid-box video{
+      height:500px;
+	}
+	.section-title{
+		font-size: 30px;
+	}
+	/*.info-cards{
+	grid-template-columns:auto;
+	}*/
+
+	.info-cards .card h1{
+		font-size: 20px;
+	}
+	.my-projects{
+		margin-bottom:300px
+	}
+	.project-vidbox img{
+		width:250px;
+		margin-left:-100px;
+	}
+	.project-info{
+		padding-left:10px;
+		margin-left: -50px;
+	}
+	.project-info h1{
+		font-size:20px;
+		max-width:200px;
+        
+	}
+	.project-info{
+		font-size: 10px;
+		text-wrap:wrap;
+		max-width:200px;
+		min-width:0;
+	}
+	footer h1{
+		font-size:20px;
+	}
+
+}
+
+@media screen and (max-width: 700px){
+	header{
+		position: fixed;
+		height: 50px;
+
+	}
+     header h1 {
+		font-size: 25px;
+
+	 }
+      .blackhole-box video{
+	    margin-top:-16%;
+
+	  }
+	  .hero-info h1{
+		line-height: 50px;
+	  }
+	  .hero-vuid-box{
+		height:200px;
+		top:5%;
+		right: 5%;
+
+	  }
+
+	  .my-projects{
+		margin-bottom:600px;
+	  }
+	  .project-card{
+		gap:30px;
+		margin-left: 25%;
+        flex-direction:column;
+        
+	  }
+
+	.project-info{
+		width:85%;
+
+	}
+
+    .project-info p{
+		max-width: 300px;
+	}
+
+}
+
  </style>
 </head>
 
@@ -665,31 +847,90 @@ header ul a{
     <h1><span style="color: #fdc200">Just</span>Code</h1> 
     
   </div> 
- 
-  <ul>
+  <div class="menu-icon">
+    <span class="gradient">MENU</span>
+    </div>
   
-    <li><a href="#">About</a></li>
-    <li><a href="#">Skills</a></li>
-    <li><a href="#">Projects</a></li>
-    
-  </ul>
-  
-  <div class="box-icon">
-  
-    <a href="#">
-     <i class='bx bx1-youtube'></i>
-    </a>
-    <a href="#">
-     <i class='bx bx1-github'></i>
-    </a>
-    <a href="#">
-     <i class='bx bx1-linkedin-square'></i>
-    </a>
-    
-  </div>
+   
  
  </header>
- 
+  <div class="sidebar">
+        <div class="close-icon">
+        <span class="gradient">CLOSE</span>
+        </div>
+ <li>
+       <a   href= "https://ju5tbe.github.io/JU5TBE/selfhelp.html">
+    SELF HELP 
+   </a> 
+   </li>
+ <li>
+<a  href="https://ju5tbe.github.io/JU5TBE/extra.html">
+     EXTRA
+   </a>
+   </li>
+ <li>
+ <a  href="https://ju5tbe.github.io/JU5TBE/coding.html">
+    CODING
+   </a> 
+   </li>
+   <li>
+    <a href="https://ju5tbe.github.io/JU5TBE/wisdom.html">
+        MATERIAL
+    </a>
+    </li>
+<li>
+  <a class= "sidebar_link" href="https://ju5tbe.github.io/JU5TBE/wisdom.html">
+    GENERAL WISDOM
+   </a> 
+     </li>
+
+
+  <li>
+ <a class= "sidebar_link" href="">
+   OTHER
+   </a> 
+    
+</li>
+
+     
+    
+      <li>     
+    <a class= "header_link"  href="https://ju5tbe.github.io/JU5TBE/philosophy.html ">
+             
+         PHILOSOPHY
+    </a>    
+    </li>
+
+    <li>
+    <a  class= "header_link" href="https://ju5tbe.github.io/JU5TBE/home.html">
+              
+       HOME
+   </a>    
+    </li>
+     
+     <li>
+    <a class= "header_link" href="https://ju5tbe.github.io/JU5TBE/economics.html">
+       ECONOMICS 
+    </a>    
+    </li>
+    
+      <li>
+    <div class= "header_catergories">
+     <a class= "header_link"  href="https://ju5tbe.github.io/JU5TBE/credits.html ">
+             
+       CREDIT
+    </a>   
+    </li>
+      
+    <li>
+      <a class= "header_link"  href="https://ju5tbe.github.io/JU5TBE/siba.html ">
+             
+       SIBA
+    </a>             
+    </li>
+ </div>
+
+
  <div class="blackhole-box">
  <video loop autoplay muted plays-inline src="videos/blackhole.mp4" type="video/mp4"></video>
  </div>
@@ -703,8 +944,7 @@ header ul a{
       <p>This section contains books by people with brains trying to figure out how the brain brains.
       </p>
       
-     <button><i class='bx bx-send'></i>
-       Contact Me</button>
+    
    </div>
 
    <div class="hero-vid-box">
@@ -718,14 +958,14 @@ header ul a{
  <section class="info-section">
  
  <h1 class="section-title autoDisplay">
-   NOTICE BOARD
+  <span class="gradient">NOTICE BOARD</span> 
  </h1>
  <div class="info-cards">
 
   
   
   <div class="card">
-   <h1>UPDATES</h1>
+   <h1><span class="gradient">UPDATES</span> </h1>
    <p>new ui added </p>
    <video loop autoplay muted plays-inline 
    src="videos/glob.mp4" type="video/mp4"></video>
@@ -734,14 +974,14 @@ header ul a{
   </div>
  
   <div class="card">
-    <h1 class="section-title autoDisplay">Upcoming </h1>
+    <h1 class="section-title autoDisplay"><span class="gradient">UPCOMING</span>  </h1>
     <p>More books</p>
     <img src="images/grid4.png" alt="Profile pic"/>           
   </div>
  </div> 
  </section>
  <section class="my-projects">
-    <h1 class="section-title autoDisplay">BOOKS</h1>
+    <h1 class="section-title autoDisplay"><span class="gradient">BOOKS</span> </h1>
     <div class="project-card">
 
         <div class="project-vidbox autoBlur">
