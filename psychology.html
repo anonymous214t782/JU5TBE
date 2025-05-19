@@ -61,7 +61,7 @@ header{
 	right: 0;
 	left: 0;
 	align-items: center;
-	justify-content:center;
+	justify-content:flex-end;
 	height: 70px;
 	background-color:  rgba(255, 255, 255, 0.123);
 	backdrop-filter: blur(10px);
@@ -727,8 +727,7 @@ header ul a{
 }
  @media screen and (max-width: 1000px){
 	.blackhole.box video{
-		margin-top:-20%;
-
+		margin-top:-15%;
 	}
    body{
 	width: viewport width;
@@ -744,6 +743,7 @@ header ul a{
 	}
 	.hero-vid-box video{
       height:500px;
+		display: block;
 	}
 	.section-title{
 		font-size: 30px;
@@ -759,10 +759,7 @@ header ul a{
 		margin-bottom:300px
 		
 	}
-	.project-vidbox img{
-		width:250px;
-		margin-left: 10%;
-	}
+	
 	.project-info{
 		
 	
@@ -788,6 +785,8 @@ header ul a{
 	min-width: 12rem;
 	max-height: 11rem;
 		  margin-left:-5%;
+		  width:250px;
+		margin-left: 5%;
      }
 
 
@@ -821,19 +820,19 @@ header ul a{
 		margin-bottom:500px;
 	  }
 	  .project-card{
-		gap:30px;
-		
+		gap:30px;	
         flex-direction:column;
         
 	  }
 
 	.project-info{
-		width:85%;
+		width:80%;
 
 	}
 
     .project-info p{
 		max-width: 250px;
+	    
 	}
      .project-vidbox img{
 	     width: fit-content;
