@@ -61,7 +61,7 @@ header{
 	right: 0;
 	left: 0;
 	align-items: center;
-	justify-content:flex-end;
+	justify-content: space-between;
 	height: 70px;
 	background-color:  rgba(255, 255, 255, 0.123);
 	backdrop-filter: blur(10px);
@@ -726,12 +726,13 @@ header ul a{
   }
 }
  @media screen and (max-width: 1000px){
+	 .container{
+		 max-width: 1000px;
+	 }
 	.blackhole.box video{
 		margin-top:-15%;
 	}
-   body{
-	width: viewport-width;
-}
+   
 	.hero-info h1{
 		font-size: 40px;
 		max-width: 400px;
@@ -794,12 +795,12 @@ header ul a{
 
 @media screen and (max-width: 700px){
 	.container{
-		width: viewport-width;
+		width: 700px;
 	}
 	header{
 		position: fixed;
 		height: 50px;
-width: 100%;
+width: 700px;
 	}
      header h1 {
 		font-size: 25px;
