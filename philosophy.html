@@ -718,11 +718,13 @@ header ul a{
   }
 }
   @media screen and (max-width: 1000px){
+	 .container{
+		 max-width: 1000px;
+	 }
 	.blackhole.box video{
-		margin-top:-20%;
-
+		margin-top:-15%;
 	}
-
+   
 	.hero-info h1{
 		font-size: 40px;
 		max-width: 400px;
@@ -734,6 +736,7 @@ header ul a{
 	}
 	.hero-vid-box video{
       height:500px;
+		display: block;
 	}
 	.section-title{
 		font-size: 30px;
@@ -747,14 +750,12 @@ header ul a{
 	}
 	.my-projects{
 		margin-bottom:300px
+		
 	}
-	.project-vidbox img{
-		width:250px;
-		margin-left:-100px;
-	}
+	
 	.project-info{
-		padding-left:10px;
-		margin-left: -50px;
+		
+	
 	}
 	.project-info h1{
 		font-size:20px;
@@ -762,61 +763,88 @@ header ul a{
         
 	}
 	.project-info{
-		font-size: 10px;
+		font-size: 15px;
 		text-wrap:wrap;
-		max-width:200px;
+		max-width:150px;
 		min-width:0;
+		margin-left: 20px
 	}
 	footer h1{
 		font-size:20px;
 	}
+	  .project-vidbox img{
+	     
+	max-width: 13rem;
+	min-width: 12rem;
+	max-height: 11rem;
+
+         width:250px;
+	
+     }
+
 
 }
 
 @media screen and (max-width: 700px){
+	.container{
+		max-width: 700px;
+	}
 	header{
 		position: fixed;
 		height: 50px;
-
+max-width: 700px;
+			
 	}
      header h1 {
 		font-size: 25px;
-
+	
 	 }
       .blackhole-box video{
-	    margin-top:-16%;
-
+	    margin-top:-18%;
+	
 	  }
 	  .hero-info h1{
 		line-height: 50px;
 	  }
-	  .hero-vuid-box{
+	  .hero-vid-box{
 		height:200px;
 		top:5%;
 		right: 5%;
-
+	
 	  }
 
 	  .my-projects{
-		margin-bottom:600px;
+		margin-bottom:500px;
+		max-width: 700px;
+		
+		  
 	  }
 	  .project-card{
-		gap:30px;
-		margin-left: 25%;
-        flex-direction: row;
-        
+		gap:15px;	
+        flex-direction:column;
+        	align-items: center;
+		  justify-content:  center;
+		 max-width: 700px; 
 	  }
 
-	.project-info{
-		width:85%;
-
+	.project-info p{
+		width:80%;
+		min-width: 0;
+		max-width: 150px;
+		
 	}
 
-    .project-info p{
-		max-width: 300px;
-	}
+   
+	
+     .project-vidbox img{	
+	max-width: 8rem;
+	min-width: 8rem;
+	max-height: 10rem;
+	    
+     }
 
 }
+
  </style>
 </head>
 
