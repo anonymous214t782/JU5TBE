@@ -11,6 +11,7 @@ function moreText() {
     dots.style.display = "none";
     btnText.innerHTML = "Read less";
     moreText.style.display = "inline";
+     moreText.style.marginBottom = "250px";
   }
 }
 
@@ -27,6 +28,7 @@ function moreText1() {
     dots1.style.display = "none";
     btnText1.innerHTML = "Read less";
     moreText1.style.display = "inline";
+     moreText1.style.marginBottom = "250px";
   }
 }
 
@@ -43,6 +45,7 @@ function moreText2() {
     dots2.style.display = "none";
     btnText2.innerHTML = "Read less";
     moreText2.style.display = "inline";
+     moreText2.style.marginBottom = "250px";
   }
 }
 
@@ -59,6 +62,7 @@ function moreText3() {
     dots3.style.display = "none";
     btnText3.innerHTML = "Read less";
     moreText3.style.display = "inline";
+     moreText3.style.marginBottom = "250px";
   }
 }
 
@@ -75,6 +79,7 @@ function moreText4() {
     dots4.style.display = "none";
     btnText4.innerHTML = "Read less";
     moreText4.style.display = "inline";
+     moreText4.style.marginBottom = "250px";
   }
 }
 
@@ -91,6 +96,7 @@ function moreText6() {
     dots6.style.display = "none";
     btnText6.innerHTML = "Read less";
     moreText6.style.display = "inline";
+     moreText6.style.marginBottom = "250px";
   }
 }
 
@@ -107,6 +113,7 @@ function moreText5() {
     dots5.style.display = "none";
     btnText5.innerHTML = "Read less";
     moreText5.style.display = "inline";
+     moreText5.style.marginBottom = "250px";
   }
 }
 
@@ -123,6 +130,7 @@ function moreText7() {
     dots7.style.display = "none";
     btnText7.innerHTML = "Read less";
     moreText7.style.display = "inline";
+     moreText7.style.marginBottom = "250px";
   }
 }
 
@@ -140,6 +148,7 @@ function moreText8() {
     dots8.style.display = "none";
     btnText8.innerHTML = "Read less";
     moreText8.style.display = "inline";
+     moreText8.style.marginBottom = "250px";
   }
 }
 
@@ -156,6 +165,7 @@ function moreText9() {
     dots9.style.display = "none";
     btnText9.innerHTML = "Read less";
     moreText9.style.display = "inline";
+     moreText9.style.marginBottom = "250px";
   }
 }
 function moreText10() {
@@ -170,8 +180,8 @@ function moreText10() {
   } else {
     dots10.style.display = "none";
     btnText10.innerHTML = "Read less";
-    moreText10.style.display = "block";
-      moreText10.style.marginBottom = "10000px";
+    moreText10.style.display = "inline";
+      moreText10.style.marginBottom = "250px";
   }
 }
 
@@ -188,6 +198,7 @@ function moreText11() {
     dots11.style.display = "none";
     btnText11.innerHTML = "Read less";
     moreText11.style.display = "inline";
+     moreText11.style.marginBottom = "250px";
   }
 }
 
@@ -204,6 +215,7 @@ function moreText12() {
     dots12.style.display = "none";
     btnText12.innerHTML = "Read less";
     moreText12.style.display = "inline";
+     moreText12.style.marginBottom = "250px";
   }
 }
 
@@ -220,6 +232,7 @@ function moreText13() {
     dots13.style.display = "none";
     btnText13.innerHTML = "Read less";
     moreText13.style.display = "inline";
+     moreText13.style.marginBottom = "250px";
   }
 }
 
@@ -236,6 +249,7 @@ function moreText14() {
     dots14.style.display = "none";
     btnText14.innerHTML = "Read less";
     moreText14.style.display = "inline";
+     moreText14.style.marginBottom = "250px";
   }
 }
 
@@ -252,6 +266,7 @@ function moreText16() {
     dots16.style.display = "none";
     btnText16.innerHTML = "Read less";
     moreText16.style.display = "inline";
+     moreText16.style.marginBottom = "250px";
   }
 }
 
@@ -268,6 +283,7 @@ function moreText15() {
     dots15.style.display = "none";
     btnText15.innerHTML = "Read less";
     moreText15.style.display = "inline";
+     moreText15.style.marginBottom = "250px";
   }
 }
 
@@ -284,6 +300,7 @@ function moreText17() {
     dots17.style.display = "none";
     btnText17.innerHTML = "Read less";
     moreText17.style.display = "inline";
+     moreText17.style.marginBottom = "250px";
   }
 }
 
@@ -301,6 +318,7 @@ function moreText18() {
     dots18.style.display = "none";
     btnText18.innerHTML = "Read less";
     moreText18.style.display = "inline";
+     moreText18.style.marginBottom = "250px";
   }
 }
 
@@ -317,6 +335,7 @@ function moreText19() {
     dots19.style.display = "none";
     btnText19.innerHTML = "Read less";
     moreText19.style.display = "inline";
+     moreText19.style.marginBottom = "250px";
   }
 }
 function moreText20() {
@@ -332,6 +351,7 @@ function moreText20() {
     dots20.style.display = "none";
     btnText20.innerHTML = "Read less";
     moreText20.style.display = "inline";
+     moreText20.style.marginBottom = "250px";
   }
 }
 
