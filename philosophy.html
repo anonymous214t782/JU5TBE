@@ -816,19 +816,29 @@ max-width: 700px;
 	  .my-projects{
 		margin-bottom:500px;
 		max-width: 700px;
-		
+		gap:10px;	
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+        	align-items: center;
+		 justify-content:  center;
+		 max-width: 700px; 
+		  display: block;
+		 
 		  
 	  }
 	  .project-card{
 		gap:10px;	
 		display: grid;
-		grid-template-rows: row;
+		grid-template-rows: 1fr 1fr;
         	align-items: center;
 		 justify-content:  center;
 		 max-width: 700px; 
 		  display: block;
 		  margin-left: -5%;
 	  }
+	.project-info{
+		display: block;
+	}
 
 	.project-info p{
 		width:80%;
