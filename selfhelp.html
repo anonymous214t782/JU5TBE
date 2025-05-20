@@ -761,13 +761,13 @@ header ul a{
 	}
 	.project-info h1{
 		font-size:20px;
-		max-width:200px;
+		max-width:500px;
         
 	}
 	.project-info{
 		font-size: 15px;
 		text-wrap:wrap;
-		max-width:150px;
+		max-width:400px;
 		min-width:0;
 		margin-left: 20px
 	}
@@ -780,7 +780,7 @@ header ul a{
 	min-width: 12rem;
 	max-height: 11rem;
 
-         width:250px;
+         
 	
      }
 
@@ -814,38 +814,84 @@ max-width: 700px;
 		right: 5%;
 	
 	  }
+        .pls_block{
+                display: block;
+                margin-bottom:10px;
+        }
 
 	  .my-projects{
 		margin-bottom:500px;
 		max-width: 700px;
-		
+		gap:10px;	
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+        	align-items: center;
+		 justify-content:  center;
+		 max-width: 700px; 
+		  display:  block;
+		 
 		  
 	  }
 	  .project-card{
-		gap:15px;	
-        flex-direction:column;
+		gap:10px;	
+		display: grid;
+		grid-template-column: 1fr ;
         	align-items: center;
-		  justify-content:  center;
+		 justify-content:  center;
 		 max-width: 700px; 
+		  display: inline-block;
+		  margin-top: 10%;
+		  margin-bottom: 10%;
+		  margin-left: -5%;
+		  padding-right: 5%;
+		  max-height: 250px;
+		  overflow-x: auto;
+		  overflow-y: auto;
+		  
 	  }
+
+
+.project-card::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.project-card {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+	
+	.project-info{
+		display: block;
+	}
 
 	.project-info p{
 		width:80%;
 		min-width: 0;
-		max-width: 150px;
-		
+		max-width: 300px;
+		margin-left: -2%;
+	       
 	}
 
-   
+   .section-title{
+	   text-align: center;
+	   justify-content:center;
+	   align-items: center;
+   }
+	   
 	
      .project-vidbox img{	
 	max-width: 8rem;
 	min-width: 8rem;
-	max-height: 10rem;
-	    
+	min-height: 11rem;
+	max-height: 11rem;
+	   
      }
 
 }
+
 
  
  </style>
