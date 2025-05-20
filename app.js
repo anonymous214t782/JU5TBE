@@ -171,6 +171,7 @@ function moreText10() {
     dots10.style.display = "none";
     btnText10.innerHTML = "Read less";
     moreText10.style.display = "block";
+      moreText10.style.marginBottom = "auto";
   }
 }
 
