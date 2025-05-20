@@ -170,7 +170,7 @@ function moreText10() {
   } else {
     dots10.style.display = "none";
     btnText10.innerHTML = "Read less";
-    moreText10.style.display = "inline";
+    moreText10.style.display = "block";
   }
 }
 
