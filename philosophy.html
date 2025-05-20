@@ -838,12 +838,29 @@ max-width: 700px;
 		 justify-content:  center;
 		 max-width: 700px; 
 		  display: inline-block;
+		  margin-top: 10%;
+		  margin-bottom: 10%;
 		  margin-left: -5%;
 		  padding-right: 5%;
 		  max-height: 250px;
-		  overflow-x:hidden;
+		  overflow-x: auto;
 		  overflow-y: auto;
+		  
 	  }
+
+
+.project-card::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.project-card {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+	
 	.project-info{
 		display: block;
 	}
@@ -856,12 +873,18 @@ max-width: 700px;
 	       
 	}
 
-   
+   .section-title{
+	   text-align: center;
+	   justify-content:center;
+	   align-items: center;
+   }
+	   
 	
      .project-vidbox img{	
 	max-width: 8rem;
 	min-width: 8rem;
-	max-height: 10rem;
+	min-height: 11rem;
+	max-height: 11rem;
 	   
      }
 
@@ -999,8 +1022,7 @@ max-width: 700px;
   <div class="card">
    <h1><span class="gradient">UPDATES</span> </h1>
    <p>new ui added </p>
-   <video loop autoplay muted plays-inline 
-   src="videos/glob.mp4" type="video/mp4"></video>
+  
 
    
   </div>
