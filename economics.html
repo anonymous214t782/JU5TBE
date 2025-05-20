@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,
  initial-scale=1.0"/>
-<title>JustCode</title>
+<title>JUSTBOOKS</title>
 
 
 <link href='https://unpkg.com/boxicons@2.1.3/
@@ -726,13 +726,13 @@ header ul a{
 	}
 	.project-info h1{
 		font-size:20px;
-		max-width:200px;
+		max-width:500px;
         
 	}
 	.project-info{
 		font-size: 15px;
 		text-wrap:wrap;
-		max-width:150px;
+		max-width:400px;
 		min-width:0;
 		margin-left: 20px
 	}
@@ -745,7 +745,7 @@ header ul a{
 	min-width: 12rem;
 	max-height: 11rem;
 
-         width:250px;
+         
 	
      }
 
@@ -779,39 +779,83 @@ max-width: 700px;
 		right: 5%;
 	
 	  }
+        .pls_block{
+                display: block;
+                margin-bottom:10px;
+        }
 
 	  .my-projects{
 		margin-bottom:500px;
 		max-width: 700px;
-		
+		gap:10px;	
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+        	align-items: center;
+		 justify-content:  center;
+		 max-width: 700px; 
+		  display:  block;
+		 
 		  
 	  }
 	  .project-card{
-		gap:15px;	
-        flex-direction:column;
+		gap:10px;	
+		display: grid;
+		grid-template-column: 1fr ;
         	align-items: center;
-		  justify-content:  center;
+		 justify-content:  center;
 		 max-width: 700px; 
+		  display: inline-block;
+		  margin-top: 10%;
+		  margin-bottom: 10%;
+		  margin-left: -5%;
+		  padding-right: 5%;
+		  max-height: 250px;
+		  overflow-x: auto;
+		  overflow-y: auto;
+		  
 	  }
+
+
+.project-card::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.project-card {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+	
+	.project-info{
+		display: block;
+	}
 
 	.project-info p{
 		width:80%;
 		min-width: 0;
-		max-width: 150px;
-		
+		max-width: 300px;
+		margin-left: -2%;
+	       
 	}
 
-   
+   .section-title{
+	   text-align: center;
+	   justify-content:center;
+	   align-items: center;
+   }
+	   
 	
      .project-vidbox img{	
 	max-width: 8rem;
 	min-width: 8rem;
-	max-height: 10rem;
-	    
+	min-height: 11rem;
+	max-height: 11rem;
+	   
      }
 
 }
-
  </style>
 </head>
 
@@ -822,7 +866,7 @@ max-width: 700px;
 
 
 
- <video class="back-vid" loop autoplay muted   play-inline src="videos/philosophy.mp4" type="video/mp4">
+ <video class="back-vid" loop autoplay muted   play-inline src="philosophy.mp4" type="video/mp4">
  </video>
  
  <header>
@@ -837,100 +881,78 @@ max-width: 700px;
      MENU
     </div>
   
-    <div class="sidebar">
+  
+ 
+  </div>
+ 
+ </header>
+ <div class="sidebar">
         <div class="close-icon">
-          X
+          CLOSE
         </div>
  <li>
-       <a   href= "https://ju5tbe.github.io/JU5TBE/selfhelp .html">
+       <a   href= "https://ju5tbe.github.io/JU5TBE/selfhelp.html">
     SELF HELP 
    </a> 
    </li>
  <li>
-<a  href="https://ju5tbe.github.io/JU5TBE/extra .html">
+<a  href="https://ju5tbe.github.io/JU5TBE/extra.html">
      EXTRA
    </a>
    </li>
  <li>
- <a  href="https://ju5tbe.github.io/JU5TBE/coding .html">
+ <a  href="https://ju5tbe.github.io/JU5TBE/coding.html">
     CODING
    </a> 
    </li>
-
+   <li>
+    <a href="https://ju5tbe.github.io/JU5TBE/material.html">
+        MATERIAL
+    </a>
+    </li>
 <li>
-  <a class= "sidebar_link" href="">
-    
+  <a class= "sidebar_link" href="https://ju5tbe.github.io/JU5TBE/wisdom.html">
+    GENERAL WISDOM
    </a> 
      </li>
-
-
-  <li>
- <a class= "sidebar_link" href="">
-   
-   </a> 
-    
-</li>
-
      
     
       <li>     
-    <a class= "header_link"  href="https://ju5tbe.github.io/JU5TBE/PHILOSOPHY .html ">
+    <a class= "header_link"  href="https://ju5tbe.github.io/JU5TBE/philosophy.html ">
              
-         PHI
+         HOME
     </a>    
     </li>
 
     <li>
-    <a  class= "header_link" href="https://ju5tbe.github.io/JU5TBE/Psychology .html">
+    <a  class= "header_link" href="https://ju5tbe.github.io/JU5TBE/psychology.html">
               
-       PSY
+       PSYCHOLOGY
    </a>    
     </li>
      
      <li>
-    <a class= "header_link" href="https://ju5tbe.github.io/JU5TBE/Economics .html">
-       ECO
+    <a class= "header_link" href="https://ju5tbe.github.io/JU5TBE/home.html">
+       HOME
     </a>    
     </li>
     
       <li>
     <div class= "header_catergories">
-     <a class= "header_link"  href="https://ju5tbe.github.io/JU5TBE/CREDITS .html ">
+     <a class= "header_link"  href="https://ju5tbe.github.io/JU5TBE/credit.html ">
              
-       CREDIT
+       CREDITS
     </a>   
     </li>
       
     <li>
-      <a class= "header_link"  href="https://ju5tbe.github.io/JU5TBE/Siba .html ">
+      <a class= "header_link"  href="https://ju5tbe.github.io/JU5TBE/siba.html ">
              
        SIBA
     </a>             
     </li>
-  <ul>
-  
-    <li><a href="#">About</a></li>
-    <li><a href="#">Skills</a></li>
-    <li><a href="#">Projects</a></li>
-    
-  </ul>
-  
-  <div class="box-icon">
-  
-    <a href="#">
-     <i class='bx bx1-youtube'></i>
-    </a>
-    <a href="#">
-     <i class='bx bx1-github'></i>
-    </a>
-    <a href="#">
-     <i class='bx bx1-linkedin-square'></i>
-    </a>
-    
-  </div>
- 
- </header>
- 
+ </div>
+	
  <div class="blackhole-box">
  <video loop autoplay muted plays-inline src="videos/blackhole.mp4" type="video/mp4"></video>
  </div>
