@@ -282,36 +282,7 @@ header ul a{
 }
 
 
-.scroll-down::before,
-.scroll-down::after{
-	content:"";
-	position:absolute;
-	top: 20%;
-	left:49%;
-	height:10px;
-	width:10px;
-	border:2px solid rgba(211,211,211,0.477);
-	transform:translate(-50%, -100%) rotate(45deg);
-	
-}
 
-.scroll-down::before{
-	top:30%;
-	animation-delay:0.5s;
-	
-}
-@keyframes{
-	0%{
-		opacity: 0;
-	}
-	30%, 60%{
-		opacity: 1;
-	}
-	100%{
-		top:90%;
-		opacity:0;
-	}
-}
 
 .info-section{
 	
@@ -588,7 +559,7 @@ header ul a{
 	animation-timeline:view();
 }
 
-/*@keyframes fadeInAnimation{
+@keyframes fadeInAnimation{
 	0%{
 		opacity:0;
 		transform:translate(-500px) scale(0.2);
@@ -603,7 +574,7 @@ header ul a{
 		filter:blur(20px);
 	}
 
-}*/
+}
 
 .point{
 	display: block;
@@ -801,7 +772,7 @@ max-width: 700px;
 	 }
       .blackhole-box video{
 	    margin-top:-18%;
-	
+	position: fixed;
 	  }
 	  .hero-info h1{
 		line-height: 50px;
@@ -1006,7 +977,7 @@ max-width: 700px;
      <video class="autoBlur" loop autoplay muted   play-inline src="videos/infoVid.mp4" type="video/mp4"></video>
    </div>
 
-   <div class="scroll-down"></div>
+   
  </section>
  
  
