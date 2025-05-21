@@ -705,7 +705,7 @@ header ul a{
     border-bottom-left-radius: 50%;
   }
 }
-@media screen and (max-width: 1000px){
+ @media screen and (max-width: 1000px){
 	 .container{
 		 max-width: 1000px;
 	 }
@@ -747,13 +747,13 @@ header ul a{
 	}
 	.project-info h1{
 		font-size:20px;
-		max-width:200px;
+		max-width:500px;
         
 	}
 	.project-info{
 		font-size: 15px;
 		text-wrap:wrap;
-		max-width:150px;
+		max-width:400px;
 		min-width:0;
 		margin-left: 20px
 	}
@@ -766,7 +766,7 @@ header ul a{
 	min-width: 12rem;
 	max-height: 11rem;
 
-         width:250px;
+         
 	
      }
 
@@ -787,6 +787,24 @@ max-width: 700px;
 		font-size: 25px;
 	
 	 }
+
+@keyframes fadeInAnimation{
+	0%{
+		opacity:1;
+		transform:translate(0px) scale(1);
+		filter:blur(0);
+	}
+	35%, 65%{
+		opacity:1;
+		transform:translate(0) scale(1);
+		filter:blur(0);
+	}
+	100%{
+		filter:blur(0);
+	}
+
+}
+	
       .blackhole-box video{
 	    margin-top:-18%;
 	
@@ -800,38 +818,84 @@ max-width: 700px;
 		right: 5%;
 	
 	  }
+        .pls_block{
+                display: block;
+                margin-bottom:10px;
+        }
 
 	  .my-projects{
 		margin-bottom:500px;
 		max-width: 700px;
-		
+		gap:10px;	
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+        	align-items: center;
+		 justify-content:  center;
+		 max-width: 700px; 
+		  display:  block;
+		 
 		  
 	  }
 	  .project-card{
-		gap:15px;	
-        flex-direction:column;
+		gap:10px;	
+		display: grid;
+		grid-template-column: 1fr ;
         	align-items: center;
-		  justify-content:  center;
+		 justify-content:  center;
 		 max-width: 700px; 
+		  display: inline-block;
+		  margin-top: 10%;
+		  margin-bottom: 10%;
+		  margin-left: -5%;
+		  padding-right: 5%;
+		  max-height: 250px;
+		  overflow-x: auto;
+		  overflow-y: auto;
+		  
 	  }
+
+
+.project-card::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.project-card {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+	
+	.project-info{
+		display: block;
+	}
 
 	.project-info p{
 		width:80%;
 		min-width: 0;
-		max-width: 150px;
-		
+		max-width: 300px;
+		margin-left: -2%;
+	       
 	}
 
-   
+   .section-title{
+	   text-align: center;
+	   justify-content:center;
+	   align-items: center;
+   }
+	   
 	
      .project-vidbox img{	
 	max-width: 8rem;
 	min-width: 8rem;
-	max-height: 10rem;
-	    
+	min-height: 11rem;
+	max-height: 11rem;
+	   
      }
 
 }
+
 
  </style>
 </head>
@@ -869,7 +933,7 @@ max-width: 700px;
         <div class="close-icon">
           Close
         </div>
- <li>
+<li>
        <a   href= "https://ju5tbe.github.io/JU5TBE/selfhelp.html">
     SELF HELP 
    </a> 
@@ -880,21 +944,25 @@ max-width: 700px;
    </a>
    </li>
  <li>
- <a  href="https://ju5tbe.github.io/JU5TBE/home.html">
-    HOME
+ <a  href="https://ju5tbe.github.io/JU5TBE/coding.html">
+    CODING
    </a> 
    </li>
-
+   <li>
+    <a href="https://ju5tbe.github.io/JU5TBE/material.html">
+        MATERIAL
+    </a>
+    </li>
 <li>
-  <a class= "sidebar_link" href="">
-    
+  <a class= "sidebar_link" href="https://ju5tbe.github.io/JU5TBE/wisdom.html">
+    GENERAL WISDOM
    </a> 
      </li>
 
 
   <li>
- <a class= "sidebar_link" href="">
-   
+ <a class= "sidebar_link" href="https://ju5tbe.github.ipo/JU5TBE/other.html">
+   OTHER
    </a> 
     
 </li>
@@ -902,35 +970,35 @@ max-width: 700px;
      
     
       <li>     
-    <a class= "header_link"  href="https://ju5tbe.github.io/JU5TBE/PHILOSOPHY .html ">
+    <a class= "header_link"  href="https://ju5tbe.github.io/JU5TBE/philosophy.html ">
              
          PHILOSOPHY
     </a>    
     </li>
 
     <li>
-    <a  class= "header_link" href="https://ju5tbe.github.io/JU5TBE/Psychology .html">
+    <a  class= "header_link" href="https://ju5tbe.github.io/JU5TBE/home.html">
               
-       PSYCHOLOGY
+       HOME
    </a>    
     </li>
      
      <li>
-    <a class= "header_link" href="https://ju5tbe.github.io/JU5TBE/Economics .html">
-       ECONOMICS
+    <a class= "header_link" href="https://ju5tbe.github.io/JU5TBE/economics.html">
+       ECONOMICS 
     </a>    
     </li>
     
       <li>
     <div class= "header_catergories">
-     <a class= "header_link"  href="https://ju5tbe.github.io/JU5TBE/CREDITS .html ">
+     <a class= "header_link"  href="https://ju5tbe.github.io/JU5TBE/credits.html ">
              
        CREDIT
     </a>   
     </li>
       
     <li>
-      <a class= "header_link"  href="https://ju5tbe.github.io/JU5TBE/Siba .html ">
+      <a class= "header_link"  href="https://ju5tbe.github.io/JU5TBE/siba.html ">
              
        SIBA
     </a>             
@@ -942,20 +1010,17 @@ max-width: 700px;
  </div>
  <section class="hero">
    <div class="hero-info autoBlur">
-      <div class="hero-info-title autoDisplay">
-         <i class='bx bx1-sketch'></i>
+      
         
       </div>
       
-      <h1>PSYC<span class="gradient">HOLOGY
-      </span> Sec<span class="gradient">tion
-      </span></h1>
-      <p>This section contains books by people with brains trying to figure out how the brain brains.
+      <h1>COD<span class="gradient">ING
+      </span> </h1>
+      <p>You want to be a hackerr,Well I cant teach you cause I dont know how to...YET
+	      
       </p>
       
-     <button><i class='bx bx-send'></i>
-       Contact Me</button>
-   </div>
+    
 
    <div class="hero-vid-box">
      <video class="autoBlur" loop autoplay muted   play-inline src="psychology31 (11).mp4" type="video/mp4"></video>
