@@ -282,35 +282,8 @@ header ul a{
 }
 
 
-.scroll-down::before,
-.scroll-down::after{
-	content:"";
-	position:absolute;
-	top: 20%;
-	left:49%;
-	height:10px;
-	width:10px;
-	border:2px solid rgba(211,211,211,0.477);
-	transform:translate(-50%, -100%) rotate(45deg);
-	
-}
 
-.scroll-down::before{
-	top:30%;
-	animation-delay:0.5s;
-	
-}
-@keyframes{
-	0%{
-		opacity: 0;
-	}
-	30%, 60%{
-		opacity: 1;
-	}
-	100%{
-		top:90%;
-		opacity:0;
-	}
+
 }
 
 .info-section{
@@ -588,7 +561,7 @@ header ul a{
 	animation-timeline:view();
 }
 
-/*@keyframes fadeInAnimation{
+@keyframes fadeInAnimation{
 	0%{
 		opacity:0;
 		transform:translate(-500px) scale(0.2);
@@ -603,7 +576,7 @@ header ul a{
 		filter:blur(20px);
 	}
 
-}*/
+}
 
  .menu-icon{
             font-size:30px;
@@ -972,34 +945,34 @@ max-width: 700px;
      <video class="autoBlur" loop autoplay muted   play-inline src="videos/infoVid.mp4" type="video/mp4"></video>
    </div>
 
-   <div class="scroll-down"></div>
+  
  </section>
  
  
  <section class="info-section">
  
  <h1 class="section-title autoDisplay">
-   NOTICE BOARD
+  <span class="gradient">NOTICE BOARD</span>
  </h1>
  <div class="info-cards">
 
   
   
   <div class="card">
-   <h1>UPDATES</h1>
+   <h1><span class="gradient">UPDATES</span></h1>
    <p>new ui added </p>
   
   </div>
  
   <div class="card">
-    <h1 class="section-title autoDisplay">Upcoming </h1>
+    <h1 class="section-title autoDisplay"><span class="gradient">Upcoming</span> </h1>
     <p>More books</p>
     <img src="images/grid4.png" alt="Profile pic"/>           
   </div>
  </div> 
  </section>
  <section class="my-projects">
-    <h1 class="section-title autoDisplay">BOOKS</h1>
+    <h1 class="section-title autoDisplay"><span class="gradient">BOOKS</span></h1>
     <div class="project-card">
 
         <div class="project-vidbox autoBlur">
@@ -1179,7 +1152,7 @@ and poor families.<span id ="dots12">...</span>
 
         <div class="project-vidbox autoBlur">
 
-            <img id="projectVideo2" src="flow.jpg">
+            <img id="projectVideo2" src="psychologyOfMoney.jpg">
             <div class="project-info fadeInRight" >
                 <h1>THE <span class="gradient">PSYCHOLOGY</span> OF <span class="gradient">MONEY</span></h1>
                 <p>IT is in the title really,kinda like RICH DAD and a good book 
