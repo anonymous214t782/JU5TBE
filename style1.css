@@ -31,10 +31,10 @@ body{
 
 }
 
-#more10, #more11, #more12, #more13, #more14, #more15, #more16, #more17, #more18,#more19,#more20,#more21,#more22,#more23,#more24,#more25,#more26,#more27,#more29,#more30,
+#more10, #more11, #more12, #more13, #more14, #more15,#more16,#more17,#more18,#more19,#more20,#more21,#more22,#more23,#more24,#more25,#more26,#more27,#more29,#more30,
 #more31,#more32,#more33,#more34,#more35,#more36,#more37,#more38,#more39,#more40,#more41,#more42,#more43,#more44,#more45,#more46,#more47,#more48,#more49,
-#more19{
-    display: none;
+#more42{
+        display: none;
 	margin-bottom: 5%;
 	margin-top:5%;
 }
