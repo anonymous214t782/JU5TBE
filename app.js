@@ -467,8 +467,7 @@ function moreText7() {
   }
 }
 
-let vid = document.getElementById("back-vid");
-vid.playbackRate = 0.5;
+
 
 
 //sidebar elementss
