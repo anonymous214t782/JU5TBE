@@ -1,8 +1,8 @@
 
 
- function moreText() {
+
 for (let i = 0; i <= 300; i++){
-   
+    function moreText{i}(){
     let dots{i} = document.getElementById("dots{i}");
     let moreText{i} = document.getElementById("more{i}");
     let btnText{i} = document.getElementById("btn{i}");
