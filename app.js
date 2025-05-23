@@ -1,4 +1,4 @@
-for (let i = 0; i <= 200; i++){
+for (let i = 0; i <= 300; i++){
   window[`moreText${i}`] = function() {
     let dots${i} = document.getElementById(`dots${i}`);
     let moreText${i} = document.getElementById(`more${i}`);
