@@ -1,8 +1,11 @@
 
+for (let i = 131; i <= 170; i++) {
+  document.getElementById(`btn${i}`).addEventListener("click", function moreText() {
+    toggleVisibility(`dots${i}`, `more${i}`, `btn1${i}`);
 
 
-for (let i = 0; i <= 300; i++){
-    function moreText{i}(){
+
+
     let dots{i} = document.getElementById("dots{i}");
     let moreText{i} = document.getElementById("more{i}");
     let btnText{i} = document.getElementById("btn{i}");
@@ -17,7 +20,10 @@ for (let i = 0; i <= 300; i++){
     moreText{i}.style.display = "inline";
      moreText{i}.style.marginBottom = "250px";
   }
+}});
 }
+
+    
  
 
 //sidebar elementss
