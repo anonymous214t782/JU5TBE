@@ -18,7 +18,7 @@ for (let i = 0; i <= 300; i++){
      moreText${i}.style.marginBottom = "250px";
   }
 }
-
+ }
 
 //sidebar elementss
 const sideBar = document.querySelector(".sidebar")
