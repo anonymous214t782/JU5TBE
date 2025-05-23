@@ -1,8 +1,8 @@
 for (let i = 0; i <= 300; i++){
-  window[`moreText${i}`] = function() {
-    let dots${i} = document.getElementById(`dots${i}`);
-    let moreText${i} = document.getElementById(`more${i}`);
-    let btnText${i} = document.getElementById(`btn${i}`);
+  window["moreText${i}"] = function() {
+    let dots${i} = document.getElementById("dots${i}");
+    let moreText${i} = document.getElementById("more${i}");
+    let btnText${i} = document.getElementById("btn${i}");
 
   if (dots${i}.style.display === "none") {
     dots${i}.style.display = "inline";
