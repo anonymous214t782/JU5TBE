@@ -6,19 +6,19 @@ for (let i = 131; i <= 170; i++) {
 
 
 
-    let dots{i} = document.getElementById("dots{i}");
-    let moreText{i} = document.getElementById("more{i}");
-    let btnText{i} = document.getElementById("btn{i}");
+    let dots${i} = document.getElementById("dots${i}");
+    let moreText${i} = document.getElementById("more${i}");
+    let btnText${i} = document.getElementById("btn${i}");
 
-  if (dots{i}.style.display === "none") {
-    dots{i}.style.display = "inline";
-    btnText{i}.innerHTML = "Read more";
-    moreText{i}.style.display = "none";
+  if (dots${i}.style.display === "none") {
+    dots${i}.style.display = "inline";
+    btnText${i}.innerHTML = "Read more";
+    moreText${i}.style.display = "none";
   } else {
-    dots{i}.style.display = "none";
-    btnText{i}.innerHTML = "Read less";
-    moreText{i}.style.display = "inline";
-     moreText{i}.style.marginBottom = "250px";
+    dots${i}.style.display = "none";
+    btnText${i}.innerHTML = "Read less";
+    moreText${i}.style.display = "inline";
+     moreText${i}.style.marginBottom = "250px";
   }
 }});
 }
