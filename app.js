@@ -1,6 +1,6 @@
 
 
- function moreText${i}() {
+ function moreText() {
 for (let i = 0; i <= 300; i++){
    
     let dots${i} = document.getElementById("dots${i}");
