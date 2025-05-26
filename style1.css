@@ -2,7 +2,19 @@ html {
   scroll-behavior: smooth;
 }
 
-
+:root{
+    --headerbackgroundcolor: rgba(255, 255, 255, 0.123);
+	--shadow: goldenrod;
+	--backgroundcolor: rgb(5, 5, 5);
+	--bodycolor: rgb(192, 192, 192);
+    --headerulcolor: rgba(35, 35, 35, 0.30);
+	--gradient: #f8ab03, #3e3f12, #ac7f03, #ff8800, #d9ff00, #fbff00, #f8ab03;
+	--infocardbackground:#161616b7;
+	--projectbutton: rgb(27, 27, 27);
+	--imgshadow:lightgray;
+	--textshadow:rgba(230, 230, 230, 0411);
+	--sidebartextshadow:rgba(20, 20, 20, 0.411)
+}
  .background{
       position: fixed;
       right: 0;
@@ -17,9 +29,9 @@ html {
 body{
 	margin: 0;
 	padding: 0;
-	background-color: var(--bcolor);
+	background-color: var(--backgroundcolor);
 	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	color: rgb(192, 192, 192);
+	color: var(--bodycolor);
 }
 
 .container{
@@ -31,17 +43,11 @@ body{
 	flex-direction: column;
 	align-items: center;
 	gap: 100px;
-	background-color: var(--bcolor);
+	background-color: var(--backgroundcolor);
 	
 }
 
-:root{
 
-	--bcolor: rgb(5, 5, 5);
-	--bcolor1: rgb(255, 255, 255);
-	--tcolor1: black;
-
-}
 
 #more10, #more11, #more12, #more13, #more14, #more15,#more16,#more17,#more18,#more19,#more20,#more21,#more22,#more23,#more24,#more25,#more26,#more27,#more29,#more30,
 #more31,#more32,#more33,#more34,#more35,#more36,#more37,#more38,#more39,#more40,#more41,#more42,#more43,#more44,#more45,#more46,#more47,#more48,#more49,
@@ -72,10 +78,10 @@ header{
 	align-items: center;
 	justify-content:space-between;
 	height: 70px;
-	background-color:  rgba(255, 255, 255, 0.123);
+	background-color:  var(--headerbackgroundcolor);
 	backdrop-filter: blur(10px);
 	padding: 0 30px;
-	box-shadow: 0 0 15px #f5cb0e;
+	box-shadow: 0 0 15px var(--shadow);
 	z-index: 999;	
 	
 }
@@ -100,9 +106,9 @@ header ul{
 	width: 30%;
 	padding: 15px 15px;
 	border-radius: 50px;
-	background-color: rgba(35, 35, 35, 0.30);
+	background-color: var(--headerulcolor);
 	backdrop-filter: blur(10px);
-	box-shadow: 0 0 10px #dec17265;
+	box-shadow: 0 0 10px var(--shadow);
 	
 }
 
@@ -129,29 +135,7 @@ header ul a{
 	
 }
 
-.box-icons a{
-	
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 20px;
-	width: 30px;
-	height: 30px;
-	border: 2px solid #727fde;
-	text-decoration: none;
-	color: lightgray;
-	border-radius: 50%;
-	transition: 0.3s;
-	
-}
 
-.box-icons a:hover{
-	
-	background-color: #464646;
-	color:black;
-	box-shadow: 0 0 15px #aaaaaa6f;
-	
-}
 
 
 .blackhole-box{
@@ -227,7 +211,7 @@ header ul a{
 }
 
 .gradient{
-	background: linear-gradient(to right,#f8ab03, #3e3f12, #ac7f03, #ff8800, #d9ff00, #fbff00, #f8ab03);
+	background: linear-gradient(to, var(--gradient));
 	background-size: 200%;
 	background-clip: text;
 	-webkit-background-clip: text;
@@ -295,8 +279,8 @@ header ul a{
 	width: auto;
 	height: 40vh;
 	overflow:hidden;
-	border: 1px solid rgb(223, 171, 0);
-	background-color: #161616b7;
+	border: 1px solid --shadow;
+	background-color: var(--infocardbackground);
 	border-radius:20px;
     transition: 0.3s;
 	
@@ -432,7 +416,7 @@ header ul a{
 	max-width: 22rem;
 	min-width: 21rem;
 	max-height: 19rem;
-	box-shadow: 0 0 10px lightgray;
+	box-shadow: 0 0 10px var(--imgshadow);
 	border-radius: 20px;
 	transition: 0.5s;
 	margin-top:0;
@@ -441,7 +425,7 @@ header ul a{
 }
 
 .project-vidbox img:hover{
-	box-shadow: 0 0 20px lightgray;
+	box-shadow: 0 0 20px var(--imgshadow);
 }
 
 .project-info{
@@ -471,18 +455,18 @@ header ul a{
 }
 
 .project-info button{
-	color: goldenrod;
+	color: var(--shadow);
 	padding: 10px 15px;
 	border-radius: 10px;
-	border: 2px solid goldenrod;
-	background-color: #1d1d1d3d;
-	box-shadow: 0 0 5px #eed60084;
+	border: 2px solid var(--shadow);
+	background-color: var(--projectbutton);
+	box-shadow: 0 0 5px var(--shadow);
 	cursor: pointer;
 	transition: 0.3s;
 }
 
 .project-info button:hover{	
-	box-shadow: 0 0 15px #ffd00086;
+	box-shadow: 0 0 15px var(--shadow);
     opacity: 0.7;
 
 } 
@@ -503,7 +487,7 @@ header ul a{
 .slink,
 .blink{
 	text-decoration: none;
-	color: goldenrod;
+	color: var(--shadow);
 	display: block;
 }
 
@@ -537,7 +521,7 @@ header ul a{
             background-color: rgba(20, 20, 20, 0.411);
             backdrop-filter: 10px;
             z-index:999;
-            box-shadow: 0 0 20px rgba(goldenrod 0.411);
+            box-shadow: 0 0 20px var(--shadow) 0,411;
             border-bottom-left-radius: 60%;
             width:0;
             opacity:0;
@@ -546,7 +530,7 @@ header ul a{
 
 .close-icon{
   font-size: 30px;
-  color:lightgrey;
+  
   padding-left: 10px;
   cursor: pointer;
   margin-bottom:2rem;
@@ -563,10 +547,10 @@ header ul a{
   padding-left: 20px;
   text-decoration: none;
   margin-bottom:50px;
-  color: lightgrey;
+  color: var(--imgshadow);
   font-weight:700;
   font-size: 20px;
-  text-shadow: 0 0 15px rgba(230, 230, 230, 0411)
+  text-shadow: 0 0 15px var(--sidebartextshadow);
 }
 
 .sidebar.open-sidebar{
