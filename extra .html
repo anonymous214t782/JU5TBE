@@ -7,6 +7,87 @@
  
     <title>EXTRA</title>
 <style>
+
+.menu-icon{
+            font-size:30px;
+            cursor:pointer;
+            
+        }
+
+ .sidebar{
+            position: fixed;
+            right:0;
+            top:0;
+            bottom:70%;
+            width:80%;
+            background-color: rgba(20, 20, 20, 0.411);
+            backdrop-filter: 10px;
+            z-index:999;
+            box-shadow: 0 0 20px grey 0,411;
+            border-bottom-left-radius: 60%;
+            width:0;
+            opacity:0;
+
+        }
+
+.close-icon{
+  font-size: 30px;
+  
+  padding-left: 10px;
+  cursor: pointer;
+  margin-bottom:2rem;
+  padding-left: 40px;
+  margin-top:1em;
+}
+.sidebar  li {
+  padding-left: 20px;
+   list-style: none;
+ margin-bottom: 10px;
+}
+
+.sidebar  li a{
+  padding-left: 20px;
+  text-decoration: none;
+  margin-bottom:50px;
+  color: black;
+  font-weight:700;
+  font-size: 20px;
+  text-shadow: 0 0 15px grey;
+}
+
+.sidebar.open-sidebar{
+  animation: openSidebarAnimation 1.5s forwards;
+}
+
+@keyframes openSidebarAnimation {
+  to{
+    width:80%;
+    opacity:1;
+    bottom:0;
+    border-radius: 0em;
+  }
+}
+
+.sidebar.close-sidebar{
+  animation: closeSidebarAnimation 1.5s forwards;
+}
+
+@keyframes closeSidebarAnimation {
+  from{
+    width:80%;
+    opacity:1;
+    bottom:0;
+    border-radius: 0em;
+  }
+  to{
+    width:0;
+    opacity:0;
+    bottom:0;
+    border-bottom-left-radius: 50%;
+  }}
+
+
+
 a{
   
         text-decoration: none;
@@ -199,69 +280,82 @@ height: 20rem;
 
 </head>
 <body>
-   <div class= "sidebar_div">
-          
-   <a class= "sidebar_link" href= "https://ju5tbe.github.io/JU5TBE/selfhelp .html">
-    SELF HELP 
-   </a> 
-<a class= "sidebar_link" href="https://ju5tbe.github.io/JU5TBE/Project.html">
-     HOME
-   </a>
-
- <a class= "sidebar_link" href="https://ju5tbe.github.io/JU5TBE/coding .html">
-    CODING
-   </a> 
-
-  <a class= "sidebar_link" href="">
-    
-   </a>   
-
- <a class= "sidebar_link" href="">
-   
-   </a> 
-    
-</div>
-
+  
    
    
     <header>
+    <div class="menu-icon">
+    <span class="gradient">MENU</span>
+    </div>
+  
+   
+ 
+ </header>
+  <div class="sidebar">
+        <div class="close-icon">
+        <span class="gradient">CLOSE</span>
+        </div>
+ <li>
+       <a   href= "https://ju5tbe.github.io/JU5TBE/selfhelp .html">
+    SELF HELP 
+   </a> 
+   </li>
+ <li>
+<a  href="https://ju5tbe.github.io/JU5TBE/Project.html">
+     HOME
+   </a>
+   </li>
+ <li>
+ <a  href="https://ju5tbe.github.io/JU5TBE/coding .html">
+    CODING
+   </a> 
+   </li>
+  
+<li>
+  <a class= "sidebar_link" href="https://ju5tbe.github.io/JU5TBE/wisdom .html">
+    GENERAL WISDOM
+   </a> 
+     </li>
+
+
+     
+    
+      <li>     
+    <a class= "header_link"  href="https://ju5tbe.github.io/JU5TBE/PHILOSOPHY .html ">
              
-     <div class= "header_catergories">            
-    <a class= "header_link" href="https://ju5tbe.github.io/JU5TBE/PHILOSOPHY .html">
-         PHI
+         PHILOSOPHY
     </a>    
-    </div>
-    
-    <div class= "header_catergories">
-    <a class= "header_link" href="https://ju5tbe.github.io/JU5TBE/Project.html">
-       HOME 
+    </li>
+
+    <li>
+    <a  class= "header_link" href="https://ju5tbe.github.io/JU5TBE/Psychology .html">
+              
+       PSYCHOLOGY
    </a>    
-    </div>
+    </li>
      
-    <div class= "header_catergories"">
+     <li>
     <a class= "header_link" href="https://ju5tbe.github.io/JU5TBE/Economics .html">
-       ECO
+       ECONOMICS 
     </a>    
-    </div>
+    </li>
     
-    
-     
+      <li>
     <div class= "header_catergories">
-     <a class= "header_link" href="https://ju5tbe.github.io/JU5TBE/CREDITS .html">
-       CRE
+     <a class= "header_link"  href="https://ju5tbe.github.io/JU5TBE/CREDITS .html ">
+             
+       CREDIT
     </a>   
-    </div>
+    </li>
       
-    <div class= "header_catergories">
-      <a class= "header_link" href="https://ju5tbe.github.io/JU5TBE/Siba .html">
+    <li>
+      <a class= "header_link"  href="https://ju5tbe.github.io/JU5TBE/Siba .html ">
+             
        SIBA
     </a>             
-    </div>
-    
-    
-</header>
-
-
+    </li>
+ </div>
+   
 <div class="title"> 
   EXTRA
 </div>
@@ -302,6 +396,6 @@ height: 20rem;
   </p>   
   </div>
 
-   
+  <script src="app.js"></script> 
 </body>
 </html>
