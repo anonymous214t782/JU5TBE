@@ -6,10 +6,16 @@ a{
   color:rgb(163, 163, 163);
 }
 
+
+:root{
+  --header: rgba(20, 20, 20, 0.411); 
+  --border: rgba(50, 50, 50, 0.300);
+}
+
 /*logo image*/
 
 .logo_img{
-  width: 7rem;
+  width: 5rem;
   height: 5rem;
   max-height: 5rem;
   border-radius: 1rem;
@@ -32,9 +38,9 @@ a{
             bottom:70%;
             width:40%;
             background-color: rgba(20, 20, 20, 0.411);
-            backdrop-filter: 10px;
+            backdrop-filter: 1rem;
             z-index:999;
-            box-shadow: 0 0 20px rgba(red, green, blue, 0.411);
+            box-shadow: 0 0 2rem rgba(red, green, blue, 0.411);
             border-bottom-right-radius: 60%;
             width:0;
             opacity:0;
@@ -44,21 +50,22 @@ a{
 .close-icon{
   font-size: 3rem;
   color:lightgrey;
-  padding-left: 18rem;
+  padding-left: 1rem;
   cursor: pointer;
   margin-bottom:2rem;
+  padding-left: 4rem;
   margin-top:1em;
 }
-.sidebar  li {
+.sidebar  li{
   padding-left: 2rem;
-   list-style: none;
- margin-bottom: 10px;
+  list-style: none;
+  margin-bottom: 1rem;
 }
 
 .sidebar  li a{
-  padding-left: 12rem;
+  padding-left: 2rem;
   text-decoration: none;
-  margin-bottom:50px;
+  margin-bottom:5rem;
   color: lightgrey;
   font-weight:700;
   font-size: 2rem;
@@ -69,7 +76,7 @@ a{
   animation: openSidebarAnimation 1.5s forwards;
 }
 
-@keyframes openSidebarAnimation {
+@keyframes openSidebarAnimation{
   to{
     width:40%;
     opacity:1;
@@ -82,7 +89,7 @@ a{
   animation: closeSidebarAnimation 1.5s forwards;
 }
 
-@keyframes closeSidebarAnimation {
+@keyframes closeSidebarAnimation{
   from{
     width:40%;
     opacity:1;
@@ -93,7 +100,7 @@ a{
     width:0;
     opacity:0;
     bottom:0;
-    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
   }
 }
 
@@ -108,14 +115,14 @@ a{
     right: 0;
    
     flex-direction: row;
-    background-color: rgb(66, 66, 66);
+    background-color: rgb(20, 20, 20);
     max-height: 60px;
     justify-content: center;
     align-items: center;
 
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    box-shadow: 0 0 10px rgb(92, 92, 92);
+    box-shadow: 0 0 10px rgb(44, 44, 44);
 }
 
 
@@ -255,7 +262,7 @@ body{
 
   padding: 0;
   margin: 0;
-  background: linear-gradient(-45deg, #474747, #000000, rgb(17, 17, 17), #1f1f1f, #000000);
+  background: linear-gradient(-45deg, #222222, #000000, rgb(17, 17, 17), #0c0c0c, #000000);
 	background-size: 500% 500%;
 	animation: gradient 15s ease infinite;
 	height: 100vh;
@@ -288,6 +295,8 @@ body{
   font-size: 3rem;
   color: white;
   cursor: pointer;
+  text-align: center;
+  
   
 }
 
@@ -304,30 +313,137 @@ body{
 
 /*footer*/
 .footer{
-  
   display:flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  height: 2.5rem;
+  max-height: 2.5rem;
   position: fixed;
   bottom:0;
   left: 0;
   right: 0;
-  height: 2.5rem;
-  max-height: 3rem;
-  justify-content: space-between;
-  align-items: center;
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
-  background:#383838;
+  background: var(--header);
   color: rgb(163, 163, 163);
-  box-shadow: 0 0 2rem rgb(63, 63, 63);
+  box-shadow: 0 0 2rem rgb(34, 34, 34);
   cursor: pointer;
-  display: block;
+  transition: 1.5s;
 
 }
 
-.footer a{
-  padding-left: 25%;
+.footer i{
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
   font-size: 2rem;
+  transition: 0.5s;
+  border: none;
+}
+
+
+
+
+/*hover info*/
+.tooltip {
+   display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: relative;
+  color: rgb(194, 194, 194);
+  display: inline-block;
+  
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+   display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  visibility: hidden;
+  width: 120px;
+  background-color: var(--header);
+  color: #a7a7a7;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 5px 0;
+  border: 2px solid rgba(80, 80, 80, 0.411);
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  width: 120px;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px; 
+}
+
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(117, 117, 117) transparent transparent transparent;
+}
+/*hover info*/
+
+#contact_info{
+  display: none;
+  position: fixed;
+  bottom: 6rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.contact_text{
+  width: 60%;
+  margin:auto;
+  border-radius: 20px;
+  border: 2px solid var(--border);
+  text-align: center;
+  color: rgb(201, 201, 201);
+  transition: 0.5s;
+  
+}
+
+.contact_text::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(117, 117, 117) transparent transparent transparent;
+}
+
+.contact_text h1{
+  text-decoration: underline;
+  font-size: 2.3rem;
+}
+
+.contact_details{
+  display:block;
+  margin-top: 3%;
+}
+
+
+.contact_details i{
+  font-size: 2rem;
+  margin-right: 3%;
+}
+
+.contact_details_text{
+  font-size: 1.4rem;
 }
 
 /* footer */
@@ -397,3 +513,20 @@ body{
 	}
 }
 /* layout */
+
+/* hover */
+.footer i:hover{
+  border-radius: 100%;
+  background: none;
+  box-shadow: 0 0 5px rgb(122, 122, 122);
+  font-size: 2.2rem;
+}
+
+.contact_text:hover{
+  box-shadow: 0 0 15px rgb(122, 122, 122);
+  font-size: 1.4rem;
+}
+
+.menu-icon:hover{
+  box-shadow: 0 0 15px white;
+}
