@@ -146,9 +146,9 @@ a{
 
 
 /* sign in menu animation and icon*/
-.icon_menu{
+.icon_menu_light{
  position: absolute;
- right: 3%;
+ left: 0;
  font-size: 2rem;
  color: rgb(112, 112, 112);
  z-index: 1;
@@ -239,7 +239,7 @@ color:lightgrey;
 }
 
 .title{
- padding-top: 15rem;
+ margin-top: 15rem;
 }
 .title h1{
  color: rgb(216, 216, 216);
@@ -247,7 +247,8 @@ color:lightgrey;
  justify-content: center;
  align-items: center;
  font-size: 4rem;
- text-decoration: underline;
+ text-decoration-line: underline;
+  text-underline-offset: 0.4em;
 }
 
 .title p{
@@ -321,8 +322,8 @@ body{
  display:flex;
  flex-direction: row;
  justify-content: space-evenly;
- height: 2.5rem;
- max-height: 2.5rem;
+ height: 2.8rem;
+ max-height: 2.8rem;
  position: fixed;
  left: 0;
  right: 0;
@@ -331,7 +332,7 @@ body{
  border-top-left-radius: 0.1rem;
  background: var(--header);
  color: rgb(163, 163, 163);
- box-shadow: 0 0 2rem rgb(20, 20, 20);
+ box-shadow: 0 0 2rem rgb(29, 29, 29);
  cursor: pointer;
  transition: 1.5s;
  font-size: 1.8rem;
@@ -350,6 +351,18 @@ body{
  cursor: pointer;
 
 }
+.header a{
+  
+ align-items: center;
+ justify-content: center;
+ vertical-align: middle;
+ font-size: 2rem;
+ transition: 0.5s;
+ border: none;
+ cursor: pointer;
+ text-decoration: none;
+
+}
 
 
 
@@ -362,7 +375,7 @@ body{
  position: relative;
  color: rgb(194, 194, 194);
  display: inline-block;
- 
+  
 }
 
 /* Tooltip text */
@@ -400,19 +413,21 @@ body{
  margin-left: -5px;
  border-width: 5px;
  border-style: solid;
- border-color: rgb(117, 117, 117) transparent transparent transparent;
+ border-color: transparent transparent whitesmoke transparent;
 }
 /*hover info*/
 
 #contact_info{
  display: none;
  position: fixed;
- top: 6rem;
- bottom: 6rem;
+ top: 30rem;
+ left: 0;
+ right: 0;
  width: 100%;
  align-items: center;
  justify-content: center;
  background: rgba(0, 0, 0, 0.411);
+ cursor: pointer;
  
 }
 
@@ -430,7 +445,7 @@ body{
 .contact_text::after {
  content: " ";
  position: absolute;
- top: 100%; /* At the bottom of the tooltip */
+ bottom: 100%; /* At the bottom of the tooltip */
  left: 50%;
  margin-left: -5px;
  border-width: 5px;
@@ -548,6 +563,8 @@ body{
 @media  screen and (max-width: 700px){
   .title h1{
     font-size: 2rem;
+     text-decoration-line: underline;
+    text-underline-offset: 0.5em;
   }
   .title p{
     font-size: 1.5rem;
@@ -556,18 +573,25 @@ body{
   .header a{
     font-size: 1.5rem;
   }
+  
 }
 
 @media  screen and (max-width: 1000px){
   .title h1{
-    font-size: 2.3rem;
+    font-size: 2.8rem;
+    text-decoration-line: underline;
+    text-underline-offset: 0.5em;
   }
   .title p{
-    font-size: 1.8rem;
+    font-size: 2rem;
    
   }
   .header a{
     font-size: 1.5rem;
   }
+  
+    
+    
+  
 }
 /*media query*/
