@@ -1,6 +1,6 @@
-html {
+html{
     font-size: 62.5%;
-  }
+}
 
 a{
  color:rgb(209, 209, 209);
@@ -259,6 +259,51 @@ color:lightgrey;
  text-align: center;
 }
 
+.about_us_title{
+ display:block;
+ text-decoration: none; 
+}
+
+.about_us_content{
+  width:100%;
+  text-align: center;
+  align-items: center;
+}    
+
+.about_us_content p{
+  margin: auto;
+  width: 80%;
+  color: rgb(220, 220, 220);
+}    
+
+.profile_title{
+ position: absolute;
+ left: 1%;
+ text-underline-offset: 0;  
+ display:block; 
+}
+.profile_content{
+    text-align:left;
+}
+.profile_text{ 
+ position: absolute;
+ left:0;
+ top: 22rem;
+ max-width: 50%;
+ font-size: 1.6rem;
+ color: rgb(200, 200, 200);
+ text-align: left;
+ text-wrap: wrap;
+}
+
+.profile_content img{
+ display: inline block;
+ width: 40%;
+}
+.corporate_content{
+    
+}
+
 
 
 
@@ -267,9 +312,9 @@ body{
 
    padding: 0;
     margin: 0;
-   background: linear-gradient(-45deg, #000000e8, #111111, rgb(17, 17, 17), #0c0c0c, #000000);
+   background: linear-gradient(-45deg, #10101010, #111111, rgb(17, 17, 17), #0c0c0c, #000000);
    background-size: 500% 500%;
-   animation: gradient 10s ease infinite;
+   animation: gradient 5s ease infinite;
    height: 100vh;
 
 }
@@ -322,8 +367,8 @@ body{
  display:flex;
  flex-direction: row;
  justify-content: space-evenly;
- height: 2.8rem;
- max-height: 2.8rem;
+ height: 3.5rem;
+ max-height: 3.5rem;
  position: fixed;
  left: 0;
  right: 0;
@@ -352,10 +397,7 @@ body{
 
 }
 .header a{
-  
- align-items: center;
- justify-content: center;
- vertical-align: middle;
+    
  font-size: 2rem;
  transition: 0.5s;
  border: none;
@@ -416,7 +458,7 @@ body{
  border-color: transparent transparent whitesmoke transparent;
 }
 /*hover info*/
-#contact_info1,
+#contact_info1,#contact_info2,#contact_info3,#contact_info,
 #contact_info{
  display: none;
  position: fixed;
@@ -432,10 +474,10 @@ body{
 }
 
 .contact_text{
- width: 60%;
+ width: 70%;
  margin:auto;
  border-radius: 20px;
- border: 2px solid var(--border);
+ border: 2px solid rgb( 150, 150, 150);
  text-align: center;
  color: rgb(201, 201, 201);
  transition: 0.5s;
@@ -566,6 +608,8 @@ body{
      text-decoration-line: underline;
     text-underline-offset: 0.5em;
   }
+  
+  
   .title p{
     font-size: 1.5rem;
    
