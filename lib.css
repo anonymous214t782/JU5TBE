@@ -416,7 +416,7 @@ body{
  border-color: transparent transparent whitesmoke transparent;
 }
 /*hover info*/
-
+#contact_info1,
 #contact_info{
  display: none;
  position: fixed;
