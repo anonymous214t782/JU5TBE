@@ -520,7 +520,7 @@ body{
 }
 
 .contact_info_profile{
- display: block;
+ display: none;
  position: fixed;
  top: 40rem;
  left: 0;
