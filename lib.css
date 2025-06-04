@@ -1,7 +1,7 @@
 html{
     font-size: 62.5%;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 a{
  color:rgb(209, 209, 209);
  font-size: 1.8rem;
@@ -14,6 +14,10 @@ a{
 :root{
  --header: rgba(20, 20, 20, 0.411); 
  --border: rgba(50, 50, 50, 0.300);
+ --description_text: rgb(200, 200, 200);
+ --h1: rgb(220, 220, 220);
+ --header_text: rgb(180, 180, 180);
+ --background: rgb(255, 255, 255);
 }
 
 /*logo image*/
@@ -252,11 +256,12 @@ color:lightgrey;
 }
 
 .title p{
- color:rgb(216, 216, 216);
+ color: var(--description_text);
  font-size: 2.2rem;
  line-height: 1.4rem;
  font-family: serif typeface;
  text-align: center;
+ font-family: sans-serif;
 }
 
 .about_us_title{
@@ -277,13 +282,26 @@ color:lightgrey;
 }    
 
 .profile_title{
+ 
+  margin-bottom: 2rem;
  position: absolute;
+ top: 15rem;
  left: 1%;
  text-underline-offset: 0;  
- display:block; 
+ display:block;
+ font-family: monospace; 
+ color: rgb(216, 216, 216);
+ text-align: center;
+ justify-content: center;
+ align-items: center;
+ font-size: 2rem;
+ text-decoration-line: underline;
+  text-underline-offset: 0.4em;
 }
 .profile_content{
     text-align:left;
+    display: flex;
+
 }
 .profile_text{ 
  position: absolute;
@@ -291,14 +309,19 @@ color:lightgrey;
  top: 22rem;
  max-width: 70%;
  font-size: 1.6rem;
- color: rgb(200, 200, 200);
+ color: var(--description_text);
  text-align: left;
  text-wrap: wrap;
 }
 
 .profile_content img{
- display: inline block;
- width: 40%;
+ margin-left: 60%;
+ font-size: 1rem;
+ mix-blend-mode:lighten;
+ position: absolute;
+ right:0.3rem;
+ top: 20rem;
+ padding:0;
 }
 .corporate_content{
     
@@ -314,7 +337,7 @@ body{
     margin: 0;
    background: linear-gradient(-45deg, #10101010, #111111, rgb(17, 17, 17), #0c0c0c, #000000);
    background-size: 500% 500%;
-   animation: gradient 5s ease infinite;
+   animation: gradient 15s ease infinite;
    height: 100vh;
 
 }
@@ -325,7 +348,7 @@ body{
        background-position: 0% 50%;
    }
    50% {
-       background-position: 100% 50%;
+       background-position: 100% 100%;
    }
    100% {
        background-position: 0% 50%;
@@ -376,7 +399,7 @@ body{
  border-top-right-radius: 0.1rem;
  border-top-left-radius: 0.1rem;
  background: var(--header);
- color: rgb(163, 163, 163);
+ color: var(--header_text);
  box-shadow: 0 0 2rem rgb(29, 29, 29);
  cursor: pointer;
  transition: 1.5s;
@@ -415,7 +438,7 @@ body{
  flex-direction: row;
  justify-content: space-evenly;
  position: relative;
- color: rgb(194, 194, 194);
+ color: var(--description_text);
  display: inline-block;
   
 }
@@ -458,7 +481,9 @@ body{
  border-color: transparent transparent whitesmoke transparent;
 }
 /*hover info*/
-#contact_info1,#contact_info2,#contact_info3,#contact_info,
+
+
+#contact_info1, #contact_info2, #contact_info3, #contact_info,
 #contact_info{
  display: none;
  position: fixed;
@@ -472,7 +497,7 @@ body{
  cursor: pointer;
  
 }
-
+.contact_text1,
 .contact_text{
  width: 70%;
  margin:auto;
