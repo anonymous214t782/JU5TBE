@@ -1,3 +1,4 @@
+
 html{
     font-size: 62.5%;
 }
@@ -18,6 +19,7 @@ a{
  --h1: rgb(220, 220, 220);
  --header_text: rgb(180, 180, 180);
  --background: rgb(255, 255, 255);
+ --gabriela:("Gabriela", serif;)
 }
 
 /*logo image*/
@@ -300,10 +302,20 @@ color:lightgrey;
 
 .about_us_content p{
   margin: auto;
-  width: 80%;
+  max-width: 70%;
   color: rgb(220, 220, 220);
-
-}    
+  font-size: 1.6rem;
+  text-align: left;
+   font-family:"Gabriela", serif;
+}   
+.padding_gaps{
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+.legal_solutions{
+  display: block;
+  margin-left: 1rem;
+} 
 
 .profile_title{
  padding: 0;
@@ -311,7 +323,6 @@ color:lightgrey;
  top: 5rem;
  left: 1%;
  text-underline-offset: 0.1;  
- font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
  color: rgb(216, 216, 216);
  text-align: center;
  font-size: 2rem;
@@ -322,7 +333,7 @@ color:lightgrey;
 .profile_content{
     text-align:left;
     display: flex;
-
+   
 }
 .profile_text{ 
  position: absolute;
@@ -333,6 +344,15 @@ color:lightgrey;
  color: var(--description_text);
  text-align: left;
  text-wrap: wrap;
+ font-family:"Gabriela", serif;
+}
+.specialisation_text{
+  color: white;
+  position: absolute;
+  top: 20em;
+  font-size: 1.7rem;
+  font-family: "Gabriela", serif;
+  width: 100%;
 }
 
 .profile_content img{
@@ -356,7 +376,8 @@ body{
 
    padding: 0;
     margin: 0;
-   background: linear-gradient(-45deg, #10101010, #111111, rgb(17, 17, 17), #0c0c0c, #000000);
+   /*background: linear-gradient(-45deg, #10101010, #111111, rgb(17, 17, 17), #0c0c0c, #000000);*/
+   background: black;
    background-size: 500% 500%;
    animation: gradient 15s ease infinite;
    height: 100vh;
@@ -425,8 +446,9 @@ body{
  cursor: pointer;
  transition: 1.5s;
  font-size: 1.8rem;
+ font-family:"Gabriela", serif;
  text-decoration: none;
-
+ z-index: 1;
 }
 
 .header i{
@@ -447,6 +469,8 @@ body{
  border: none;
  cursor: pointer;
  text-decoration: none;
+ vertical-align: middle;
+ 
 
 }
 
@@ -459,10 +483,19 @@ body{
  flex-direction: row;
  justify-content: space-evenly;
  position: relative;
+ font-family: var(--gabriela);
  color: var(--description_text);
  display: inline-block;
+  font-size: 2.5rem;
   
 }
+
+.header_link_text{
+ vertical-align: middle;
+  padding-top: 0.5rem;
+ font-size: 5rem;
+}
+
 
 /* Tooltip text */
 .tooltip .tooltiptext {
@@ -471,6 +504,7 @@ body{
  justify-content: space-evenly;
  visibility: hidden;
  width: 120px;
+ font-family: var(--gabriela);
  background-color: var(--header);
  color: #a7a7a7;
  font-size: 1.1rem;
@@ -506,7 +540,7 @@ body{
 
 
 .contact_info{
- display: block;
+ display: none;
  position: fixed;
  top: 30rem;
  left: 0;
@@ -520,7 +554,7 @@ body{
 }
 
 .contact_info_profile{
- display: none;
+ display: block;
  position: fixed;
  top: 40rem;
  left: 0;
@@ -559,11 +593,13 @@ body{
 .contact_text h1{
  text-decoration: underline;
  font-size: 2.3rem;
+  font-family:"Gabriela", serif;
 }
 
 .contact_details{
  display:block;
  margin-top: 3%;
+  font-family:"Gabriela", serif;
 }
 
 
@@ -582,6 +618,13 @@ body{
   left: 16%;
   top:0.5rem;
   font-size: 2rem;
+}
+.submit_text{
+  background: black;
+  border: 1px solid white;
+  color: white;
+  border-radius: 1.5rem;
+  width: 16rem;
 }
 /* footer */
 
@@ -685,6 +728,9 @@ body{
   .header a{
     font-size: 1.5rem;
   }
+  .tooltip{
+    font-size: 2rem;
+  }
   
 }
 
@@ -704,6 +750,17 @@ body{
   .header a{
     font-size: 1.5rem;
   }
+  .tooltip{
+    font-size: 2.5rem;
+  }
+.header_link_text{
+
+ vertical-align: middle;
+ padding-top: 0.5rem;
+ font-size: 5rem;
+
+}
+
   
     
     
