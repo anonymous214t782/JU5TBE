@@ -13,7 +13,8 @@ a{
 }
 
 :root{
- --header: rgba(20, 20, 20, 0.411); 
+ --header: rgba(20, 20, 20, 0.311);
+ --true_header: rgba(20, 20, 20, 1)
  --border: rgba(50, 50, 50, 0.300);
  --description_text: rgb(200, 200, 200);
  --h1: rgb(220, 220, 220);
@@ -378,7 +379,7 @@ body{
     margin: 0;
    /*background: linear-gradient(-45deg, #10101010, #111111, rgb(17, 17, 17), #0c0c0c, #000000);*/
    background: black;
-   background-size: 500% 500%;
+   background-size: 100% 100%;
    animation: gradient 15s ease infinite;
    height: 100vh;
 
@@ -440,7 +441,7 @@ body{
  top: 0;
  border-top-right-radius: 0.1rem;
  border-top-left-radius: 0.1rem;
- background: var(--header);
+ background: var(--true_header);
  color: var(--header_text);
  box-shadow: 0 0 2rem rgb(29, 29, 29);
  cursor: pointer;
@@ -485,6 +486,8 @@ body{
  position: relative;
  font-family: var(--gabriela);
  color: var(--description_text);
+ background: var(--true_header);
+ z-index:999;
  display: inline-block;
   font-size: 2.5rem;
   
@@ -548,7 +551,8 @@ body{
  width: 100%;
  align-items: center;
  justify-content: center;
- background: rgba(0, 0, 0, 0.411);
+ background: rgba(0, 0, 0, 1);
+ z-index: 999;
  cursor: pointer;
  
 }
