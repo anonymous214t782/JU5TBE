@@ -23,6 +23,33 @@ contact_me.addEventListener("click", function(){
             contact_info_profile.style.display = "none";
     }
     })
-
-// contact me info
+    // contact me info
 //testing
+
+function emailsend(){
+    var name = document.querySelector(".name").value;
+    var phone = document.querySelector(".name").value;
+    var email = document.querySelector(".name").value;
+
+    var messsageBody = "Name " + userName +
+    "<br/> Phone " + phone +
+    "<br/> Email " + email;
+    Email.send({
+    Host : "s1.maildns.net",
+    Username : "ju5tbe32w@gmail.com",
+    Password : "48C2EF7842E78A3C07C880C3B6B687F317E0",
+    To : 'ju5tbe32w@gmail.com',
+    From : "uwdursstw32w",
+    Subject : "This is the subject",
+    Body : messsageBody 
+}).then(
+  message => {
+        if(message=='OK'){
+                swal("Sucessful", "You clicked the button!", "success");
+        }
+        else{
+                swal("unsucesssful", "You clicked the button!", "error");
+        }
+  }
+);
+}
