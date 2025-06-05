@@ -776,6 +776,10 @@ body{
   
 }
 
+.specialisation_text{
+    left:0;
+}
+    
 @media  screen and (min-width: 1000px) and (max-width: 1200px){
   .title h1{
     font-size: 2.8rem;
