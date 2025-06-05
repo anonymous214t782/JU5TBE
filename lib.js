@@ -28,8 +28,8 @@ contact_me.addEventListener("click", function(){
 
 function emailsend(){
     var name = document.querySelector(".name").value;
-    var phone = document.querySelector(".name").value;
-    var email = document.querySelector(".name").value;
+    var phone = document.querySelector(".phone").value;
+    var email = document.querySelector(".email").value;
 
     var messsageBody = "Name " + userName +
     "<br/> Phone " + phone +
@@ -39,7 +39,7 @@ function emailsend(){
     Username : "ju5tbe32w@gmail.com",
     Password : "48C2EF7842E78A3C07C880C3B6B687F317E0",
     To : 'ju5tbe32w@gmail.com',
-    From : "uwdursstw32w",
+    From : "uwdursstw32w@gmail.com",
     Subject : "This is the subject",
     Body : messsageBody 
 }).then(
