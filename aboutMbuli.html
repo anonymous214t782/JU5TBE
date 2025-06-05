@@ -69,9 +69,9 @@
 
 
     <div class="title"> 
-
-      <h1 class="about_us_title">About Us</h1>
-    
+      <div class="about_us_title_div">
+         <h1 class="about_us_title">About Us</h1>
+      </div>
     </div>
        
     <div class="about_us_content">
@@ -81,6 +81,7 @@
       </p>
    
     </div> 
+    
     <div class="contact_info">
       <div class="close_contact">
         <i class="bi bi-x-circle-fill">
@@ -101,16 +102,25 @@
             Siphephelo004@gmail.com
            </span>
           </span>
+          <form onsubmit="emailSend(); reset(); return false;">
           <span class="contact_details">
-           <input placeholder="Enter Contact Infomation" class="contact_information"/>
+           <span class="contact_details_text">
+            Send us your details
+           </span>
+          </span>
+          <span class="contact_details">
+           <input type="text" placeholder="Name" class="name" name="name" required/>
+           <input type="text" placeholder="Phone" class="phone" name="phone" required/>
+            <input type="text" placeholder="Email" class="Email" name="Email" required/>
            <span class="contact_details_text">
            </span>
           </span>
           <span class="contact_details">
-           <button class="submit_text">Submit</button>
+           <button type="submit" class="btn">Submit</button>
            <span class="contact_details_text">
            </span>
           </span>
+          </form>
         </p>
       </div>
      </div>
@@ -122,7 +132,10 @@
     
 
   </div>
-
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="lib.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
 </body>
-<script src="lib.js"></script> 
+
 </html>
