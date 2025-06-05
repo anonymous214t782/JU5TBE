@@ -265,9 +265,19 @@ color:lightgrey;
  text-align: center;
  justify-content: center;
  align-items: center;
- font-size: 4rem;
+ font-size: 3rem;
  text-decoration-line: underline;
   text-underline-offset: 0.4em;
+}
+.title_area{
+  margin-top: 15rem;
+  color: rgb(216, 216, 216);
+ text-align: center;
+ justify-content: center;
+ align-items: center;
+ font-size: 1.5rem;
+ text-decoration-line: underline;
+  text-underline-offset: 1.8rem;
 }
 
 .title p{
@@ -290,25 +300,32 @@ color:lightgrey;
 }
 
 
-.about_us_title{
- display:block;
- text-decoration: none; 
-}
+
 
 .about_us_content{
+    position: absolute;
+    top: 20rem;
+    margin-top: 1rem;
   width:100%;
+  
   text-align: center;
   align-items: center;
 }    
 
+
+
+
 .about_us_content p{
   margin: auto;
-  max-width: 70%;
+ 
+  max-width: 59%;
   color: rgb(220, 220, 220);
   font-size: 1.6rem;
-  text-align: left;
-   font-family:"Gabriela", serif;
+  text-align: center;
+  font-family:"Gabriela", serif;
 }   
+
+
 .padding_gaps{
   padding-top: 1rem;
   padding-bottom: 0.5rem;
@@ -322,7 +339,7 @@ color:lightgrey;
  padding: 0;
  position: absolute;
  top: 5rem;
- left: 1%;
+ left: 3%;
  text-underline-offset: 0.1;  
  color: rgb(216, 216, 216);
  text-align: center;
@@ -334,23 +351,32 @@ color:lightgrey;
 .profile_content{
     text-align:left;
     display: flex;
+    text-wrap: pretty;
    
 }
 .profile_text{ 
  position: absolute;
- left:0;
+ left:1%;
  top: 12rem;
- max-width: 70%;
+ max-width: 80rem;
  font-size: 1.6rem;
  color: var(--description_text);
- text-align: left;
- text-wrap: wrap;
+ text-align: center;
+ text-wrap: pretty;
+ word-wrap: break-word;
+ 
  font-family:"Gabriela", serif;
+}
+
+.profile_content p{
+   text-wrap: pretty
+   ;
 }
 .specialisation_text{
   color: white;
   position: absolute;
-  top: 20em;
+  top: 15em;
+  left: 5%;
   font-size: 1.7rem;
   font-family: "Gabriela", serif;
   width: 100%;
@@ -358,7 +384,7 @@ color:lightgrey;
 
 .profile_content img{
  margin-left: 60%;
- font-size: 1rem;
+ font-size: 15rem;
  mix-blend-mode:lighten;
  position: absolute;
  right:0.3rem;
@@ -623,7 +649,14 @@ body{
   top:0.5rem;
   font-size: 2rem;
 }
-.submit_text{
+
+.contact_information{
+    background-color: rgb(223, 223, 223);
+    border: 1px solid grey;
+    border-radius: 3rem;
+    color: black
+}
+.btn{
   background: black;
   border: 1px solid white;
   color: white;
@@ -719,11 +752,13 @@ body{
 /* media query*/
 @media  screen and (max-width: 700px){
   .title h1{
-    font-size: 2rem;
+    font-size: 3rem;
      text-decoration-line: underline;
     text-underline-offset: 0.5em;
   }
-  
+  .area_h1{
+     font-size: 3rem;
+  }
   
   .title p{
     font-size: 1.5rem;
@@ -735,15 +770,19 @@ body{
   .tooltip{
     font-size: 2rem;
   }
+  .profile_text{
+    max-width: 32rem;
+  }
   
 }
 
-@media  screen and (max-width: 1000px){
+@media  screen and (min-width: 1000px) and (max-width: 1200px){
   .title h1{
     font-size: 2.8rem;
     text-decoration-line: underline;
     text-underline-offset: 0.5em;
   }
+ 
   .title p{
     font-size: 2rem;
    
@@ -752,7 +791,7 @@ body{
   font-size: 2rem;
  }
   .header a{
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .tooltip{
     font-size: 2.5rem;
@@ -770,4 +809,9 @@ body{
     
   
 }
+@media screen and (min-width: 1100px){
+   
+}
+
+
 /*media query*/
