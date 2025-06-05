@@ -77,10 +77,10 @@
     <div class="profile_content">
       <img src="imagess/logo.png">
      <p class="profile_text">
-      <span class="bold_text">Mbuli SL Attorneys</span> was founded in 2025 by <span class="bold_text">Siphephelo Mbuli</span>,who is the sole partner.
-      Siphephelo completed his article of clerkship at a large, prestigious law firm :Deney Reitz (which is now Norton Rose Fullbright) in the heart of Sandton.
+      <span class="bold_text">Mbuli SL Attorneys</span> was founded in 2025 by <span class="bold_text">Siphephelo Mbuli </span>,who is the sole partner.
+      Siphephelo completed his article of clerkship at a large, prestigious law firm: Deney Reitz (which is now Norton Rose Fullbright) in the heart of Sandton.
       After having completed rotations in Labour Law, General Insurance Litigation, Professional Indemnity and Commercial Litigation Departments he joined the LPIIF as a Legal Advisor and was duly admitted as a Legal Practitioner in May 2011.
-      Sphephelo has since worked for Leading underwriters and short term brokers as a Legal Advisor, Underwriter and Assistant Ombudsman in the short-term insurance industry. 
+      Sphephelo has since worked for Leading underwriters and short term brokers as a Legal Advisor, Underwriter and Assistant Ombudsman in the short-term insurance industry.
     </p>
     </div>
      
@@ -103,17 +103,25 @@
            <span class="contact_details_text">
             Siphephelo004@gmail.com
            </span>
+        <form onsubmit="emailSend(); reset(); return false;">
+          <span class="contact_details">
+           <span class="contact_details_text">
+            Send us your details
+           </span>
           </span>
           <span class="contact_details">
-           <input placeholder="Enter Contact Infomation" class="contact_information"/>
+           <input type="text" placeholder="Name" class="name" name="name" required/>
+           <input type="text" placeholder="Phone" class="phone" name="phone" required/>
+            <input type="text" placeholder="Email" class="Email" name="Email" required/>
            <span class="contact_details_text">
            </span>
           </span>
           <span class="contact_details">
-           <button class="submit_text">Submit</button>
+           <button type="submit" class="btn">Submit</button>
            <span class="contact_details_text">
            </span>
           </span>
+          </form>
         </p>
       </div>
      </div>
@@ -123,8 +131,11 @@
 
     
     
-
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="lib.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
   </div>
-<script src="lib.js"></script> 
+
 </body>
 </html>
