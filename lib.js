@@ -1,4 +1,7 @@
 
+
+
+
 const contact_me = document.querySelector(".contact_me");
 const contact_info = document.querySelector(".contact_info");
 const close_contact = document.querySelector(".close_contact"); 
