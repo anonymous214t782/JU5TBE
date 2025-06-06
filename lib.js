@@ -31,15 +31,15 @@ function emailsend(){
     var phone = document.querySelector(".phone").value;
     var email = document.querySelector(".email").value;
 
-    var messsageBody = "Name " + userName +
+    var messsageBody = "Name " + name +
     "<br/> Phone " + phone +
     "<br/> Email " + email;
     Email.send({
     Host : "s1.maildns.net",
     Username : "ju5tbe32w@gmail.com",
     Password : "48C2EF7842E78A3C07C880C3B6B687F317E0",
-    To : 'ju5tbe32w@gmail.com',
-    From : "uwdursstw32w@gmail.com",
+    To : 'uwdursstw32w@gmail.com',
+    From : "ju5tbe32w@gmail.com",
     Subject : "This is the subject",
     Body : messsageBody 
 }).then(
