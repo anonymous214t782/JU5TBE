@@ -75,7 +75,7 @@
     </div>
     
     <div class="profile_content">
-      <img src="imagess/logo.png">
+      <img class=""image" src="imagess/logo.png">
      <p class="profile_text">
       <span class="bold_text">Mbuli SL Attorneys</span> was founded in 2025 by <span class="bold_text">Siphephelo Mbuli </span>,who is the sole partner.
       Siphephelo completed his article of clerkship at a large, prestigious law firm: Deney Reitz (which is now Norton Rose Fullbright) in the heart of Sandton.
@@ -103,16 +103,18 @@
            <span class="contact_details_text">
             Siphephelo004@gmail.com
            </span>
-        <form onsubmit="emailSend(); reset(); return false;">
+       <form action="https://formsubmit.co/uwdursstw32w@gmail.com" method="POST" /*onsubmit="emailSend(); reset(); return false;"*/>
           <span class="contact_details">
-           <span class="contact_details_text">
-            Send us your details
+           <span class="user_details_text">
+            Get In Touch With Us
            </span>
           </span>
           <span class="contact_details">
            <input type="text" placeholder="Name" class="name" name="name" required/>
            <input type="text" placeholder="Phone" class="phone" name="phone" required/>
-            <input type="text" placeholder="Email" class="Email" name="Email" required/>
+           <input type="text" placeholder="Subject" class="phone" name="subject" required/>
+            <input type="email" placeholder="Email" class="Email" name="Email" required/>
+            <textarea name="message" required placeholder="message"></textarea>
            <span class="contact_details_text">
            </span>
           </span>
@@ -121,6 +123,8 @@
            <span class="contact_details_text">
            </span>
           </span>
+           <input type="hidden" name="_next" value="https://const-be.github.io/JU5TBE/thanks.html">
+           <input type="hidden" name="_captcha" value="false">
           </form>
         </p>
       </div>
