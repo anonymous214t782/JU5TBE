@@ -571,7 +571,7 @@ body{
 .contact_info{
  display: none;
  position: fixed;
- top: 30rem;
+ top: 15rem;
  left: 0;
  right: 0;
  width: 100%;
@@ -640,6 +640,10 @@ body{
 
 .contact_details_text{
  font-size: 1.4rem;
+}
+.user_details_text{
+  font-size: 1.7rem;
+  margin-top: 1.8rem;
 }
 
 .close_contact{
@@ -771,7 +775,7 @@ body{
     font-size: 2rem;
   }
   .profile_text{
-    max-width: 16rem;
+    max-width: 25rem;
   }
   
 }
