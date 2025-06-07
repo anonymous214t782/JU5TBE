@@ -983,6 +983,12 @@ contact_info_profile{
   .header{
       font-size: 1.3rem;
   }
+i{
+    font-size: 1.3rem;
+  }
+  a{
+    font-size: 1.3rem;
+  }
   
   
 }
@@ -1050,6 +1056,12 @@ contact_info_profile{
   }
    .header{
       font-size: 1.5rem;
+  }
+ i{
+    font-size: 1.5rem;
+  }
+  a{
+    font-size: 1.5rem;
   }
   
   
