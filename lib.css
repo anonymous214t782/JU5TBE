@@ -32,6 +32,19 @@ a{
  border-radius: 1rem;
 }
 
+
+.background{
+  position: fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  width: 100%;
+  height: 100vh;
+  mix-blend-mode: difference;
+  opacity:0.2;
+  object-fit: contain;
+}
 /*logo_image*/
 
 
@@ -235,7 +248,7 @@ color:lightgrey;
 }
 .container{
  width: 100%;
- height: 100vh;
+ height: 100%;
  top: 0;
  bottom: 0;
  left:0;
@@ -404,10 +417,9 @@ body{
     margin: 0;
    /*background: linear-gradient(-45deg, #10101010, #111111, rgb(17, 17, 17), #0c0c0c, #000000);*/
    background: black;
-   background-size: 500% 500%;
+   
    animation: gradient 15s ease infinite;
-   height: 100vh;
-
+  
 }
    
 
