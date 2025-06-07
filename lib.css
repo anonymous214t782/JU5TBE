@@ -975,10 +975,10 @@ contact_info_profile{
     max-height: 15rem; 
   }
   .header i{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .header a{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   
   
@@ -1040,6 +1040,13 @@ contact_info_profile{
     margin:auto;
     max-width: 40rem;
   }
+  .header i{
+    font-size: 1.5rem;
+  }
+  .header a{
+    font-size: 1.5rem;
+  }
+  
    
   
 }
