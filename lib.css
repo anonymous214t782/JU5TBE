@@ -980,7 +980,9 @@ contact_info_profile{
   .header a{
     font-size: 1.3rem;
   }
-  
+  .header{
+      font-size: 1.3rem;
+  }
   
   
 }
@@ -1046,6 +1048,10 @@ contact_info_profile{
   .header a{
     font-size: 1.5rem;
   }
+   .header{
+      font-size: 1.5rem;
+  }
+  
   
    
   
