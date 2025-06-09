@@ -905,7 +905,7 @@ contact_info_profile{
   .image{
      
     position: absolute;
-    left: -16%;
+    left: -22%;
     top:5rem;
     margin: auto;
     margin-top: -2rem;
@@ -922,6 +922,36 @@ contact_info_profile{
   
 }
 
+
+@media screen and (max-width: 700px){
+ .image{
+    position: absolute;
+    left: -5%;
+    top:5rem;
+    margin: auto;
+  } 
+
+@media screen and (max-width: 800px){
+ .image{
+    position: absolute;
+    left: -20%;
+    top:5rem;
+  } 
+}
+@media screen and (max-width: 900px){
+ .image{
+    position: absolute;
+    left: -18%;
+    top:5rem;
+  } 
+}
+@media screen and (max-width: 1000px){
+ .image{
+    position: absolute;
+    left: -15%;
+    top:5rem;
+  } 
+}
 
 .title_area{
   
