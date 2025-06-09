@@ -8,6 +8,16 @@
       background-image: url('https://www.transparenttextures.com/patterns/concrete-wall.png');
     }
     
+    .background{
+      position: fixed;
+      top: -30%;
+      bottom: 1%;
+      left: -75%;
+      height: 150%;
+      width: 150%;
+      z-index: -1;
+    }
+    
     .hero {
       height: 100vh;
       position: relative;
@@ -30,7 +40,7 @@
     
     .content {
       position: absolute;
-      bottom: 70%;
+      bottom: 50%;
       left: 5%;
       z-index: 10;
     }
@@ -41,15 +51,18 @@
     
     
     .menu{
-        color: white;
+        color: rgb(0, 0, 0);
         position: fixed;
         top: 1rem;
         left: 5%;
+        display: none;
     }
-    
+    .menu p{
+      font-size: 1.3rem;
+    }
     .menu_header{
         color: white;
-        display: none;
+        display: none;   
     }    
     
     .menu_projects{
@@ -74,7 +87,8 @@
        font-weight: 500;
        background-color: red;
        border: 1px solid black;
-       border-top-radius: 0;
+       border-top-left-radius: 0;
+       border-top-right-radius: 0;
        border-top: none;
        border-radius: 0.2rem;
        color: black;
@@ -106,7 +120,7 @@
     h1 {
       font-family: 'Playfair Display', serif;
       font-size: 4rem;
-      color: red;
+      color: rgb(0, 0, 0);
     }
     
     p {
@@ -126,8 +140,17 @@
           max-width: 15rem;
       }
       .header{  display: none;  }
-      
+      .red_background{
+       position: fixed;
+       top: -40%;
+       bottom: 0;
+       left: -80%;
+       height: 50rem;
+       width: 150%;
+  
+    }
     }
     @media (min-width: 769px) {
       .header{  display: inline;  }
       
+    }
