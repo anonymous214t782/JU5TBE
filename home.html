@@ -54,6 +54,7 @@ header{
 	left: 0;
 	align-items: center;
 	justify-content:space-between;
+	width: 100%;
 	height: 70px;
 	background-color:  rgba(255, 255, 255, 0.123);
 	backdrop-filter: blur(10px);
@@ -501,7 +502,7 @@ header ul a{
 
 .project-info h1{
 	width: 90%;
-	font-size: 25px;
+	font-size: 20px;
 	font-weight: 700;
 	text-wrap: nowrap;
 	margin-bottom: 0px;
@@ -510,7 +511,7 @@ header ul a{
 }
 
 .project-info p{
-	width: 90%;
+	width: 80%;
 	max-width: 400px;
 	min-width: 300px;
 	margin-bottom: 150px;
@@ -706,7 +707,13 @@ header ul a{
     border-bottom-left-radius: 50%;
   }
 }
-
+@media screen and (max-width: 900px){
+	.hero h1{
+		font-size: 18px;		
+	}
+	.hero{
+		max-width: 100%;
+	}
 
  </style>
 </head>
