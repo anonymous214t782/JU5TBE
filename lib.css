@@ -1125,7 +1125,28 @@ contact_info_profile{
    
   
 }
+}
 
 
+.designer{
+  position: absolute;
+  bottom: 0.1rem;
+  left: 0;
+  right: 0;
+  max-height: 10rem;
+  
+  text-align: center;
+}
 
+.designer_link{
+  text-align: center;
+  display: block;
+  font-style: italic;
+  font-size: 10px;
+  cursor: pointer
+}
+.patent{
+  display: block;
+  font-size: 6px;
+}
 /*media query*/
