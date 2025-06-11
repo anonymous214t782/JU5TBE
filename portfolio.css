@@ -437,7 +437,7 @@
 
     /* Responsive Adjustments */
     @media (max-width: 768px) {
-      h1 { font-size: 1.5rem; }
+      h1 { font-size: 1.8rem; }
       p { font-size: 0.8rem;
           max-width: 13rem;
       }
@@ -462,14 +462,27 @@
     .background{
       object-fit: fill;
     }
+  
+
+    }
 
 
+    @media (min-width: 620px) {
+      .background{
+        object-fit: contain;
+      }
     }
     @media (min-width: 769px) {
       .header{  display: none;  }
       .menu_icon{
       margin-top: 0%;
        }
+        p { font-size: 0.8rem;
+          max-width: 25rem;
+      }
+      .logo_text p{
+        max-width: 13rem;
+      }
       .the_projects p{
       font-size:1rem;
       max-width: 15rem;
