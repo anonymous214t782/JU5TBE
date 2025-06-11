@@ -12,7 +12,7 @@
     
 //sidebar elementss
 const sideBar = document.querySelector(".open_menu")
-const menu = document.querySelector(".menu-icon")
+const menu = document.querySelector(".menu_icon")
 
 menu.addEventListener("click", function(){
   sideBar.classList.remove("close-sidebar")
@@ -26,36 +26,43 @@ close.addEventListener("click", function(){
   sideBar.classList.add("close-sidebar")
 })
 
-
+const home = document.querySelector(".home_container")
 const project = document.querySelector(".project_container")
 const projectUl = document.querySelector(".my_projects")
 const contactMe = document.querySelector(".contact_info_page")
 const contactUl = document.querySelector(".my_contact_info")
-const teschstack = document.querySelector(".techstack")
+const techstack = document.querySelector(".techstack_container")
 const techstackUl = document.querySelector(".my_techstack")
 
 
 projectUl.addEventListener("click", function(){
   if (project.style.display === "none !important"){
-            project.style.display = "inline !important";                   
+            project.style.display = "inline !important";
+            home.style.display = "none !important";                   
     }else{
             project.style.display = "none !important";
+            home.style.display = "inline !important";            
     }
 })
 
 contactUl.addEventListener("click", function(){
   if (contactMe.style.display === "none !important"){
-            contactMe.style.display = "inline !important";                   
+            contactMe.style.display = "inline !important";
+            home.style.display = "none !important";
     }else{
             contactMe.style.display = "none !important";
+            home.style.display = "inline !important";
+
     }
 })
 
 techstackUl.addEventListener("click", function(){
-  if (teschstack.style.display === "none !important"){
-          techstack.style.display = "inline !important";                   
+  if (techstack.style.display === "none !important"){
+          techstack.style.display = "inline !important";
+          home.style.display = "none !important";
     }else{
           techstack.style.display = "none !important";
+          home.style.display = "inline !important";
     }
 })
 
