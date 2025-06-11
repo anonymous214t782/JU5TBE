@@ -29,7 +29,7 @@ close.addEventListener("click", function(){
 const home = document.querySelector(".home_container")
 const project = document.querySelector(".project_container")
 const projectUl = document.querySelector(".my_projects")
-const contactMe = document.querySelector(".contact_info_page")
+const contactMe = document.querySelector(".contact_info_container")
 const contactUl = document.querySelector(".my_contact_info")
 const techstack = document.querySelector(".techstack_container")
 const techstackUl = document.querySelector(".my_techstack")
