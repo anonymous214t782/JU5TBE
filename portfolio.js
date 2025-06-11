@@ -27,7 +27,7 @@ close.addEventListener("click", function(){
 })
 
 const home = document.querySelector(".home_container")
-const project = document.querySelector(".project_container")
+const project = document.querySelector(".projects_container")
 const projectUl = document.querySelector(".my_projects")
 const contactMe = document.querySelector(".contact_info_container")
 const contactUl = document.querySelector(".my_contact_info")
@@ -36,22 +36,22 @@ const techstackUl = document.querySelector(".my_techstack")
 
 
 projectUl.addEventListener("click", function(){
-  if (project.style.display === "none !important"){
-            project.style.display = "inline !important";
-            home.style.display = "none !important";                   
+  if (project.style.display === "none"){
+            project.style.display = "inline";
+            home.style.display = "none";                   
     }else{
-            project.style.display = "none !important";
-            home.style.display = "inline !important";            
+            project.style.display = "none";
+            home.style.display = "inline";            
     }
 })
 
 contactUl.addEventListener("click", function(){
-  if (contactMe.style.display === "none !important"){
-            contactMe.style.display = "inline !important";
-            home.style.display = "none !important";
+  if (contactMe.style.display === "none"){
+            contactMe.style.display = "inline";
+            home.style.display = "none";
     }else{
-            contactMe.style.display = "none !important";
-            home.style.display = "inline !important";
+            contactMe.style.display = "none";
+            home.style.display = "inline";
 
     }
 })
