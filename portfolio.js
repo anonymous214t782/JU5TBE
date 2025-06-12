@@ -33,6 +33,7 @@ const contactMe = document.querySelector(".contact_info_container")
 const contactUl = document.querySelector(".my_contact_info")
 const techstack = document.querySelector(".techstack_container")
 const techstackUl = document.querySelector(".my_techstack")
+const backhome = document.querySelector(".backhome")
 
 
 projectUl.addEventListener("click", function(){
@@ -40,8 +41,8 @@ projectUl.addEventListener("click", function(){
             project.style.display = "inline";
             home.style.display = "none";                   
     }else{
-            project.style.display = "none";
-            home.style.display = "inline";            
+       project.style.display = "inline";
+            home.style.display = "none";  
     }
 })
 
@@ -50,20 +51,29 @@ contactUl.addEventListener("click", function(){
             contactMe.style.display = "inline";
             home.style.display = "none";
     }else{
-            contactMe.style.display = "none";
-            home.style.display = "inline";
+             contactMe.style.display = "inline";
+            home.style.display = "none";
 
     }
 })
 
 techstackUl.addEventListener("click", function(){
-  if (techstack.style.display === "none !important"){
-          techstack.style.display = "inline !important";
-          home.style.display = "none !important";
+  if (techstack.style.display === "none"){
+          techstack.style.display = "inline";
+          home.style.display = "none";
     }else{
-          techstack.style.display = "none !important";
-          home.style.display = "inline !important";
+           techstack.style.display = "inline";
+          home.style.display = "none";
     }
 })
 
+backhome.addEventListener("click", function(){
+  if (home.style.display === "none"){
+    home.style.display = "inline";
+    project.style.display = "none";
+    techstack.style.display = "none";
+    contactMe.style.display = "none";
+    
+  }
+})
 
