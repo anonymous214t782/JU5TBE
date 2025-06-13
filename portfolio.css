@@ -541,7 +541,29 @@ btn:hover{
 }
 /*techstack section*/
     
-
+    
+.close_contact{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 30rem;
+  left: 49%;
+  font-size: 2rem;
+  
+}
+.emailsent{
+  margin-top: 10%;
+  color: white;
+  text-align:center;
+}
+.replysoon{
+  position: absolute;
+  left: 30%;
+  right: 30%;
+  margin-top: 30%;
+  color: white;
+  text-align: center;
+}
 
 
 
