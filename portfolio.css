@@ -108,12 +108,7 @@
       font-size: 1.6rem;
       text-shadow: 0 0 20px white;
     }
-    .menu_techstack{
-      
-    }
-    .menu_contact{
-        
-    }
+  
      .open_menu{
             position: fixed;
             right:0;
@@ -486,13 +481,13 @@ btn:hover{
 .techstack_container{
   width: 100%;
   height: 100%;
-  padding: 0;
-  margin: 0;
   display: none;
 }
 .techstack_video{
   width: 100%;
   height: 100%;
+  margin-top: 2rem;
+  overflow: hidden;
 }
 .techstack_icons{
   min-height: 50%;
@@ -506,7 +501,7 @@ btn:hover{
 }
 .html{
   position: absolute;
-  top: 5%;
+  top: 2%;
   left: 40%;
   right: 40%;
   max-width: 20rem;
@@ -526,7 +521,7 @@ btn:hover{
 }
 .python{
  position: absolute;
-  top: 10%;
+  top: 5%;
   left: 30%;
   right: 30%;
   max-width: 60rem;
@@ -536,7 +531,7 @@ btn:hover{
 }
 .javascript{
   position: absolute;
-  top: 10%;
+  top: 5%;
   left: 30%;
   right: 30%;
   max-width: 60rem;
