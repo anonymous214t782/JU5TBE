@@ -12,7 +12,16 @@
     
     setInterval(nextSlide, 5000); // Change slide every 5 seconds
 
-
+ let slides1 = document.querySelectorAll('.slide1');
+    let currentSlide1 = 0;
+    
+    function nextSlide1() {
+      slides1[currentSlide1].classList.remove('active1');
+      currentSlide1 = (currentSlide1 + 1) % slides1.length;
+      slides1[currentSlide1].classList.add('active1');
+    }
+    
+    setInterval(nextSlide1, 5000); 
 //sidebar elementss
 const sideBar = document.querySelector(".open_menu")
 const menu = document.querySelector(".menu_icon")

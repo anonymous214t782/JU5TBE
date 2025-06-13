@@ -24,8 +24,22 @@
       position: relative;
       overflow: hidden;
     }
+    .hero1 {
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
     
     .slide{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 1.5s ease-in-out;
+      background-size: cover;
+      background-position: center;
+    }
+    .slide1{
       position: absolute;
       width: 100%;
       height: 100%;
@@ -38,7 +52,9 @@
     .slide.active {
       opacity: 1;
     }
-    
+    .slide1.active1 {
+      opacity: 1;
+    }
     .content {
       position: absolute;
       bottom: 50%;
@@ -472,6 +488,7 @@ btn:hover{
   height: 100%;
   padding: 0;
   margin: 0;
+  display: none;
 }
 .techstack_video{
   width: 100%;
@@ -492,26 +509,40 @@ btn:hover{
   top: 5%;
   left: 40%;
   right: 40%;
-  min-width: 20rem;
-  min-height: 20rem;
   max-width: 20rem;
   max-height: 20rem;
+  mix-blend-mode: lighten;
+  opacity: 0.8;
+}
+.css{
+  position: absolute;
+   top: 53%;
+  left: 41%;
+  right: 41%;
+  max-width: 18rem;
+  max-height: 18rem;
+  mix-blend-mode: lighten;
+  opacity: 0.8;
 }
 .python{
-  position: absolute;
-  top: 5%;
-  left: 40%;
-  right: 40%;
-  max-width: 20rem;
-  max-height: 20rem;
+ position: absolute;
+  top: 10%;
+  left: 30%;
+  right: 30%;
+  max-width: 60rem;
+  max-height: 60rem;
+  mix-blend-mode: lighten;
+  opacity: 0.8;
 }
 .javascript{
   position: absolute;
-  top: 5%;
-  left: 40%;
-  right: 40%;
-  max-width: 20rem;
-  max-height: 20rem;
+  top: 10%;
+  left: 30%;
+  right: 30%;
+  max-width: 60rem;
+  max-height: 60rem;
+  mix-blend-mode: lighten;
+  opacity: 0.8;
 }
 /*techstack section*/
     
@@ -549,8 +580,15 @@ btn:hover{
     .background{
       object-fit: fill;
     }
-  
-
+    .html{
+      top: 25%;
+    }
+    .javascript{
+      top: 35%;
+    }
+    .python{
+      top:35%;
+    }
     }
 
 
@@ -608,24 +646,25 @@ btn:hover{
       font-size: 0.8rem;
       max-width: 25rem;
       } 
+    
 }
 
+@media (min-width: 769px) and (max-width: 900px){
+  .html{
+    top: 20%;
+  } 
+}
+
+@media (min-width: 900px) and (max-width: 1000px){
+  .html{
+    top: 15%;
+  } 
+}
 @media (min-width: 1000px){
   p { 
       font-size: 1rem;
       max-width: 33rem;
       } 
+    
 }
 
-@media (min-width: 1px){
-  .css{
-  
-  font-size: 200px;
-  
-  color: rgb(0, 159, 187);
-
-}
-.html{
-  font-size: 200px;
-}
-}
