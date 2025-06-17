@@ -1,0 +1,138 @@
+
+/*header*/
+.main_header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-height: 20%;
+    background: black;
+    justify-content: center;
+ }
+.header_image{
+    margin-top: 10%;
+    margin-left: 45%;
+    margin-right: 45%;
+    max-width: 30%;
+}
+.header_vid{
+   max-width:100%;
+   max-height:20%;
+}
+ /*header end*/
+ 
+ /*headerp2*/
+ 
+.headerp2{
+     position: absolute;
+     top: 20%;
+     left: 0;
+     right: 0;
+     height: 5%;
+     background: red;
+     display: flex;
+     justify-content: space-evenly;
+     vertical-align: middle;
+}
+.theme_btn{
+    margin-top: 10%;
+    border-radius: 100%;
+    border: 1px solid grey;
+}
+
+.searchbar::placeholder{
+    text-align: center;
+    color: black;
+    }
+    
+    
+/*headerp2 end*/
+
+/*cute shit*/
+.cute_shitidk{
+    position: absolute;
+    top:25%;
+    left: 0;
+    right: 0;
+    height: 15%;
+    background: blue;
+}
+
+.blog{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    height: 10rem;
+    display: block;
+    background: orange;
+    }
+.post_overview{
+    height:  8rem;
+    background: grey;
+    }
+
+.blog_post{
+    position:relative;
+    left:0;
+    right: 50%;
+    height:1rem;
+    background: pink;
+    }
+ 
+ 
+.topic_n_timestamp{
+    position: relative;    
+    left: 0;
+    right: 0;
+    height: 1rem;
+    margin-top: 0.5rem;
+    background: yellow;
+    display: flex;
+    justify-content: space-between;
+    }
+.blog_post_text{
+    margin-top:0.5rem;
+    height: 4.6rem;
+    background: green;
+    }
+        
+.read_more{
+    margin-top: 3.3rem;
+    margin-left: 20.5rem;
+    
+    border-radius: 0.3rem;
+    border: 1px solid white;
+    text-align: right;
+    background: black;
+    color: white;
+    }     
+            
+.footer{
+    position: fixed;
+    top: 95%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: purple;
+    }
+    
+    
+ /*copyright*/
+.copyright{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 10%;
+    z-index: 999;
+    
+}
+    
+.copyright p{
+    text-align: center;
+    color: rgba(130, 130, 130, 0.400);
+    font-size: 60%;
+}    
+  
+ /*copyright*/    
