@@ -1,4 +1,6 @@
-
+body{
+    background: rgb(0, 0, 0);
+}
 /*header*/
 .main_header{
     position: absolute;
@@ -6,18 +8,23 @@
     left: 0;
     right: 0;
     max-height: 20%;
-    background: black;
     justify-content: center;
+    border: 1px solid grey;
+    background: rgb(255, 0, 0);
  }
 .header_image{
-    margin-top: 10%;
-    margin-left: 45%;
-    margin-right: 45%;
-    max-width: 30%;
+    max-width: 5rem;
+    max-height: 5rem;
+    position: absolute;
+    top: 1rem;
+    left: 41%;
+    z-index: 999;    
 }
 .header_vid{
-   max-width:100%;
-   max-height:20%;
+    mix-blend-mode: lighten;
+   width:100%;
+   max-height:8rem;
+   background: rgb(255, 217, 0);   
 }
  /*header end*/
  
@@ -31,21 +38,55 @@
      height: 5%;
      background: red;
      display: flex;
-     justify-content: space-evenly;
+     justify-content: center;
      vertical-align: middle;
+    border: 1px solid grey;
 }
 .theme_btn{
-    margin-top: 10%;
-    border-radius: 100%;
-    border: 1px solid grey;
+    border-radius: 0.2em;
+    width: 6rem;
+    margin-left: -4rem;
+    margin-right: 0.5rem;
+    height: 2rem;
+    cursor: pointer;
+    background: black;
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+}
+.searchbar{
+    background: black;
+    width: 15rem;
+    height:1.7rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+    
+}
+.search_icon{
+    position: absolute;
+    top: 0.5rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    color: white;
 }
 
 .searchbar::placeholder{
     text-align: center;
-    color: black;
+    color: rgb(255, 255, 255);
     }
     
-    
+.topic_button{
+    border: 1px solid white;
+    border-radius: 0.2rem;
+    width: 5rem;
+    height: 2rem;
+    margin-left: 0.5rem;
+    margin-right: -4rem;
+    cursor: pointer;
+    color: white;
+    background: black;
+}   
 /*headerp2 end*/
 
 /*cute shit*/
@@ -55,7 +96,7 @@
     left: 0;
     right: 0;
     height: 15%;
-    background: blue;
+    
 }
 
 .blog{
@@ -65,11 +106,11 @@
     right: 0;
     height: 10rem;
     display: block;
-    background: orange;
+    background: green; 
     }
 .post_overview{
     height:  8rem;
-    background: grey;
+    background: rgb(0, 153, 255);
     }
 
 .blog_post{
@@ -77,7 +118,7 @@
     left:0;
     right: 50%;
     height:1rem;
-    background: pink;
+    background: rgb(255, 146, 146);
     }
  
  
@@ -87,25 +128,27 @@
     right: 0;
     height: 1rem;
     margin-top: 0.5rem;
-    background: yellow;
     display: flex;
     justify-content: space-between;
+    background: limegreen;
     }
 .blog_post_text{
     margin-top:0.5rem;
     height: 4.6rem;
-    background: green;
+    background: orange;
     }
         
 .read_more{
-    margin-top: 3.3rem;
-    margin-left: 20.5rem;
-    
+    position: relative;
+    margin-left: 80%;
+    width: 6rem;
     border-radius: 0.3rem;
     border: 1px solid white;
-    text-align: right;
+    text-align: center;
+    cursor: pointer;
     background: black;
     color: white;
+
     }     
             
 .footer{
@@ -114,7 +157,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: purple;
+   
     }
     
     
@@ -135,4 +178,173 @@
     font-size: 60%;
 }    
   
- /*copyright*/    
+ /*copyright*/  
+ 
+ 
+ /*sidebar*/
+   .menu_techstack ul, .contact ul,
+    .menu_projects ul{
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+       
+        transition: 0.6s; 
+    }
+
+    .defualt ul, .royal ul, .street ul,
+    .tech ul{
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+        text-align: right;
+        cursor: pointer;
+        padding-right: 40px;
+        color: whitesmoke;
+        transition: 0.6s; 
+    }
+
+    .menu_projects ul:hover, .my_contact_info:hover, 
+    .menu_techstack ul:hover{
+      font-size: 1.6rem;
+      text-shadow: 0 0 20px white;
+    }
+    
+     .defualt ul:hover, .royal:hover, .street:hover,
+    .tech ul:hover{
+      font-size: 1.6rem;
+      text-shadow: 0 0 20px white;
+    }
+
+     .open_menu{
+            position: fixed;
+            right:0;
+            top: 10rem;
+            bottom:70%;
+            width:80%;
+            background-color: rgba(20, 20, 20, 0.411);
+            backdrop-filter: 10px;
+            z-index:999;
+            box-shadow: 0 0 20px rgba(red, green, blue, 0.411);
+            border-bottom-left-radius: 60%;
+            width:0;
+            opacity:0;
+
+        }
+      
+   .close-icon{
+  font-size: 30px;
+  color:lightgrey;
+  cursor: pointer;
+  margin-bottom:2rem;
+  padding-left: 40px;
+  margin-top:1em;
+}
+
+
+.open_menu.open-sidebar{
+  animation: openSidebarAnimation 1.5s forwards;
+}
+
+@keyframes openSidebarAnimation {
+  to{
+    width:50%;
+    opacity:1;
+    top: 10rem;
+    bottom:0;
+    border-radius: 0em;
+  }
+}
+
+.open_menu.close-sidebar{
+  animation: closeSidebarAnimation 1.5s forwards;
+}
+
+@keyframes closeSidebarAnimation {
+  from{
+    width:50%;
+    opacity:1;
+    top: 10rem;
+    bottom:0;
+    border-radius: 0em;
+  }
+  to{
+    width:0;
+    opacity:0;
+    bottom:0;
+    border-bottom-left-radius: 50%;
+  }
+} 
+
+
+
+
+
+
+
+.open_menu1{
+            position: fixed;
+            left:0;
+            top: 10rem;
+            bottom:70%;
+            width:80%;
+            background-color: rgba(0, 0, 0, 0.6);
+            backdrop-filter: 10px;
+            z-index:999;
+            box-shadow: 0 0 20px rgba(red, green, blue, 0.411);
+            border-bottom-right-radius: 60%;
+            width:0;
+            opacity:0;
+
+        }
+      
+   .close-icon1{
+  font-size: 30px;
+  text-align: right;
+  color:lightgrey;
+  padding-right: 10px;
+  cursor: pointer;
+  margin-bottom:2rem;
+  padding-right: 40px;
+  margin-top:1em;
+}
+
+
+.open_menu1.open-sidebar1{
+  animation: openSidebarAnimation1 1.5s forwards;
+}
+
+@keyframes openSidebarAnimation1 {
+  to{
+    width:50%;
+    opacity:1;
+    top: 10rem;
+    bottom:0;
+    border-radius: 0em;
+  }
+}
+
+.open_menu1.close-sidebar1{
+  animation: closeSidebarAnimation1 1.5s forwards;
+}
+
+@keyframes closeSidebarAnimation1 {
+  from{
+    width:50%;
+    opacity:1;
+    top: 10rem;
+    bottom:0;
+    border-radius: 0em;
+  }
+  to{
+    width:0;
+    opacity:0;
+    bottom:0;
+    border-bottom-left-radius: 50%;
+  }
+} 
+
+
+.theme_image{
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: -5px;
+}
+/*sidebar*/
