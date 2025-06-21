@@ -332,7 +332,7 @@
   left: 1%;
   cursor: pointer;
   background: transparent;
-  color:rgb(255, 0, 0);
+  color:rgb(255, 255, 255);
   opacity: 0.7;
   transition: 0.3s;
   display: block;
@@ -375,7 +375,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-   margin-top: 50px;
+  margin-top: 50px;
   justify-content: center;
 }
 .contact_details{
@@ -471,7 +471,7 @@ btn:hover{
   left: 1%;
   cursor: pointer;
   background: transparent;
-  color:rgb(255, 0, 0);
+  color:rgb(255, 255, 255);
   opacity: 0.7;
   transition: 0.3s;
   display: block;
